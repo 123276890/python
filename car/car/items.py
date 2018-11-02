@@ -24,6 +24,9 @@ class CarItem(scrapy.Item):
     driveAndGearbox = scrapy.Field()               # 驱动及变速箱
     mostPowerful = scrapy.Field()                  # 最大功率
     carId = scrapy.Field()                         # 车id
+    slowtime = scrapy.Field()                      # 慢充时间
+    quicktime = scrapy.Field()                     # 快充时间
+    quickpercent = scrapy.Field()                  # 快充百分比
     type_id = scrapy.Field()                       # 汽车之家车型id' == carId
     car_name = scrapy.Field()
     car_type = scrapy.Field()                      # 0/1是否显示电动机表

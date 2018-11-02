@@ -22,3 +22,7 @@ class Student(object):
 
 bart = Student('Bart', Gender.Female)
 print(bart.gender)
+
+import re
+
+print(re.compile(r"[\u5ea7]+.*").findall('几门几座几箱车'))
