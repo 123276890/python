@@ -6,13 +6,10 @@
     <bookmark url="file://$PROJECT_DIR$/SpiderObject/SpiderObject/spiders/stackoverflow_spider.py" description="def parse_question(self, response):" line="12" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec2549ad-63f5-42d0-9b31-0c022d685bfc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/draft.py" afterDir="false" />
+    <list default="true" id="ec2549ad-63f5-42d0-9b31-0c022d685bfc" name="Default Changelist" comment="Default Changelist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/car/car/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/car/car/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car/car/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/car/car/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/car/car/spiders/car_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/car/car/spiders/car_spider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise11.py" beforeDir="false" afterPath="$PROJECT_DIR$/exercise11.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -46,7 +43,7 @@
     <SUITE FILE_PATH="coverage/python$exercise2.coverage" NAME="exercise2 Coverage Results" MODIFIED="1539590715687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$huxiu_spider.coverage" NAME="huxiu_spider Coverage Results" MODIFIED="1539937044758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/projectHuxiu/projectHuxiu/spiders" />
     <SUITE FILE_PATH="coverage/python$draft.coverage" NAME="draft Coverage Results" MODIFIED="1541142465734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python$stater.coverage" NAME="stater Coverage Results" MODIFIED="1541146947706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/car/car" />
+    <SUITE FILE_PATH="coverage/python$stater.coverage" NAME="stater Coverage Results" MODIFIED="1541411824957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/car/car" />
     <SUITE FILE_PATH="coverage/python$exercise8.coverage" NAME="exercise8 Coverage Results" MODIFIED="1540434711791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$first2.coverage" NAME="first2 Coverage Results" MODIFIED="1539337216226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$stackoverflow__1_.coverage" NAME="stackoverflow (1) Coverage Results" MODIFIED="1539936428391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SpiderObject/SpiderObject" />
@@ -108,7 +105,7 @@
         <entry file="file://$PROJECT_DIR$/car/car/stater.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -116,20 +113,17 @@
       <file leaf-file-name="car_spider.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/car/car/spiders/car_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="741">
-              <caret line="280" column="29" selection-start-line="280" selection-start-column="29" selection-end-line="280" selection-end-column="29" />
+            <state relative-caret-position="237">
+              <caret line="136" column="17" lean-forward="true" selection-start-line="136" selection-start-column="17" selection-end-line="136" selection-end-column="17" />
               <folding>
                 <element signature="e#26#39#0" expanded="true" />
+                <element signature="e#9955#11533#0" />
+                <element signature="e#11612#13097#0" />
+                <element signature="e#13176#14470#0" />
+                <element signature="e#14549#16127#0" />
+                <element signature="e#16243#18207#0" />
+                <element signature="e#18251#19433#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="draft.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/draft.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -137,8 +131,8 @@
       <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/car/car/items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="50" column="21" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="21" />
+            <state relative-caret-position="273">
+              <caret line="91" column="26" selection-start-line="91" selection-start-column="4" selection-end-line="91" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -146,7 +140,7 @@
       <file leaf-file-name="huxiu_spider.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProjectHuxiu/ProjectHuxiu/spiders/huxiu_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="809">
+            <state relative-caret-position="1007">
               <caret line="56" selection-start-line="56" selection-end-line="56" />
               <folding>
                 <element signature="e#25#54#0" expanded="true" />
@@ -180,6 +174,18 @@
       <find>webCrawler_scrapy</find>
       <find>AUTOTHROTTLE_ENABLED = True</find>
       <find>body_s</find>
+      <find>续航</find>
+      <find>发动机型号</find>
+      <find>排量</find>
+      <find>cylinder</find>
+      <find>进气</find>
+      <find>气缸排列</find>
+      <find>气缸数</find>
+      <find>每缸气门数</find>
+      <find>压缩比</find>
+      <find>配气机构</find>
+      <find>缸径</find>
+      <find>环保</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -232,11 +238,11 @@
         <option value="$PROJECT_DIR$/metaclass.py" />
         <option value="$PROJECT_DIR$/car/car/stater.py" />
         <option value="$PROJECT_DIR$/list.py" />
-        <option value="$PROJECT_DIR$/car/car/settings.py" />
         <option value="$PROJECT_DIR$/car/car/pipelines.py" />
         <option value="$PROJECT_DIR$/exercise11.py" />
         <option value="$PROJECT_DIR$/draft.py" />
         <option value="$PROJECT_DIR$/car/car/items.py" />
+        <option value="$PROJECT_DIR$/car/car/settings.py" />
         <option value="$PROJECT_DIR$/car/car/spiders/car_spider.py" />
       </list>
     </option>
@@ -261,7 +267,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -309,6 +314,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -504,6 +510,14 @@
       <workItem from="1539332630195" duration="128000" />
       <workItem from="1539332794045" duration="2009000" />
     </task>
+    <task id="LOCAL-00001" summary="Default Changelist">
+      <created>1541147290442</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1541147290443</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -511,21 +525,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="991" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5005325" side_tool="true" weight="0.4227273" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4992636" weight="0.46979865" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32954547" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4992636" weight="0.46979865" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49946752" weight="0.4217002" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49801588" visible="true" weight="0.15015975" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49801588" visible="true" weight="0.15335463" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" x="2152" y="110" width="1364" height="694" id="Debug" order="5" sideWeight="0.49893504" type="WINDOWED" visible="true" weight="0.45973155" />
       <window_info id="Favorites" order="2" sideWeight="0.5019841" side_tool="true" weight="0.2820324" />
+      <window_info active="true" anchor="bottom" x="2316" y="76" width="1364" height="694" id="Debug" order="5" sideWeight="0.49893504" type="WINDOWED" visible="true" weight="0.45973155" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -565,6 +580,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Default Changelist" />
+    <option name="LAST_COMMIT_MESSAGE" value="Default Changelist" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -590,23 +609,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/car/car/spiders/car_spider.py</url>
-          <line>247</line>
-          <option name="timeStamp" value="187" />
+          <line>364</line>
+          <option name="timeStamp" value="202" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/car/car/spiders/car_spider.py</url>
-          <line>262</line>
-          <option name="timeStamp" value="188" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/car/car/spiders/car_spider.py</url>
-          <line>284</line>
-          <option name="timeStamp" value="189" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/car/car/spiders/car_spider.py</url>
-          <line>294</line>
-          <option name="timeStamp" value="190" />
+          <line>147</line>
+          <option name="timeStamp" value="203" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -616,17 +625,10 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="191" />
+      <option name="time" value="204" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hex().py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cycle.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
@@ -829,13 +831,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/venv/lib/python3.7/site-packages/scrapy/item.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/venv/lib/python3.7/site-packages/twisted/python/failure.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
@@ -885,13 +880,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/car/car/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1116">
-          <caret line="98" column="30" lean-forward="true" selection-start-line="98" selection-start-column="30" selection-end-line="98" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/venv/lib/python3.7/site-packages/twisted/internet/task.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
@@ -923,7 +911,7 @@
     <entry file="file://$PROJECT_DIR$/car/car/stater.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -936,7 +924,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjectHuxiu/ProjectHuxiu/spiders/huxiu_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="809">
+        <state relative-caret-position="1007">
           <caret line="56" selection-start-line="56" selection-end-line="56" />
           <folding>
             <element signature="e#25#54#0" expanded="true" />
@@ -951,26 +939,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/venv/lib/python3.7/site-packages/twisted/internet/defer.py">
+    <entry file="file://$USER_HOME$/venv/lib/python3.7/site-packages/scrapy/item.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="653" selection-start-line="653" selection-end-line="653" />
+        <state relative-caret-position="133">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="1663" selection-start-line="1663" selection-end-line="1663" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/car/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/car/car/items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="50" column="21" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="21" />
+        <state relative-caret-position="273">
+          <caret line="91" column="26" selection-start-line="91" selection-start-column="4" selection-end-line="91" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/venv/lib/python3.7/site-packages/twisted/internet/defer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="653" selection-start-line="653" selection-end-line="653" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/car/car/spiders/car_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="280" column="29" selection-start-line="280" selection-start-column="29" selection-end-line="280" selection-end-column="29" />
+        <state relative-caret-position="237">
+          <caret line="136" column="17" lean-forward="true" selection-start-line="136" selection-start-column="17" selection-end-line="136" selection-end-column="17" />
           <folding>
             <element signature="e#26#39#0" expanded="true" />
+            <element signature="e#9955#11533#0" />
+            <element signature="e#11612#13097#0" />
+            <element signature="e#13176#14470#0" />
+            <element signature="e#14549#16127#0" />
+            <element signature="e#16243#18207#0" />
+            <element signature="e#18251#19433#0" />
           </folding>
         </state>
       </provider>

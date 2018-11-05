@@ -44,7 +44,7 @@ ROBOTSTXT_OBEY = True
 #USER_AGENT = 'car (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 
 #配置pipelines,数据库信息
