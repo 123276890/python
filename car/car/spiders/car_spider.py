@@ -15,12 +15,6 @@ function main(splash)
 end
 """
 
-script2 = """
-    var span=document.querySelector('tbody tr:nth-child(2) td:nth-child(1) div span');
-var fontSize=window.getComputedStyle(span,'::before').getPropertyValue('content')
-console.log(fontSize)
-"""
-
 
 class CarSpider(scrapy.Spider):
     name = "car"
@@ -127,6 +121,7 @@ class CarSpider(scrapy.Spider):
         # yield item
 
     def parse_article_config(self, response):
+        print(response.xpath('//script*'))
         detail = response.css('#content .conbox')
         if len(detail) > 0:
             item = CarItem()
@@ -145,7 +140,7 @@ class CarSpider(scrapy.Spider):
                 item['market_price_str'] = price.xpath('tbody/tr[1]/td[1]/div/text()')[0].extract() + '万'
                 basic = tables[1]             # 基本参数
                 if len(basic.xpath('tbody/tr')) == 18 and item['energy_type_str'] == '':
-                    print(basic.xpath('tbody/tr[2]/td[1]/div/span').extract())
+                    print(basic.css("document.styleSheets[1].cssRules[0].selectorText == \"body:before\";"))
                     item['energy_type_str'] = basic.xpath('tbody/tr[4]/td[1]/div/text()').extract()
                     item['market_time'] = basic.xpath('tbody/tr[5]/td[1]/div/text()').extract()
                     item['max_power'] = basic.xpath('tbody/tr[6]/td[1]/div/text()').extract()
@@ -346,13 +341,14 @@ class CarSpider(scrapy.Spider):
                     item['fuel_vol'] = body.xpath('tbody/tr[12]/td[1]/div/text()').extract()
                     item['cargo_vol'] = body.xpath('tbody/tr[13]/td[1]/div/text()').extract()
                     item['total_weight'] = body.xpath('tbody/tr[14]/td[1]/div/text()').extract()
+
                     # print(item['type_id'], item['body_struct'], item['quality_guarantee'], item['length'], item['width'], item['height'],
                     #       item['shaft_distance'], item['front_wheels_gap'], item['back_wheels_gap'], item['min_ground'],
                     #       item['total_weight'], item['doors'], item['seats'], item['fuel_vol'], item['cargo_vol'])
 
                 engine = tables[3]            # 发动机
                 if len(engine.xpath('tbody/tr')) == 16:
-                    item['engine_type'] = engine.xpath('tbody/tr[2]/td[1]/div/text()').extract()
+                    item['engine_type'] = item['engine']
                     item['cc'] = engine.xpath('tbody/tr[3]/td[1]/div/text()').extract()
                     item['air_intake'] = engine.xpath('tbody/tr[5]/td[1]/div/text()').extract()
                     item['cylinder_arrange'] = engine.xpath('tbody/tr[6]/td[1]/div/text()').extract()
@@ -362,7 +358,7 @@ class CarSpider(scrapy.Spider):
                     item['valve_machanism'] = engine.xpath('tbody/tr[10]/td[1]/div/text()').extract()
                     item['cylinder_radius'] = engine.xpath('tbody/tr[11]/td[1]/div/text()').extract()
                     item['environmental_standard'] = engine.xpath('tbody/tr[24]/td[1]/div').extract()
-                    print(item['environmental_standard'])
+                    print(item['engine_type'])
                 transmission = tables[4]      # 变速箱
                 chassis = tables[5]           # 底盘转向
                 wheels = tables[6]            # 车轮制动
