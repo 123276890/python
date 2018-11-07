@@ -15,6 +15,12 @@ SPIDER_MODULES = ['car.spiders']
 NEWSPIDER_MODULE = 'car.spiders'
 
 
+DOWNLOADER_MIDDLEWARES = {
+    'jdSpider.middlewares.middleware.JavaScriptMiddleware': 543,          # 键为中间件类的路径，值为中间件的顺序
+    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None    # 禁止内置的中间件
+}
+
+
 
 import random
 # user agent 列表
@@ -36,7 +42,7 @@ USER_AGENT = random.choice(USER_AGENT_LIST)
 
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 
 

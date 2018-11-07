@@ -5,6 +5,7 @@ import scrapy
 from ..items import CarItem
 from scrapy import Spider, Request
 from scrapy_splash import SplashRequest
+from ..func import func
 import re
 
 script = """
@@ -121,8 +122,21 @@ class CarSpider(scrapy.Spider):
         # yield item
 
     def parse_article_config(self, response):
-        print(response.xpath('//script*'))
-        detail = response.css('#content .conbox')
+        detail = response.body
+        detail = str(detail)
+        js_matches = []
+        reg = re.compile(r'<script>((?:.|\\n)*?)</script>')
+        car_info_datas = reg.findall(detail)
+        for strs in car_info_datas:
+            if strs.find("try{document.") < 0 and len(strs) > 500:
+                js_matches.append(strs)
+        for i, js in js_matches:
+            if i == 1:
+                dict["config"] = func.getAutoHomeDict(js)
+            elif i == 2:
+                dict["option"] = func.getAutoHomeDict(js)
+
+
         if len(detail) > 0:
             item = CarItem()
             item['type_id'] = response.meta['carId']
@@ -358,7 +372,7 @@ class CarSpider(scrapy.Spider):
                     item['valve_machanism'] = engine.xpath('tbody/tr[10]/td[1]/div/text()').extract()
                     item['cylinder_radius'] = engine.xpath('tbody/tr[11]/td[1]/div/text()').extract()
                     item['environmental_standard'] = engine.xpath('tbody/tr[24]/td[1]/div').extract()
-                    print(item['engine_type'])
+
                 transmission = tables[4]      # 变速箱
                 chassis = tables[5]           # 底盘转向
                 wheels = tables[6]            # 车轮制动
