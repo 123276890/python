@@ -3,9 +3,8 @@
 
 import scrapy
 from ..items import CarItem
-from scrapy import Spider, Request
 from scrapy_splash import SplashRequest
-from ..func import func
+from ..autohome import get_complete_text_autohome
 import re
 
 script = """
@@ -122,309 +121,312 @@ class CarSpider(scrapy.Spider):
         # yield item
 
     def parse_article_config(self, response):
-        detail = response.body
-        detail = str(detail)
-        js_matches = []
-        reg = re.compile(r'<script>((?:.|\\n)*?)</script>')
-        car_info_datas = reg.findall(detail)
-        for strs in car_info_datas:
-            if strs.find("try{document.") < 0 and len(strs) > 500:
-                js_matches.append(strs)
-        for i, js in js_matches:
-            if i == 1:
-                dict["config"] = func.getAutoHomeDict(js)
-            elif i == 2:
-                dict["option"] = func.getAutoHomeDict(js)
 
+        debug_flag = 1
 
-        if len(detail) > 0:
-            item = CarItem()
-            item['type_id'] = response.meta['carId']
-            item['car_name'] = response.meta['carName']
-            if len(response.meta['bodyForm']) > 0:
-                item['car_struct'] = response.meta['bodyForm']
-            else:
-                item['car_struct'] = ''
-            item['manufacturer'] = response.meta['manufacturer']
-            item['car_level_str'] = response.meta['level']
-            item['energy_type_str'] = response.meta['energy']
-            tables = detail.xpath('table')
-            if len(tables) == 16:
-                price = tables[0]             # 价格
-                item['market_price_str'] = price.xpath('tbody/tr[1]/td[1]/div/text()')[0].extract() + '万'
-                basic = tables[1]             # 基本参数
-                if len(basic.xpath('tbody/tr')) == 18 and item['energy_type_str'] == '':
-                    print(basic.css("document.styleSheets[1].cssRules[0].selectorText == \"body:before\";"))
-                    item['energy_type_str'] = basic.xpath('tbody/tr[4]/td[1]/div/text()').extract()
-                    item['market_time'] = basic.xpath('tbody/tr[5]/td[1]/div/text()').extract()
-                    item['max_power'] = basic.xpath('tbody/tr[6]/td[1]/div/text()').extract()
-                    item['max_torque'] = basic.xpath('tbody/tr[7]/td[1]/div/text()').extract()
-                    item['engine'] = basic.xpath('tbody/tr[8]/td[1]/div/text()').extract()
-                    item['gearbox'] = basic.xpath('tbody/tr[9]/td[1]/div/text()').extract()
-                    item['car_size'] = basic.xpath('tbody/tr[10]/td[1]/div/text()').extract()
-                    if len(item['car_struct']) > 0:
-                        item['car_struct'] = item['car_struct']
-                    else:
-                        item['car_struct'] = basic.xpath('tbody/tr[11]/td[1]/div/text()')[0].extract()
-                    item['max_speed'] = basic.xpath('tbody/tr[12]/td[1]/div/text()').extract()
-                    item['official_speedup'] = basic.xpath('tbody/tr[13]/td[1]/div/text()').extract()
-                    item['actual_speedup'] = basic.xpath('tbody/tr[14]/td[1]/div/text()').extract()
-                    item['actual_brake'] = basic.xpath('tbody/tr[15]/td[1]/div/text()').extract()
-                    item['gerenal_fueluse'] = basic.xpath('tbody/tr[16]/td[1]/div/text()').extract()
-                    item['actual_fueluse'] = basic.xpath('tbody/tr[17]/td[1]/div/text()').extract()
-                    item['quality_guarantee'] = basic.xpath('tbody/tr[18]/td[1]/div/text()').extract()
+        if 0 or debug_flag:
+            # 参数配置
+            text = response.body
+            text = str(text.decode('utf-8'))
+            text = get_complete_text_autohome(text)
+            dataConfig = re.search('var config(\s.*?)};', text, re.DOTALL).group()
+            dataOption = re.search('var option(\s.*?)};', text, re.DOTALL).group()
+            print(dataConfig, dataOption)
+            if debug_flag:
+                if "hs_kw" not in dataConfig and "hs_kw" not in dataOption:
+                    print("%s ok !!" % response.url)
+        detailConfig = dataConfig
+        detailOption = dataOption
+        print(detailConfig, detailOption)
 
-                    # print(item['type_id'], item['car_name'], item['market_price_str'], item['manufacturer'],
-                    #       item['car_level_str'], item['energy_type_str'], item['max_power'], item['max_torque'],
-                    #       item['engine'], item['gearbox'], item['car_size'], item['car_struct'], item['max_speed'],
-                    #       item['official_speedup'], item['actual_speedup'], item['actual_brake'],
-                    #       item['gerenal_fueluse'], item['actual_fueluse'], item['quality_guarantee'])
-
-                elif len(basic.xpath('tbody/tr')) == 18 and len(item['energy_type_str']) > 0:
-                    item['energy_type_str'] = basic.xpath('tbody/tr[4]/td[1]/div/text()').extract()
-                    item['market_time'] = basic.xpath('tbody/tr[5]/td[1]/div/text()').extract()
-                    item['e_mileage'] = basic.xpath('tbody/tr[6]/td[1]/div/text()').extract()
-                    item['quicktime'] = basic.xpath('tbody/tr[7]/td[1]/div/text()').extract()
-                    item['slowtime'] = basic.xpath('tbody/tr[8]/td[1]/div/text()').extract()
-                    item['quickpercent'] = basic.xpath('tbody/tr[9]/td[1]/div/text()').extract()
-                    item['max_power'] = basic.xpath('tbody/tr[10]/td[1]/div/text()').extract()
-                    item['max_torque'] = basic.xpath('tbody/tr[11]/td[1]/div/text()').extract()
-                    item['car_size'] = basic.xpath('tbody/tr[12]/td[1]/div/text()').extract()
-                    if len(item['car_struct']) > 0:
-                        item['car_struct'] = item['car_struct']
-                    else:
-                        item['car_struct'] = basic.xpath('tbody/tr[13]/td[1]/div/text()')[0].extract()
-                    item['max_speed'] = basic.xpath('tbody/tr[14]/td[1]/div/text()').extract()
-                    item['official_speedup'] = basic.xpath('tbody/tr[15]/td[1]/div/text()').extract()
-                    item['actual_speedup'] = basic.xpath('tbody/tr[16]/td[1]/div/text()').extract()
-                    item['actual_brake'] = basic.xpath('tbody/tr[17]/td[1]/div/text()').extract()
-                    item['quality_guarantee'] = basic.xpath('tbody/tr[18]/td[1]/div/text()').extract()
-
-                elif len(basic.xpath('tbody/tr')) == 17:
-                    item['energy_type_str'] = basic.xpath('tbody/tr[4]/td[1]/div/text()').extract()
-                    item['max_power'] = basic.xpath('tbody/tr[5]/td[1]/div/text()').extract()
-                    item['max_torque'] = basic.xpath('tbody/tr[6]/td[1]/div/text()').extract()
-                    item['engine'] = basic.xpath('tbody/tr[7]/td[1]/div/text()').extract()
-                    item['gearbox'] = basic.xpath('tbody/tr[8]/td[1]/div/text()').extract()
-                    item['car_size'] = basic.xpath('tbody/tr[9]/td[1]/div/text()').extract()
-                    if len(item['car_struct']) > 0:
-                        item['car_struct'] = item['car_struct']
-                    else:
-                        item['car_struct'] = basic.xpath('tbody/tr[10]/td[1]/div/text()')[0].extract()
-                    item['max_speed'] = basic.xpath('tbody/tr[11]/td[1]/div/text()').extract()
-                    item['official_speedup'] = basic.xpath('tbody/tr[12]/td[1]/div/text()').extract()
-                    item['actual_speedup'] = basic.xpath('tbody/tr[13]/td[1]/div/text()').extract()
-                    item['actual_brake'] = basic.xpath('tbody/tr[14]/td[1]/div/text()').extract()
-                    item['gerenal_fueluse'] = basic.xpath('tbody/tr[15]/td[1]/div/text()').extract()
-                    item['actual_fueluse'] = basic.xpath('tbody/tr[16]/td[1]/div/text()').extract()
-                    item['quality_guarantee'] = basic.xpath('tbody/tr[17]/td[1]/div/text()').extract()
-
-                elif len(basic.xpath('tbody/tr')) == 19:
-                    item['energy_type_str'] = basic.xpath('tbody/tr[4]/td[1]/div/text()').extract()
-                    item['market_time'] = basic.xpath('tbody/tr[5]/td[1]/div/text()').extract()
-                    item['e_mileage'] = basic.xpath('tbody/tr[6]/td[1]/div/text()').extract()
-                    item['max_power'] = basic.xpath('tbody/tr[10]/td[1]/div/text()').extract()
-                    item['max_torque'] = basic.xpath('tbody/tr[11]/td[1]/div/text()').extract()
-                    item['car_size'] = basic.xpath('tbody/tr[12]/td[1]/div/text()').extract()
-                    if len(item['car_struct']) > 0:
-                        item['car_struct'] = item['car_struct']
-                    else:
-                        item['car_struct'] = basic.xpath('tbody/tr[13]/td[1]/div/text()')[0].extract()
-                    item['max_speed'] = basic.xpath('tbody/tr[14]/td[1]/div/text()').extract()
-                    item['official_speedup'] = basic.xpath('tbody/tr[15]/td[1]/div/text()').extract()
-                    item['actual_speedup'] = basic.xpath('tbody/tr[16]/td[1]/div/text()').extract()
-                    item['actual_brake'] = basic.xpath('tbody/tr[17]/td[1]/div/text()').extract()
-                    item['quality_guarantee'] = basic.xpath('tbody/tr[19]/td[1]/div/text()').extract()
-
-                elif len(basic.xpath('tbody/tr')) == 21:
-                    item['energy_type_str'] = basic.xpath('tbody/tr[4]/td[1]/div/text()').extract()
-                    item['market_time'] = basic.xpath('tbody/tr[5]/td[1]/div/text()').extract()
-                    item['e_mileage'] = basic.xpath('tbody/tr[6]/td[1]/div/text()').extract()
-                    item['quicktime'] = basic.xpath('tbody/tr[7]/td[1]/div/text()').extract()
-                    item['slowtime'] = basic.xpath('tbody/tr[8]/td[1]/div/text()').extract()
-                    item['quickpercent'] = basic.xpath('tbody/tr[9]/td[1]/div/text()').extract()
-                    item['max_power'] = basic.xpath('tbody/tr[10]/td[1]/div/text()').extract()
-                    item['max_torque'] = basic.xpath('tbody/tr[11]/td[1]/div/text()').extract()
-                    item['car_size'] = basic.xpath('tbody/tr[12]/td[1]/div/text()').extract()
-                    if len(item['car_struct']) > 0:
-                        item['car_struct'] = item['car_struct']
-                    else:
-                        item['car_struct'] = basic.xpath('tbody/tr[13]/td[1]/div/text()')[0].extract()
-                    item['max_speed'] = basic.xpath('tbody/tr[14]/td[1]/div/text()').extract()
-                    item['official_speedup'] = basic.xpath('tbody/tr[15]/td[1]/div/text()').extract()
-                    item['actual_speedup'] = basic.xpath('tbody/tr[16]/td[1]/div/text()').extract()
-                    item['actual_brake'] = basic.xpath('tbody/tr[17]/td[1]/div/text()').extract()
-                    item['quality_guarantee'] = basic.xpath('tbody/tr[21]/td[1]/div/text()').extract()
-
-                elif len(basic.xpath('tbody/tr')) == 25 and len(item['energy_type_str']) > 2:
-                    item['energy_type_str'] = basic.xpath('tbody/tr[4]/td[1]/div/text()').extract()
-                    item['market_time'] = basic.xpath('tbody/tr[5]/td[1]/div/text()').extract()
-                    item['e_mileage'] = basic.xpath('tbody/tr[6]/td[1]/div/text()').extract()
-                    item['quicktime'] = basic.xpath('tbody/tr[7]/td[1]/div/text()').extract()
-                    item['slowtime'] = basic.xpath('tbody/tr[8]/td[1]/div/text()').extract()
-                    item['quickpercent'] = basic.xpath('tbody/tr[9]/td[1]/div/text()').extract()
-                    item['max_power'] = basic.xpath('tbody/tr[10]/td[1]/div/text()').extract()
-                    item['max_torque'] = basic.xpath('tbody/tr[11]/td[1]/div/text()').extract()
-                    item['engine'] = basic.xpath('tbody/tr[12]/td[1]/div/text()').extract()
-                    item['gearbox'] = basic.xpath('tbody/tr[13]/td[1]/div/text()').extract()
-                    item['car_size'] = basic.xpath('tbody/tr[14]/td[1]/div/text()').extract()
-                    if len(item['car_struct']) > 0:
-                        item['car_struct'] = item['car_struct']
-                    else:
-                        item['car_struct'] = basic.xpath('tbody/tr[15]/td[1]/div/text()')[0].extract()
-                    item['max_speed'] = basic.xpath('tbody/tr[16]/td[1]/div/text()').extract()
-                    item['official_speedup'] = basic.xpath('tbody/tr[17]/td[1]/div/text()').extract()
-                    item['actual_speedup'] = basic.xpath('tbody/tr[18]/td[1]/div/text()').extract()
-                    item['actual_brake'] = basic.xpath('tbody/tr[19]/td[1]/div/text()').extract()
-                    item['gerenal_fueluse'] = basic.xpath('tbody/tr[23]/td[1]/div/text()').extract()
-                    item['actual_fueluse'] = basic.xpath('tbody/tr[24]/td[1]/div/text()').extract()
-                    item['quality_guarantee'] = basic.xpath('tbody/tr[25]/td[1]/div/text()').extract()
-
-                else:
-                    item['energy_type_str'] = basic.xpath('tbody/tr[4]/td[1]/div/text()').extract()
-                    item['market_time'] = basic.xpath('tbody/tr[5]/td[1]/div/text()').extract()
-                    item['max_power'] = basic.xpath('tbody/tr[6]/td[1]/div/text()').extract()
-                    item['max_torque'] = basic.xpath('tbody/tr[7]/td[1]/div/text()').extract()
-                    item['engine'] = basic.xpath('tbody/tr[8]/td[1]/div/text()').extract()
-                    item['gearbox'] = basic.xpath('tbody/tr[9]/td[1]/div/text()').extract()
-                    item['car_size'] = basic.xpath('tbody/tr[10]/td[1]/div/text()').extract()
-                    if len(item['car_struct']) > 0:
-                        item['car_struct'] = item['car_struct']
-                    else:
-                        item['car_struct'] = basic.xpath('tbody/tr[11]/td[1]/div/text()')[0].extract()
-                    item['max_speed'] = basic.xpath('tbody/tr[12]/td[1]/div/text()').extract()
-                    item['gerenal_fueluse'] = basic.xpath('tbody/tr[13]/td[1]/div/text()').extract()
-                    item['quality_guarantee'] = basic.xpath('tbody/tr[14]/td[1]/div/text()').extract()
-
-                if len(item['quality_guarantee']) > 1:
-                    item['quality_guarantee'] = item['quality_guarantee'][0] + '年或' + item['quality_guarantee'][1] + '万' + item['quality_guarantee'][2]
-                else:
-                    item['quality_guarantee'] = item['quality_guarantee'][0] + '年不限公里'
-
-                    # print(item['type_id'], item['car_name'], item['market_price_str'], item['manufacturer'],
-                    #       item['car_level_str'], item['energy_type_str'], item['max_power'], item['max_torque'],
-                    #       item['engine'], item['gearbox'], item['car_size'], item['car_struct'], item['max_speed'],
-                    #       item['gerenal_fueluse'], item['quality_guarantee'])
-
-                if len(item['car_struct']) > 3 and item['car_struct'] != '暂无':
-                    item['body_struct'] = re.compile(r"[\u5ea7]+.*").findall(item['car_struct'])[0][1:]
-                elif len(item['car_struct']) > 0 and item['car_struct'] != '暂无':
-                    item['body_struct'] = item['car_struct']
-                else:
-                    item['body_struct'] = ''
-
-                body = tables[2]              # 车身
-                if len(body.xpath('tbody/tr')) == 16:
-                    item['length'] = body.xpath('tbody/tr[2]/td[1]/div/text()').extract()
-                    item['width'] = body.xpath('tbody/tr[3]/td[1]/div/text()').extract()
-                    item['height'] = body.xpath('tbody/tr[4]/td[1]/div/text()').extract()
-                    item['shaft_distance'] = body.xpath('tbody/tr[5]/td[1]/div/text()').extract()
-                    item['front_wheels_gap'] = body.xpath('tbody/tr[6]/td[1]/div/text()').extract()
-                    item['back_wheels_gap'] = body.xpath('tbody/tr[7]/td[1]/div/text()').extract()
-                    item['min_ground'] = body.xpath('tbody/tr[8]/td[1]/div/text()').extract()
-                    item['total_weight'] = body.xpath('tbody/tr[9]/td[1]/div/text()').extract()
-                    if len(item['body_struct']) > 0:
-                        item['body_struct'] = item['body_struct']
-                    else:
-                        item['body_struct'] = body.xpath('tbody/tr[10]/td[1]/div/text()').extract()
-                    item['doors'] = body.xpath('tbody/tr[11]/td[1]/div/text()').extract()
-                    item['seats'] = body.xpath('tbody/tr[12]/td[1]/div/text()').extract()
-                    item['open_type'] = body.xpath('tbody/tr[13]/td[1]/div/text()').extract()
-                    item['fuel_vol'] = body.xpath('tbody/tr[14]/td[1]/div/text()').extract()
-                    item['cargo_size'] = body.xpath('tbody/tr[15]/td[1]/div/text()').extract()
-                    item['carry_cap'] = body.xpath('tbody/tr[16]/td[1]/div/text()').extract()
-                    # print(item['type_id'], item['body_struct'], item['quality_guarantee'], item['length'], item['width'], item['height'],
-                    #       item['shaft_distance'], item['front_wheels_gap'], item['back_wheels_gap'], item['min_ground'],
-                    #       item['total_weight'], item['doors'], item['seats'], item['open_type'], item['fuel_vol'],
-                    #       item['cargo_size'], item['carry_cap'])
-
-                else:
-                    item['length'] = body.xpath('tbody/tr[2]/td[1]/div/text()').extract()
-                    item['width'] = body.xpath('tbody/tr[3]/td[1]/div/text()').extract()
-                    item['height'] = body.xpath('tbody/tr[4]/td[1]/div/text()').extract()
-                    item['shaft_distance'] = body.xpath('tbody/tr[5]/td[1]/div/text()').extract()
-                    item['front_wheels_gap'] = body.xpath('tbody/tr[6]/td[1]/div/text()').extract()
-                    item['back_wheels_gap'] = body.xpath('tbody/tr[7]/td[1]/div/text()').extract()
-                    item['min_ground'] = body.xpath('tbody/tr[8]/td[1]/div/text()').extract()
-                    if len(item['body_struct']) > 0:
-                        item['body_struct'] = item['body_struct']
-                    else:
-                        item['body_struct'] = body.xpath('tbody/tr[9]/td[1]/div/text()').extract()
-                    item['doors'] = body.xpath('tbody/tr[10]/td[1]/div/text()').extract()
-                    item['seats'] = body.xpath('tbody/tr[11]/td[1]/div/text()').extract()
-                    item['fuel_vol'] = body.xpath('tbody/tr[12]/td[1]/div/text()').extract()
-                    item['cargo_vol'] = body.xpath('tbody/tr[13]/td[1]/div/text()').extract()
-                    item['total_weight'] = body.xpath('tbody/tr[14]/td[1]/div/text()').extract()
-
-                    # print(item['type_id'], item['body_struct'], item['quality_guarantee'], item['length'], item['width'], item['height'],
-                    #       item['shaft_distance'], item['front_wheels_gap'], item['back_wheels_gap'], item['min_ground'],
-                    #       item['total_weight'], item['doors'], item['seats'], item['fuel_vol'], item['cargo_vol'])
-
-                engine = tables[3]            # 发动机
-                if len(engine.xpath('tbody/tr')) == 16:
-                    item['engine_type'] = item['engine']
-                    item['cc'] = engine.xpath('tbody/tr[3]/td[1]/div/text()').extract()
-                    item['air_intake'] = engine.xpath('tbody/tr[5]/td[1]/div/text()').extract()
-                    item['cylinder_arrange'] = engine.xpath('tbody/tr[6]/td[1]/div/text()').extract()
-                    item['cylinders'] = engine.xpath('tbody/tr[7]/td[1]/div/text()').extract()
-                    item['valves'] = engine.xpath('tbody/tr[8]/td[1]/div/text()').extract()
-                    item['compress_rate'] = engine.xpath('tbody/tr[9]/td[1]/div/text()').extract()
-                    item['valve_machanism'] = engine.xpath('tbody/tr[10]/td[1]/div/text()').extract()
-                    item['cylinder_radius'] = engine.xpath('tbody/tr[11]/td[1]/div/text()').extract()
-                    item['environmental_standard'] = engine.xpath('tbody/tr[24]/td[1]/div').extract()
-
-                transmission = tables[4]      # 变速箱
-                chassis = tables[5]           # 底盘转向
-                wheels = tables[6]            # 车轮制动
-                safety = tables[7]            # 主/被动安全装备
-                manipulation = tables[8]      # 辅助/操控配置
-                gat = tables[9]               # 外部/防盗配置
-                internal = tables[10]         # 内部配置
-                seat = tables[11]             # 座椅配置
-                multimedia = tables[12]       # 多媒体配置
-                light = tables[13]            # 灯光配置
-                glass = tables[14]            # 玻璃/后视镜
-                refrigerator = tables[15]     # 空调/冰箱
-
-            elif len(tables) == 17 and len(item['energy_type_str']) > 0:
-                price = tables[0]             # 价格
-                basic = tables[1]             # 基本参数
-                body = tables[2]              # 车身
-                engine = tables[3]            # 发动机
-                motor = tables[4]             # 电动机
-                transmission = tables[5]      # 变速箱
-                chassis = tables[6]           # 底盘转向
-                wheels = tables[7]            # 车轮制动
-                safety = tables[8]            # 主/被动安全装备
-                manipulation = tables[9]      # 辅助/操控配置
-                gat = tables[10]              # 外部/防盗配置
-                internal = tables[11]         # 内部配置
-                seat = tables[12]             # 座椅配置
-                multimedia = tables[13]       # 多媒体配置
-                light = tables[14]            # 灯光配置
-                glass = tables[15]            # 玻璃/后视镜
-                refrigerator = tables[16]     # 空调/冰箱
-
-            elif len(tables) == 17 and len(item['energy_type_str']) == 0:
-               price = tables[0]              # 价格
-               basic = tables[1]              # 基本参数
-               body = tables[2]               # 车身
-               transmission = tables[3]       # 变速箱
-               chassis = tables[4]            # 底盘转向
-               wheels = tables[5]             # 车轮制动
-               engine = tables[6]             # 发动机
-               motor = tables[7]              # 电动机
-               safety = tables[8]             # 主/被动安全装备
-               manipulation = tables[9]       # 辅助/操控配置
-               gat = tables[10]               # 外部/防盗配置
-               internal = tables[11]          # 内部配置
-               seat = tables[12]              # 座椅配置
-               multimedia = tables[13]        # 多媒体配置
-               light = tables[14]             # 灯光配置
-               glass = tables[15]             # 玻璃/后视镜
-               refrigerator = tables[16]      # 空调/冰箱
-
-            else:
-                pass
+        # if len(detail) > 0:
+        #     item = CarItem()
+        #     item['type_id'] = response.meta['carId']
+        #     item['car_name'] = response.meta['carName']
+        #     if len(response.meta['bodyForm']) > 0:
+        #         item['car_struct'] = response.meta['bodyForm']
+        #     else:
+        #         item['car_struct'] = ''
+        #     item['manufacturer'] = response.meta['manufacturer']
+        #     item['car_level_str'] = response.meta['level']
+        #     item['energy_type_str'] = response.meta['energy']
+        #     tables = detail.xpath('table')
+        #     if len(tables) == 16:
+        #         price = tables[0]             # 价格
+        #         item['market_price_str'] = price.xpath('tbody/tr[1]/td[1]/div/text()')[0].extract() + '万'
+        #         basic = tables[1]             # 基本参数
+        #         if len(basic.xpath('tbody/tr')) == 18 and item['energy_type_str'] == '':
+        #             print(basic.css("document.styleSheets[1].cssRules[0].selectorText == \"body:before\";"))
+        #             item['energy_type_str'] = basic.xpath('tbody/tr[4]/td[1]/div/text()').extract()
+        #             item['market_time'] = basic.xpath('tbody/tr[5]/td[1]/div/text()').extract()
+        #             item['max_power'] = basic.xpath('tbody/tr[6]/td[1]/div/text()').extract()
+        #             item['max_torque'] = basic.xpath('tbody/tr[7]/td[1]/div/text()').extract()
+        #             item['engine'] = basic.xpath('tbody/tr[8]/td[1]/div/text()').extract()
+        #             item['gearbox'] = basic.xpath('tbody/tr[9]/td[1]/div/text()').extract()
+        #             item['car_size'] = basic.xpath('tbody/tr[10]/td[1]/div/text()').extract()
+        #             if len(item['car_struct']) > 0:
+        #                 item['car_struct'] = item['car_struct']
+        #             else:
+        #                 item['car_struct'] = basic.xpath('tbody/tr[11]/td[1]/div/text()')[0].extract()
+        #             item['max_speed'] = basic.xpath('tbody/tr[12]/td[1]/div/text()').extract()
+        #             item['official_speedup'] = basic.xpath('tbody/tr[13]/td[1]/div/text()').extract()
+        #             item['actual_speedup'] = basic.xpath('tbody/tr[14]/td[1]/div/text()').extract()
+        #             item['actual_brake'] = basic.xpath('tbody/tr[15]/td[1]/div/text()').extract()
+        #             item['gerenal_fueluse'] = basic.xpath('tbody/tr[16]/td[1]/div/text()').extract()
+        #             item['actual_fueluse'] = basic.xpath('tbody/tr[17]/td[1]/div/text()').extract()
+        #             item['quality_guarantee'] = basic.xpath('tbody/tr[18]/td[1]/div/text()').extract()
+        #
+        #             # print(item['type_id'], item['car_name'], item['market_price_str'], item['manufacturer'],
+        #             #       item['car_level_str'], item['energy_type_str'], item['max_power'], item['max_torque'],
+        #             #       item['engine'], item['gearbox'], item['car_size'], item['car_struct'], item['max_speed'],
+        #             #       item['official_speedup'], item['actual_speedup'], item['actual_brake'],
+        #             #       item['gerenal_fueluse'], item['actual_fueluse'], item['quality_guarantee'])
+        #
+        #         elif len(basic.xpath('tbody/tr')) == 18 and len(item['energy_type_str']) > 0:
+        #             item['energy_type_str'] = basic.xpath('tbody/tr[4]/td[1]/div/text()').extract()
+        #             item['market_time'] = basic.xpath('tbody/tr[5]/td[1]/div/text()').extract()
+        #             item['e_mileage'] = basic.xpath('tbody/tr[6]/td[1]/div/text()').extract()
+        #             item['quicktime'] = basic.xpath('tbody/tr[7]/td[1]/div/text()').extract()
+        #             item['slowtime'] = basic.xpath('tbody/tr[8]/td[1]/div/text()').extract()
+        #             item['quickpercent'] = basic.xpath('tbody/tr[9]/td[1]/div/text()').extract()
+        #             item['max_power'] = basic.xpath('tbody/tr[10]/td[1]/div/text()').extract()
+        #             item['max_torque'] = basic.xpath('tbody/tr[11]/td[1]/div/text()').extract()
+        #             item['car_size'] = basic.xpath('tbody/tr[12]/td[1]/div/text()').extract()
+        #             if len(item['car_struct']) > 0:
+        #                 item['car_struct'] = item['car_struct']
+        #             else:
+        #                 item['car_struct'] = basic.xpath('tbody/tr[13]/td[1]/div/text()')[0].extract()
+        #             item['max_speed'] = basic.xpath('tbody/tr[14]/td[1]/div/text()').extract()
+        #             item['official_speedup'] = basic.xpath('tbody/tr[15]/td[1]/div/text()').extract()
+        #             item['actual_speedup'] = basic.xpath('tbody/tr[16]/td[1]/div/text()').extract()
+        #             item['actual_brake'] = basic.xpath('tbody/tr[17]/td[1]/div/text()').extract()
+        #             item['quality_guarantee'] = basic.xpath('tbody/tr[18]/td[1]/div/text()').extract()
+        #
+        #         elif len(basic.xpath('tbody/tr')) == 17:
+        #             item['energy_type_str'] = basic.xpath('tbody/tr[4]/td[1]/div/text()').extract()
+        #             item['max_power'] = basic.xpath('tbody/tr[5]/td[1]/div/text()').extract()
+        #             item['max_torque'] = basic.xpath('tbody/tr[6]/td[1]/div/text()').extract()
+        #             item['engine'] = basic.xpath('tbody/tr[7]/td[1]/div/text()').extract()
+        #             item['gearbox'] = basic.xpath('tbody/tr[8]/td[1]/div/text()').extract()
+        #             item['car_size'] = basic.xpath('tbody/tr[9]/td[1]/div/text()').extract()
+        #             if len(item['car_struct']) > 0:
+        #                 item['car_struct'] = item['car_struct']
+        #             else:
+        #                 item['car_struct'] = basic.xpath('tbody/tr[10]/td[1]/div/text()')[0].extract()
+        #             item['max_speed'] = basic.xpath('tbody/tr[11]/td[1]/div/text()').extract()
+        #             item['official_speedup'] = basic.xpath('tbody/tr[12]/td[1]/div/text()').extract()
+        #             item['actual_speedup'] = basic.xpath('tbody/tr[13]/td[1]/div/text()').extract()
+        #             item['actual_brake'] = basic.xpath('tbody/tr[14]/td[1]/div/text()').extract()
+        #             item['gerenal_fueluse'] = basic.xpath('tbody/tr[15]/td[1]/div/text()').extract()
+        #             item['actual_fueluse'] = basic.xpath('tbody/tr[16]/td[1]/div/text()').extract()
+        #             item['quality_guarantee'] = basic.xpath('tbody/tr[17]/td[1]/div/text()').extract()
+        #
+        #         elif len(basic.xpath('tbody/tr')) == 19:
+        #             item['energy_type_str'] = basic.xpath('tbody/tr[4]/td[1]/div/text()').extract()
+        #             item['market_time'] = basic.xpath('tbody/tr[5]/td[1]/div/text()').extract()
+        #             item['e_mileage'] = basic.xpath('tbody/tr[6]/td[1]/div/text()').extract()
+        #             item['max_power'] = basic.xpath('tbody/tr[10]/td[1]/div/text()').extract()
+        #             item['max_torque'] = basic.xpath('tbody/tr[11]/td[1]/div/text()').extract()
+        #             item['car_size'] = basic.xpath('tbody/tr[12]/td[1]/div/text()').extract()
+        #             if len(item['car_struct']) > 0:
+        #                 item['car_struct'] = item['car_struct']
+        #             else:
+        #                 item['car_struct'] = basic.xpath('tbody/tr[13]/td[1]/div/text()')[0].extract()
+        #             item['max_speed'] = basic.xpath('tbody/tr[14]/td[1]/div/text()').extract()
+        #             item['official_speedup'] = basic.xpath('tbody/tr[15]/td[1]/div/text()').extract()
+        #             item['actual_speedup'] = basic.xpath('tbody/tr[16]/td[1]/div/text()').extract()
+        #             item['actual_brake'] = basic.xpath('tbody/tr[17]/td[1]/div/text()').extract()
+        #             item['quality_guarantee'] = basic.xpath('tbody/tr[19]/td[1]/div/text()').extract()
+        #
+        #         elif len(basic.xpath('tbody/tr')) == 21:
+        #             item['energy_type_str'] = basic.xpath('tbody/tr[4]/td[1]/div/text()').extract()
+        #             item['market_time'] = basic.xpath('tbody/tr[5]/td[1]/div/text()').extract()
+        #             item['e_mileage'] = basic.xpath('tbody/tr[6]/td[1]/div/text()').extract()
+        #             item['quicktime'] = basic.xpath('tbody/tr[7]/td[1]/div/text()').extract()
+        #             item['slowtime'] = basic.xpath('tbody/tr[8]/td[1]/div/text()').extract()
+        #             item['quickpercent'] = basic.xpath('tbody/tr[9]/td[1]/div/text()').extract()
+        #             item['max_power'] = basic.xpath('tbody/tr[10]/td[1]/div/text()').extract()
+        #             item['max_torque'] = basic.xpath('tbody/tr[11]/td[1]/div/text()').extract()
+        #             item['car_size'] = basic.xpath('tbody/tr[12]/td[1]/div/text()').extract()
+        #             if len(item['car_struct']) > 0:
+        #                 item['car_struct'] = item['car_struct']
+        #             else:
+        #                 item['car_struct'] = basic.xpath('tbody/tr[13]/td[1]/div/text()')[0].extract()
+        #             item['max_speed'] = basic.xpath('tbody/tr[14]/td[1]/div/text()').extract()
+        #             item['official_speedup'] = basic.xpath('tbody/tr[15]/td[1]/div/text()').extract()
+        #             item['actual_speedup'] = basic.xpath('tbody/tr[16]/td[1]/div/text()').extract()
+        #             item['actual_brake'] = basic.xpath('tbody/tr[17]/td[1]/div/text()').extract()
+        #             item['quality_guarantee'] = basic.xpath('tbody/tr[21]/td[1]/div/text()').extract()
+        #
+        #         elif len(basic.xpath('tbody/tr')) == 25 and len(item['energy_type_str']) > 2:
+        #             item['energy_type_str'] = basic.xpath('tbody/tr[4]/td[1]/div/text()').extract()
+        #             item['market_time'] = basic.xpath('tbody/tr[5]/td[1]/div/text()').extract()
+        #             item['e_mileage'] = basic.xpath('tbody/tr[6]/td[1]/div/text()').extract()
+        #             item['quicktime'] = basic.xpath('tbody/tr[7]/td[1]/div/text()').extract()
+        #             item['slowtime'] = basic.xpath('tbody/tr[8]/td[1]/div/text()').extract()
+        #             item['quickpercent'] = basic.xpath('tbody/tr[9]/td[1]/div/text()').extract()
+        #             item['max_power'] = basic.xpath('tbody/tr[10]/td[1]/div/text()').extract()
+        #             item['max_torque'] = basic.xpath('tbody/tr[11]/td[1]/div/text()').extract()
+        #             item['engine'] = basic.xpath('tbody/tr[12]/td[1]/div/text()').extract()
+        #             item['gearbox'] = basic.xpath('tbody/tr[13]/td[1]/div/text()').extract()
+        #             item['car_size'] = basic.xpath('tbody/tr[14]/td[1]/div/text()').extract()
+        #             if len(item['car_struct']) > 0:
+        #                 item['car_struct'] = item['car_struct']
+        #             else:
+        #                 item['car_struct'] = basic.xpath('tbody/tr[15]/td[1]/div/text()')[0].extract()
+        #             item['max_speed'] = basic.xpath('tbody/tr[16]/td[1]/div/text()').extract()
+        #             item['official_speedup'] = basic.xpath('tbody/tr[17]/td[1]/div/text()').extract()
+        #             item['actual_speedup'] = basic.xpath('tbody/tr[18]/td[1]/div/text()').extract()
+        #             item['actual_brake'] = basic.xpath('tbody/tr[19]/td[1]/div/text()').extract()
+        #             item['gerenal_fueluse'] = basic.xpath('tbody/tr[23]/td[1]/div/text()').extract()
+        #             item['actual_fueluse'] = basic.xpath('tbody/tr[24]/td[1]/div/text()').extract()
+        #             item['quality_guarantee'] = basic.xpath('tbody/tr[25]/td[1]/div/text()').extract()
+        #
+        #         else:
+        #             item['energy_type_str'] = basic.xpath('tbody/tr[4]/td[1]/div/text()').extract()
+        #             item['market_time'] = basic.xpath('tbody/tr[5]/td[1]/div/text()').extract()
+        #             item['max_power'] = basic.xpath('tbody/tr[6]/td[1]/div/text()').extract()
+        #             item['max_torque'] = basic.xpath('tbody/tr[7]/td[1]/div/text()').extract()
+        #             item['engine'] = basic.xpath('tbody/tr[8]/td[1]/div/text()').extract()
+        #             item['gearbox'] = basic.xpath('tbody/tr[9]/td[1]/div/text()').extract()
+        #             item['car_size'] = basic.xpath('tbody/tr[10]/td[1]/div/text()').extract()
+        #             if len(item['car_struct']) > 0:
+        #                 item['car_struct'] = item['car_struct']
+        #             else:
+        #                 item['car_struct'] = basic.xpath('tbody/tr[11]/td[1]/div/text()')[0].extract()
+        #             item['max_speed'] = basic.xpath('tbody/tr[12]/td[1]/div/text()').extract()
+        #             item['gerenal_fueluse'] = basic.xpath('tbody/tr[13]/td[1]/div/text()').extract()
+        #             item['quality_guarantee'] = basic.xpath('tbody/tr[14]/td[1]/div/text()').extract()
+        #
+        #         if len(item['quality_guarantee']) > 1:
+        #             item['quality_guarantee'] = item['quality_guarantee'][0] + '年或' + item['quality_guarantee'][1] + '万' + item['quality_guarantee'][2]
+        #         else:
+        #             item['quality_guarantee'] = item['quality_guarantee'][0] + '年不限公里'
+        #
+        #             # print(item['type_id'], item['car_name'], item['market_price_str'], item['manufacturer'],
+        #             #       item['car_level_str'], item['energy_type_str'], item['max_power'], item['max_torque'],
+        #             #       item['engine'], item['gearbox'], item['car_size'], item['car_struct'], item['max_speed'],
+        #             #       item['gerenal_fueluse'], item['quality_guarantee'])
+        #
+        #         if len(item['car_struct']) > 3 and item['car_struct'] != '暂无':
+        #             item['body_struct'] = re.compile(r"[\u5ea7]+.*").findall(item['car_struct'])[0][1:]
+        #         elif len(item['car_struct']) > 0 and item['car_struct'] != '暂无':
+        #             item['body_struct'] = item['car_struct']
+        #         else:
+        #             item['body_struct'] = ''
+        #
+        #         body = tables[2]              # 车身
+        #         if len(body.xpath('tbody/tr')) == 16:
+        #             item['length'] = body.xpath('tbody/tr[2]/td[1]/div/text()').extract()
+        #             item['width'] = body.xpath('tbody/tr[3]/td[1]/div/text()').extract()
+        #             item['height'] = body.xpath('tbody/tr[4]/td[1]/div/text()').extract()
+        #             item['shaft_distance'] = body.xpath('tbody/tr[5]/td[1]/div/text()').extract()
+        #             item['front_wheels_gap'] = body.xpath('tbody/tr[6]/td[1]/div/text()').extract()
+        #             item['back_wheels_gap'] = body.xpath('tbody/tr[7]/td[1]/div/text()').extract()
+        #             item['min_ground'] = body.xpath('tbody/tr[8]/td[1]/div/text()').extract()
+        #             item['total_weight'] = body.xpath('tbody/tr[9]/td[1]/div/text()').extract()
+        #             if len(item['body_struct']) > 0:
+        #                 item['body_struct'] = item['body_struct']
+        #             else:
+        #                 item['body_struct'] = body.xpath('tbody/tr[10]/td[1]/div/text()').extract()
+        #             item['doors'] = body.xpath('tbody/tr[11]/td[1]/div/text()').extract()
+        #             item['seats'] = body.xpath('tbody/tr[12]/td[1]/div/text()').extract()
+        #             item['open_type'] = body.xpath('tbody/tr[13]/td[1]/div/text()').extract()
+        #             item['fuel_vol'] = body.xpath('tbody/tr[14]/td[1]/div/text()').extract()
+        #             item['cargo_size'] = body.xpath('tbody/tr[15]/td[1]/div/text()').extract()
+        #             item['carry_cap'] = body.xpath('tbody/tr[16]/td[1]/div/text()').extract()
+        #             # print(item['type_id'], item['body_struct'], item['quality_guarantee'], item['length'], item['width'], item['height'],
+        #             #       item['shaft_distance'], item['front_wheels_gap'], item['back_wheels_gap'], item['min_ground'],
+        #             #       item['total_weight'], item['doors'], item['seats'], item['open_type'], item['fuel_vol'],
+        #             #       item['cargo_size'], item['carry_cap'])
+        #
+        #         else:
+        #             item['length'] = body.xpath('tbody/tr[2]/td[1]/div/text()').extract()
+        #             item['width'] = body.xpath('tbody/tr[3]/td[1]/div/text()').extract()
+        #             item['height'] = body.xpath('tbody/tr[4]/td[1]/div/text()').extract()
+        #             item['shaft_distance'] = body.xpath('tbody/tr[5]/td[1]/div/text()').extract()
+        #             item['front_wheels_gap'] = body.xpath('tbody/tr[6]/td[1]/div/text()').extract()
+        #             item['back_wheels_gap'] = body.xpath('tbody/tr[7]/td[1]/div/text()').extract()
+        #             item['min_ground'] = body.xpath('tbody/tr[8]/td[1]/div/text()').extract()
+        #             if len(item['body_struct']) > 0:
+        #                 item['body_struct'] = item['body_struct']
+        #             else:
+        #                 item['body_struct'] = body.xpath('tbody/tr[9]/td[1]/div/text()').extract()
+        #             item['doors'] = body.xpath('tbody/tr[10]/td[1]/div/text()').extract()
+        #             item['seats'] = body.xpath('tbody/tr[11]/td[1]/div/text()').extract()
+        #             item['fuel_vol'] = body.xpath('tbody/tr[12]/td[1]/div/text()').extract()
+        #             item['cargo_vol'] = body.xpath('tbody/tr[13]/td[1]/div/text()').extract()
+        #             item['total_weight'] = body.xpath('tbody/tr[14]/td[1]/div/text()').extract()
+        #
+        #             # print(item['type_id'], item['body_struct'], item['quality_guarantee'], item['length'], item['width'], item['height'],
+        #             #       item['shaft_distance'], item['front_wheels_gap'], item['back_wheels_gap'], item['min_ground'],
+        #             #       item['total_weight'], item['doors'], item['seats'], item['fuel_vol'], item['cargo_vol'])
+        #
+        #         engine = tables[3]            # 发动机
+        #         if len(engine.xpath('tbody/tr')) == 16:
+        #             item['engine_type'] = item['engine']
+        #             item['cc'] = engine.xpath('tbody/tr[3]/td[1]/div/text()').extract()
+        #             item['air_intake'] = engine.xpath('tbody/tr[5]/td[1]/div/text()').extract()
+        #             item['cylinder_arrange'] = engine.xpath('tbody/tr[6]/td[1]/div/text()').extract()
+        #             item['cylinders'] = engine.xpath('tbody/tr[7]/td[1]/div/text()').extract()
+        #             item['valves'] = engine.xpath('tbody/tr[8]/td[1]/div/text()').extract()
+        #             item['compress_rate'] = engine.xpath('tbody/tr[9]/td[1]/div/text()').extract()
+        #             item['valve_machanism'] = engine.xpath('tbody/tr[10]/td[1]/div/text()').extract()
+        #             item['cylinder_radius'] = engine.xpath('tbody/tr[11]/td[1]/div/text()').extract()
+        #             item['environmental_standard'] = engine.xpath('tbody/tr[24]/td[1]/div').extract()
+        #
+        #         transmission = tables[4]      # 变速箱
+        #         chassis = tables[5]           # 底盘转向
+        #         wheels = tables[6]            # 车轮制动
+        #         safety = tables[7]            # 主/被动安全装备
+        #         manipulation = tables[8]      # 辅助/操控配置
+        #         gat = tables[9]               # 外部/防盗配置
+        #         internal = tables[10]         # 内部配置
+        #         seat = tables[11]             # 座椅配置
+        #         multimedia = tables[12]       # 多媒体配置
+        #         light = tables[13]            # 灯光配置
+        #         glass = tables[14]            # 玻璃/后视镜
+        #         refrigerator = tables[15]     # 空调/冰箱
+        #
+        #     elif len(tables) == 17 and len(item['energy_type_str']) > 0:
+        #         price = tables[0]             # 价格
+        #         basic = tables[1]             # 基本参数
+        #         body = tables[2]              # 车身
+        #         engine = tables[3]            # 发动机
+        #         motor = tables[4]             # 电动机
+        #         transmission = tables[5]      # 变速箱
+        #         chassis = tables[6]           # 底盘转向
+        #         wheels = tables[7]            # 车轮制动
+        #         safety = tables[8]            # 主/被动安全装备
+        #         manipulation = tables[9]      # 辅助/操控配置
+        #         gat = tables[10]              # 外部/防盗配置
+        #         internal = tables[11]         # 内部配置
+        #         seat = tables[12]             # 座椅配置
+        #         multimedia = tables[13]       # 多媒体配置
+        #         light = tables[14]            # 灯光配置
+        #         glass = tables[15]            # 玻璃/后视镜
+        #         refrigerator = tables[16]     # 空调/冰箱
+        #
+        #     elif len(tables) == 17 and len(item['energy_type_str']) == 0:
+        #        price = tables[0]              # 价格
+        #        basic = tables[1]              # 基本参数
+        #        body = tables[2]               # 车身
+        #        transmission = tables[3]       # 变速箱
+        #        chassis = tables[4]            # 底盘转向
+        #        wheels = tables[5]             # 车轮制动
+        #        engine = tables[6]             # 发动机
+        #        motor = tables[7]              # 电动机
+        #        safety = tables[8]             # 主/被动安全装备
+        #        manipulation = tables[9]       # 辅助/操控配置
+        #        gat = tables[10]               # 外部/防盗配置
+        #        internal = tables[11]          # 内部配置
+        #        seat = tables[12]              # 座椅配置
+        #        multimedia = tables[13]        # 多媒体配置
+        #        light = tables[14]             # 灯光配置
+        #        glass = tables[15]             # 玻璃/后视镜
+        #        refrigerator = tables[16]      # 空调/冰箱
+        #
+        #     else:
+        #         pass
 
 
