@@ -23,7 +23,7 @@ def get_char(js, replace_count):
             }
         }
     """
-    constant_function_regex4 = re.compile(r"""
+    constant_function_regex4 = re.compile(r'''
         function\s+\w+\(\)\s*\{\s*
             function\s+\w+\(\)\s*\{\s*
                 return\s+[\'\"][^\'\"]+[\'\"];\s*
@@ -34,10 +34,10 @@ def get_char(js, replace_count):
                 return\s*\w+\(\);\s*
             \}\s*
         \}
-        """, re.X)
+        ''', re.X)
     l = constant_function_regex4.findall(js)
     for i in l:
-        function_name = re.search(r"""
+        function_name = re.search(r'''
         function\s+(\w+)\(\)\s*\{\s*
             function\s+\w+\(\)\s*\{\s*
                 return\s+[\'\"]([^\'\"]+)[\'\"];\s*
@@ -48,7 +48,7 @@ def get_char(js, replace_count):
                 return\s*\w+\(\);\s*
             \}\s*
         \}
-        """, i, re.X)
+        ''', i, re.X)
         if_else_no_args_return_constant_function_functions.append(function_name.groups())
         js = js.replace(i, "")
         # 替换全文
@@ -69,7 +69,7 @@ def get_char(js, replace_count):
             }
         }
     """
-    constant_function_regex5 = re.compile(r"""
+    constant_function_regex5 = re.compile(r'''
         function\s+\w+\(\)\s*\{\s*
             function\s+\w+\(\)\s*\{\s*
                 return\s+[\'\"][^\'\"]+[\'\"];\s*
@@ -80,10 +80,10 @@ def get_char(js, replace_count):
                 return\s*[\'\"][^\'\"]+[\'\"];\s*
             \}\s*
         \}
-        """, re.X)
+        ''', re.X)
     l = constant_function_regex5.findall(js)
     for i in l:
-        function_name = re.search(r"""
+        function_name = re.search(r'''
         function\s+(\w+)\(\)\s*\{\s*
             function\s+\w+\(\)\s*\{\s*
                 return\s+[\'\"]([^\'\"]+)[\'\"];\s*
@@ -94,7 +94,7 @@ def get_char(js, replace_count):
                 return\s*[\'\"]([^\'\"]+)[\'\"];\s*
             \}\s*
         \}
-        """, i, re.X)
+        ''', i, re.X)
         if_else_no_args_return_function_constant_functions.append(function_name.groups())
         js = js.replace(i, "")
         # 替换全文
@@ -109,8 +109,7 @@ def get_char(js, replace_count):
             return ZA__;
         };
     """
-    constant_function_regex1 = re.compile(
-        r"var\s+[^=]+=\s*function\(\w+\)\{\s*[\'\"]return\s*\w+\s*[\'\"];\s*return\s+\w+;\s*\};")
+    constant_function_regex1 = re.compile(r"var\s+[^=]+=\s*function\(\w+\)\{\s*[\'\"]return\s*\w+\s*[\'\"];\s*return\s+\w+;\s*\};")
     l = constant_function_regex1.findall(js)
     for i in l:
         function_name = re.search("var\s+([^=]+)", i).group(1)
@@ -128,20 +127,20 @@ def get_char(js, replace_count):
             return ';';
         };
     """
-    constant_function_regex2 = re.compile(r"""
+    constant_function_regex2 = re.compile(r'''
             var\s+[^=]+=\s*function\(\)\{\s*
                 [\'\"]return\s*\w+\s*[\'\"];\s*
                 return\s+[\'\"][^\'\"]+[\'\"];\s*
                 \};
-            """, re.X)
+            ''', re.X)
     l = constant_function_regex2.findall(js)
     for i in l:
-        function_name = re.search(r"""
+        function_name = re.search(r'''
             var\s+([^=]+)=\s*function\(\)\{\s*
                 [\'\"]return\s*\w+\s*[\'\"];\s*
                 return\s+[\'\"]([^\'\"]+)[\'\"];\s*
                 \};
-            """, i, re.X)
+            ''', i, re.X)
         var_no_args_return_constant_functions.append(function_name.groups())
         js = js.replace(i, "")
         # 替换全文
@@ -156,20 +155,20 @@ def get_char(js, replace_count):
             return 'E';
         }
     """
-    constant_function_regex3 = re.compile(r"""
+    constant_function_regex3 = re.compile(r'''
             function\s*\w+\(\)\s*\{\s*
                 [\'\"]return\s*[^\'\"]+[\'\"];\s*
                 return\s*[\'\"][^\'\"]+[\'\"];\s*
             \}\s*
-        """, re.X)
+        ''', re.X)
     l = constant_function_regex3.findall(js)
     for i in l:
-        function_name = re.search(r"""
+        function_name = re.search(r'''
             function\s*(\w+)\(\)\s*\{\s*
                 [\'\"]return\s*[^\'\"]+[\'\"];\s*
                 return\s*[\'\"]([^\'\"]+)[\'\"];\s*
             \}\s*
-        """, i, re.X)
+        ''', i, re.X)
         no_args_return_constant_functions.append(function_name.groups())
         js = js.replace(i, "")
         # 替换全文
@@ -183,18 +182,18 @@ def get_char(js, replace_count):
             return '';
         }
     """
-    constant_function_regex3 = re.compile(r"""
+    constant_function_regex3 = re.compile(r'''
             function\s*\w+\(\)\s*\{\s*
                 return\s*[\'\"][^\'\"]*[\'\"];\s*
             \}\s*
-        """, re.X)
+        ''', re.X)
     l = constant_function_regex3.findall(js)
     for i in l:
-        function_name = re.search(r"""
+        function_name = re.search(r'''
             function\s*(\w+)\(\)\s*\{\s*
                 return\s*[\'\"]([^\'\"]*)[\'\"];\s*
             \}\s*
-        """, i, re.X)
+        ''', i, re.X)
         no_args_return_constant_sample_functions.append(function_name.groups())
         js = js.replace(i, "")
         # 替换全文
@@ -208,20 +207,20 @@ def get_char(js, replace_count):
                 return '1'
             })()
     """
-    constant_function_regex6 = re.compile(r"""
+    constant_function_regex6 = re.compile(r'''
             \(function\(\)\s*\{\s*
                 [\'\"]return[^\'\"]+[\'\"];\s*
                 return\s*[\'\"][^\'\"]*[\'\"];?
             \}\)\(\)
-        """, re.X)
+        ''', re.X)
     l = constant_function_regex6.findall(js)
     for i in l:
-        function_name = re.search(r"""
+        function_name = re.search(r'''
             \(function\(\)\s*\{\s*
                 [\'\"]return[^\'\"]+[\'\"];\s*
                 return\s*([\'\"][^\'\"]*[\'\"]);?
             \}\)\(\)
-        """, i, re.X)
+        ''', i, re.X)
         js = js.replace(i, function_name.group(1))
 
     # 字符串拼接时使用返回参数的函数
@@ -231,21 +230,21 @@ def get_char(js, replace_count):
                 return iU__;
             })('9F')
     """
-    constant_function_regex6 = re.compile(r"""
+    constant_function_regex6 = re.compile(r'''
             \(function\(\w+\)\s*\{\s*
                 [\'\"]return[^\'\"]+[\'\"];\s*
                 return\s*\w+;
             \}\)\([\'\"][^\'\"]*[\'\"]\)
-        """, re.X)
+        ''', re.X)
 
     l = constant_function_regex6.findall(js)
     for i in l:
-        function_name = re.search(r"""
+        function_name = re.search(r'''
             \(function\(\w+\)\s*\{\s*
                 [\'\"]return[^\'\"]+[\'\"];\s*
                 return\s*\w+;
             \}\)\(([\'\"][^\'\"]*[\'\"])\)
-        """, i, re.X)
+        ''', i, re.X)
         js = js.replace(i, function_name.group(1))
 
     # 获取所有变量
@@ -267,7 +266,7 @@ def get_char(js, replace_count):
 
     # 寻找%E4%B8%AD%E5%80%92%E 密集区域
     # string_region = re.findall("((?:%\w\w)+)", js)
-    string_region = re.findall(r"((?:%\w\w|[A-Za-z\d])+)", js)
+    string_region = re.compile(r"((?:%\w\w|[A-Za-z\d])+)").findall(js)
     # 去重
     string_region = set(string_region)
     # 判断是否存在汉字
@@ -331,12 +330,12 @@ def get_complete_text_autohome(text):
     _types_info = defaultdict(list)
     types = re.compile(r'hs_kw(\d+_[^\'\"]+)').findall(text)
     for item in types:
-        idx, type = item.split("_")
-        _types_info[type].append(idx)
+        idx, typ = item.split("_")
+        _types_info[typ].append(idx)
     # 获取混淆字符个数
-    types = {type: len(set(value)) for type, value in _types_info.items()}
+    types = {typ: len(set(value)) for typ, value in _types_info.items()}
 
-    js_list = re.findall(r"<script>(\(function[\s\S]+?)\(document\);</script>", text)
+    js_list = re.compile(r"<script>(\(function[\s\S]+?)\(document\);</script>").findall(text)
     type_charlist = {}
     for js in js_list:
         for _type in types:

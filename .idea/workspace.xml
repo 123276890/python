@@ -6,13 +6,10 @@
     <bookmark url="file://$PROJECT_DIR$/SpiderObject/SpiderObject/spiders/stackoverflow_spider.py" description="def parse_question(self, response):" line="12" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec2549ad-63f5-42d0-9b31-0c022d685bfc" name="Default Changelist" comment="Default Changelist">
-      <change afterPath="$PROJECT_DIR$/autohome.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car/car/autohome.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo.py" afterDir="false" />
+    <list default="true" id="ec2549ad-63f5-42d0-9b31-0c022d685bfc" name="Default Changelist" comment="取出数据 破解未成功">
+      <change afterPath="$PROJECT_DIR$/car/car/autohome.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/car/car/func.py" beforeDir="false" afterPath="$PROJECT_DIR$/func.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/car/car/spiders/car_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/car/car/spiders/car_spider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car/car/autohome.py" beforeDir="false" afterPath="$PROJECT_DIR$/car/car/autohome.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -49,7 +46,7 @@
     <SUITE FILE_PATH="coverage/python$huxiu_spider.coverage" NAME="huxiu_spider Coverage Results" MODIFIED="1539937044758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/projectHuxiu/projectHuxiu/spiders" />
     <SUITE FILE_PATH="coverage/python$phantomJsTest.coverage" NAME="phantomJsTest Coverage Results" MODIFIED="1541575738526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$draft.coverage" NAME="draft Coverage Results" MODIFIED="1541142465734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python$stater.coverage" NAME="stater Coverage Results" MODIFIED="1541669466380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/car/car" />
+    <SUITE FILE_PATH="coverage/python$stater.coverage" NAME="stater Coverage Results" MODIFIED="1541752346420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/car/car" />
     <SUITE FILE_PATH="coverage/python$exercise8.coverage" NAME="exercise8 Coverage Results" MODIFIED="1540434711791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$first2.coverage" NAME="first2 Coverage Results" MODIFIED="1539337216226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$stackoverflow__1_.coverage" NAME="stackoverflow (1) Coverage Results" MODIFIED="1539936428391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SpiderObject/SpiderObject" />
@@ -111,15 +108,15 @@
         <entry file="file://$PROJECT_DIR$/car/car/stater.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="114">
-              <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+              <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="car_spider.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="car_spider.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/car/car/spiders/car_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
+            <state relative-caret-position="522">
               <caret line="134" selection-start-line="134" selection-end-line="134" />
               <folding>
                 <element signature="e#26#39#0" expanded="true" />
@@ -134,14 +131,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="autohome.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="autohome.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/car/car/autohome.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2112">
-              <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-              <folding>
-                <element signature="e#25#34#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="59">
+              <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -160,7 +154,7 @@
     <findStrings>
       <find>web</find>
       <find>webCrawler_scrapy</find>
-      <find />
+      <find>AUTOTHROTTLE_ENABLED = True</find>
       <find>body_s</find>
       <find>续航</find>
       <find>发动机型号</find>
@@ -177,6 +171,7 @@
       <find>发动机</find>
       <find>js</find>
       <find>供油方式</find>
+      <find>type</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -185,7 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/exercise1.py" />
         <option value="$PROJECT_DIR$/conditional.py" />
         <option value="$PROJECT_DIR$/exercise2.py" />
         <option value="$PROJECT_DIR$/cycle.py" />
@@ -219,7 +213,6 @@
         <option value="$PROJECT_DIR$/EnumerationClass.py" />
         <option value="$PROJECT_DIR$/exercise10.py" />
         <option value="$PROJECT_DIR$/metaclass.py" />
-        <option value="$PROJECT_DIR$/car/car/stater.py" />
         <option value="$PROJECT_DIR$/list.py" />
         <option value="$PROJECT_DIR$/car/car/pipelines.py" />
         <option value="$PROJECT_DIR$/exercise11.py" />
@@ -234,8 +227,10 @@
         <option value="$PROJECT_DIR$/autohome.py" />
         <option value="$PROJECT_DIR$/demo.py" />
         <option value="$PROJECT_DIR$/ProjectHuxiu/ProjectHuxiu/autohome.py" />
-        <option value="$PROJECT_DIR$/car/car/autohome.py" />
+        <option value="$PROJECT_DIR$/car/car/stater.py" />
         <option value="$PROJECT_DIR$/car/car/spiders/car_spider.py" />
+        <option value="$PROJECT_DIR$/car/car/autohome.js" />
+        <option value="$PROJECT_DIR$/car/car/autohome.py" />
       </list>
     </option>
   </component>
@@ -310,8 +305,8 @@
       <recent name="$PROJECT_DIR$/SpiderObject/SpiderObject/spiders" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/car/car" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -521,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541586935657</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="取出数据 破解未成功">
+      <created>1541669570470</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1541669570470</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -529,6 +531,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="991" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5005325" side_tool="true" weight="0.4227273" />
@@ -537,20 +540,20 @@
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32954547" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4992636" weight="0.46979865" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49946752" weight="0.4217002" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49801588" visible="true" weight="0.15335463" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49776286" visible="true" weight="0.15335463" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" id="Structure" order="1" sideWeight="0.50223714" side_tool="true" visible="true" weight="0.15335463" />
       <window_info id="Favorites" order="2" sideWeight="0.5019841" side_tool="true" weight="0.2820324" />
-      <window_info active="true" anchor="bottom" x="2192" y="110" width="1364" height="694" id="Debug" order="5" sideWeight="0.49893504" type="WINDOWED" visible="true" weight="0.45973155" />
+      <window_info anchor="bottom" x="2192" y="110" width="1364" height="694" id="Debug" order="5" sideWeight="0.49893504" type="WINDOWED" visible="true" weight="0.45973155" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
       <window_info active="true" anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32997763" />
     </layout>
     <layout-to-restore>
@@ -585,7 +588,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Default Changelist" />
-    <option name="LAST_COMMIT_MESSAGE" value="Default Changelist" />
+    <MESSAGE value="取出数据 破解未成功" />
+    <option name="LAST_COMMIT_MESSAGE" value="取出数据 破解未成功" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -633,22 +637,15 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="232" />
+      <option name="time" value="258" />
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="text" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ProjectHuxiu/ProjectHuxiu/spiders/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectHuxiu/ProjectHuxiu/middlewares.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-402" />
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -765,20 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
           <caret line="345" selection-start-line="345" selection-end-line="345" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/venv/lib/python3.7/site-packages/scrapy/utils/misc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/importlib/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="126" selection-start-line="126" selection-end-line="126" />
         </state>
       </provider>
     </entry>
@@ -903,9 +886,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/traceback.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/re.pyi">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -913,13 +893,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="722">
           <caret line="1663" selection-start-line="1663" selection-end-line="1663" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/venv/lib/python3.7/site-packages/twisted/internet/defer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="653" selection-start-line="653" selection-end-line="653" />
         </state>
       </provider>
     </entry>
@@ -947,13 +920,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/car/car/stater.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/car/car/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="836">
@@ -971,19 +937,62 @@
     <entry file="file://$PROJECT_DIR$/car/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/car/car/autohome.py">
+    <entry file="file://$PROJECT_DIR$/car/car/stater.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2112">
-          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+        <state relative-caret-position="114">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/venv/lib/python3.7/site-packages/twisted/internet/defer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="653" selection-start-line="653" selection-end-line="653" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/venv/lib/python3.7/site-packages/scrapy/utils/misc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/importlib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="126" selection-start-line="126" selection-end-line="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/traceback.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/re.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="184" column="4" selection-start-line="184" selection-start-column="4" selection-end-line="184" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/car/autohome.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="16" />
           <folding>
-            <element signature="e#25#34#0" expanded="true" />
+            <element signature="e#313#584#0" />
+            <element signature="e#827#877#0" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/car/car/spiders/car_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
+        <state relative-caret-position="522">
           <caret line="134" selection-start-line="134" selection-end-line="134" />
           <folding>
             <element signature="e#26#39#0" expanded="true" />
@@ -994,6 +1003,13 @@
             <element signature="e#5350#6168#0" />
             <element signature="e#7500#7521#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/car/autohome.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
