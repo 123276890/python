@@ -23,6 +23,16 @@ class Student(object):
 bart = Student('Bart', Gender.Female)
 print(bart.gender)
 
+
 import re
 
 print(re.compile(r"[\u5ea7]+.*").findall('几门几座几箱车'))
+
+
+from collections import defaultdict
+ab = ['1_', '25_20', '1_32', '41_54_56']
+for item in ab:
+    idx, typ = item.split('_')
+    _types_info = defaultdict(list)
+    _types_info[typ].append(idx)
+print(_types_info)

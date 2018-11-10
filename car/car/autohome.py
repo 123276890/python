@@ -329,6 +329,7 @@ def get_char(js, replace_count):
 def get_complete_text_autohome(text):
     _types_info = defaultdict(list)
     types = re.compile(r'hs_kw(\d+_[^\'\"]+)').findall(text)
+    print(type(types))
     for item in types:
         idx, typ = item.split("_")
         _types_info[typ].append(idx)
