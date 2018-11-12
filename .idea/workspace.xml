@@ -6,9 +6,9 @@
     <bookmark url="file://$PROJECT_DIR$/SpiderObject/SpiderObject/spiders/stackoverflow_spider.py" description="def parse_question(self, response):" line="12" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec2549ad-63f5-42d0-9b31-0c022d685bfc" name="Default Changelist" comment="取出数据 破解未成功">
+    <list default="true" id="ec2549ad-63f5-42d0-9b31-0c022d685bfc" name="Default Changelist" comment="易车网">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/car/car/autohome.py" beforeDir="false" afterPath="$PROJECT_DIR$/car/car/autohome.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yicheSpider/yicheSpider/spiders/yiche_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/yicheSpider/yicheSpider/spiders/yiche_spider.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -115,12 +115,10 @@
       <file leaf-file-name="car_spider.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/car/car/spiders/car_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="536">
-              <caret line="135" column="75" lean-forward="true" selection-start-line="135" selection-start-column="75" selection-end-line="135" selection-end-column="75" />
+            <state relative-caret-position="532">
+              <caret line="28" column="41" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="41" />
               <folding>
                 <element signature="e#26#39#0" expanded="true" />
-                <element signature="e#482#790#0" />
-                <element signature="e#831#1583#0" />
                 <element signature="e#1777#3483#0" />
                 <element signature="e#3535#6914#0" />
                 <element signature="e#4512#5322#0" />
@@ -131,11 +129,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="autohome.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="yiche_spider.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yicheSpider/yicheSpider/spiders/yiche_spider.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+              <folding>
+                <element signature="e#25#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="items.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/car/car/items.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="146" column="8" selection-start-line="146" selection-start-column="8" selection-end-line="146" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yicheSpider/yicheSpider/items.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="809">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="autohome.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/car/car/autohome.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="326" column="21" lean-forward="true" selection-start-line="326" selection-start-column="21" selection-end-line="326" selection-end-column="21" />
+            <state relative-caret-position="853">
+              <caret line="349" column="50" selection-start-line="349" selection-start-column="50" selection-end-line="349" selection-end-column="50" />
               <folding>
                 <element signature="e#25#34#0" expanded="true" />
               </folding>
@@ -147,7 +175,7 @@
         <entry file="file://$PROJECT_DIR$/exercise11.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="570">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
@@ -164,26 +192,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>web</find>
-      <find>webCrawler_scrapy</find>
-      <find>AUTOTHROTTLE_ENABLED = True</find>
-      <find>body_s</find>
-      <find>续航</find>
-      <find>发动机型号</find>
-      <find>排量</find>
-      <find>cylinder</find>
-      <find>进气</find>
-      <find>气缸排列</find>
-      <find>气缸数</find>
-      <find>每缸气门数</find>
-      <find>压缩比</find>
-      <find>配气机构</find>
-      <find>缸径</find>
+      <find>车型级别</find>
+      <find>车型</find>
+      <find>级别</find>
+      <find>车身形式</find>
+      <find>车身</find>
+      <find>能源</find>
+      <find>最大</find>
+      <find>变速箱</find>
+      <find>混合油耗</find>
+      <find>加速时间</find>
       <find>环保</find>
-      <find>发动机</find>
-      <find>js</find>
+      <find>质保</find>
+      <find>颜色</find>
+      <find>长</find>
+      <find>轴距</find>
+      <find>整备质量</find>
+      <find>座位数</find>
+      <find>容积</find>
+      <find>油箱</find>
+      <find>前轮</find>
+      <find>备胎</find>
+      <find>排量</find>
+      <find>最大马力</find>
+      <find>最大功率转速</find>
+      <find>最大扭矩转速</find>
       <find>供油方式</find>
-      <find>type</find>
+      <find>压缩比</find>
+      <find>燃油</find>
+      <find>发动机</find>
+      <find>变速箱类型</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -192,8 +230,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/conditional.py" />
-        <option value="$PROJECT_DIR$/exercise2.py" />
         <option value="$PROJECT_DIR$/cycle.py" />
         <option value="$PROJECT_DIR$/hex().py" />
         <option value="$PROJECT_DIR$/def.py" />
@@ -243,6 +279,8 @@
         <option value="$PROJECT_DIR$/exercise11.py" />
         <option value="$PROJECT_DIR$/car/car/spiders/car_spider.py" />
         <option value="$PROJECT_DIR$/car/car/autohome.py" />
+        <option value="$PROJECT_DIR$/yicheSpider/yicheSpider/spiders/yiche_spider.py" />
+        <option value="$PROJECT_DIR$/yicheSpider/yicheSpider/items.py" />
       </list>
     </option>
   </component>
@@ -289,13 +327,20 @@
             <path>
               <item name="python" type="b2602c69:ProjectViewProjectNode" />
               <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="ProjectHuxiu" type="462c0819:PsiDirectoryNode" />
+              <item name="yicheSpider" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="python" type="b2602c69:ProjectViewProjectNode" />
               <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="ProjectHuxiu" type="462c0819:PsiDirectoryNode" />
-              <item name="ProjectHuxiu" type="462c0819:PsiDirectoryNode" />
+              <item name="yicheSpider" type="462c0819:PsiDirectoryNode" />
+              <item name="yicheSpider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="yicheSpider" type="462c0819:PsiDirectoryNode" />
+              <item name="yicheSpider" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -556,7 +601,28 @@
       <option name="project" value="LOCAL" />
       <updated>1541841933607</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="取出数据 破解未成功">
+      <created>1542015894996</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1542015894996</updated>
+    </task>
+    <task id="LOCAL-00010" summary="易车网">
+      <created>1542017319404</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1542017319404</updated>
+    </task>
+    <task id="LOCAL-00011" summary="易车网">
+      <created>1542017380953</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1542017380953</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -573,14 +639,14 @@
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32954547" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4992636" weight="0.46979865" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49946752" weight="0.4217002" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49776286" visible="true" weight="0.15335463" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49776286" visible="true" weight="0.15335463" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" sideWeight="0.50223714" side_tool="true" visible="true" weight="0.15335463" />
       <window_info id="Favorites" order="2" sideWeight="0.5019841" side_tool="true" weight="0.2820324" />
-      <window_info active="true" anchor="bottom" x="2192" y="110" width="1364" height="694" id="Debug" order="5" sideWeight="0.49893504" type="WINDOWED" visible="true" weight="0.45973155" />
+      <window_info anchor="bottom" x="2192" y="110" width="1364" height="694" id="Debug" order="5" sideWeight="0.49893504" type="WINDOWED" visible="true" weight="0.45973155" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -622,7 +688,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Default Changelist" />
     <MESSAGE value="取出数据 破解未成功" />
-    <option name="LAST_COMMIT_MESSAGE" value="取出数据 破解未成功" />
+    <MESSAGE value="易车网" />
+    <option name="LAST_COMMIT_MESSAGE" value="易车网" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -684,20 +751,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70093">
-          <caret line="2417" column="36" selection-start-line="2417" selection-start-column="36" selection-end-line="2417" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpiderObject/SpiderObject/spiders/stackoverflow_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/venv/lib/python3.7/site-packages/scrapy/utils/reactor.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="812">
@@ -937,13 +990,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/car/car/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1672">
-          <caret line="88" column="13" selection-start-line="88" selection-start-column="4" selection-end-line="88" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/car/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -975,7 +1021,7 @@
     <entry file="file://$PROJECT_DIR$/exercise11.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
@@ -1028,14 +1074,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/car/car/autohome.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="853">
+          <caret line="349" column="50" selection-start-line="349" selection-start-column="50" selection-end-line="349" selection-end-column="50" />
+          <folding>
+            <element signature="e#25#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/car/car/spiders/car_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="135" column="75" lean-forward="true" selection-start-line="135" selection-start-column="75" selection-end-line="135" selection-end-column="75" />
+        <state relative-caret-position="532">
+          <caret line="28" column="41" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="41" />
           <folding>
             <element signature="e#26#39#0" expanded="true" />
-            <element signature="e#482#790#0" />
-            <element signature="e#831#1583#0" />
             <element signature="e#1777#3483#0" />
             <element signature="e#3535#6914#0" />
             <element signature="e#4512#5322#0" />
@@ -1045,13 +1099,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/car/car/autohome.py">
+    <entry file="file://$PROJECT_DIR$/yicheSpider/yicheSpider/spiders/yiche_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="326" column="21" lean-forward="true" selection-start-line="326" selection-start-column="21" selection-end-line="326" selection-end-column="21" />
+        <state relative-caret-position="342">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
           <folding>
-            <element signature="e#25#34#0" expanded="true" />
+            <element signature="e#25#38#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yicheSpider/yicheSpider/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="809">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/car/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="146" column="8" selection-start-line="146" selection-start-column="8" selection-end-line="146" selection-end-column="8" />
         </state>
       </provider>
     </entry>
