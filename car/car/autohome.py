@@ -251,7 +251,8 @@ def get_char(js, replace_count):
     var_regex = "var\s+(\w+)\s*=\s*([\'\"].*?[\'\"]);\s"
 
     for var_name, var_value in re.findall(var_regex, js):
-        var_value = re.sub(r"\s", "", var_value).strip("\'\" ")
+        # var_value = re.sub(r"\s", "", var_value).strip("\'\" ")
+        var_value = var_value.strip("\'\"").strip()
         if "(" in var_value:
             var_value = ";"
         all_var[var_name] = var_value
@@ -282,7 +283,7 @@ def get_char(js, replace_count):
         if not re.search(r"%\w\w", string_):
             continue
         # 过滤
-        utf8_string = urllib.unquote(string_)
+        utf8_string = urllib.parse.unquote(string_)
         if not utf8_string.isalpha():
             # 去掉可能匹配到的多余字符 \w+  建立在混淆字符串是排好序的 字母在汉字前
             utf8_string = utf8_string.rstrip(string.letters + string.digits + "_")
@@ -295,7 +296,7 @@ def get_char(js, replace_count):
         if len(string_) > len(string_str):
             string_str = string_
 
-    utf8_string = urllib.unquote(string_str)
+    utf8_string = urllib.parse.unquote(string_str)
     if not utf8_string.isalpha():
         # 去掉可能匹配到的多余字符 \w+  建立在混淆字符串是排好序的 字母在汉字前
         utf8_string = utf8_string.rstrip(string.letters + string.digits + "_")
@@ -329,7 +330,6 @@ def get_char(js, replace_count):
 def get_complete_text_autohome(text):
     _types_info = defaultdict(list)
     types = re.compile(r'hs_kw(\d+_[^\'\"]+)').findall(text)
-    print(type(types))
     for item in types:
         idx, typ = item.split("_")
         _types_info[typ].append(idx)
@@ -342,8 +342,8 @@ def get_complete_text_autohome(text):
         for _type in types:
             if _type in js:
                 break
-        else:
-            continue
+            else:
+                continue
         if not js:
             continue
         try:
