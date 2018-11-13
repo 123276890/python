@@ -45,6 +45,8 @@ class YichespiderItem(scrapy.Item):
     engine_start_stop = scrapy.Field()             # 发动机启停
     gears_type = scrapy.Field()                    # 变速箱类型
     gears_num = scrapy.Field()                     # 挡位个数
+    drive_method = scrapy.Field()                  # 驱动方式
+
 
 
 
