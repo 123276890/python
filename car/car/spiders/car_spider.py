@@ -44,7 +44,9 @@ class CarSpider(scrapy.Spider):
                     url = response.urljoin(item['link'])
                     # print(item['cars'], url)
                     # yield item
-                    yield scrapy.Request(url, callback=self.parse_article)
+                    # yield scrapy.Request(url, callback=self.parse_article)
+                    yield SplashRequest(url="https://car.autohome.com.cn/config/series/528.html", callback=self.test,
+                                        args={'wait': 1})
 
     def parse_article(self, response):
         detail = response.xpath('//div[@class="carseries-main"]/div[@class="series-list"]')
@@ -134,8 +136,9 @@ class CarSpider(scrapy.Spider):
             for s in strs:
                 s = ord(s)
                 strslist.append(s)
-            if strs.find("try{document.") < 0 and len(strslist) > 500:
-                js_matches.append(strs)
+            if strs.find("try{document.") < 0:
+                if len(strslist) > 500:
+                    js_matches.append(strs)
 
         for i, js in enumerate(js_matches):
             if i == 1:
@@ -144,6 +147,18 @@ class CarSpider(scrapy.Spider):
                 dic["option"] = autohome.getAutoHomeDict(js)
             else:
                 pass
+
+        # 基本参数组
+        pos_start = html.find("var config =")
+        if pos_start <= 0:
+            pass
+        str_base = html[pos_start:]
+        pos_end = str_base.find("\\n")
+        if pos_end > len(str_base):
+            pass
+        str_base = str_base[13:pos_end - 1]
+
+        # 选项配置参数组
 
     def parse_article_config(self, response):
 
