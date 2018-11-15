@@ -4,7 +4,6 @@
 import scrapy
 from ..items import CarItem
 from scrapy_splash import SplashRequest
-from ..autohome import get_complete_text_autohome
 import re
 
 script = """
@@ -112,32 +111,41 @@ class CarSpider(scrapy.Spider):
             url = response.urljoin(item['link'])
             item['energy_type_str'] = ''
 
-        yield SplashRequest(url, meta={'energy': item['energy_type_str'], 'bodyForm': item['bodyForm'],
-                                       'carId': item['carId'], 'manufacturer': item['carBrand'],
-                                       'level': item['modelLevel'], 'carName': item['carName']},
-                            callback=self.parse_article_config, args={'wait': 1})
+        # yield SplashRequest(url, meta={'energy': item['energy_type_str'], 'bodyForm': item['bodyForm'],
+        #                                'carId': item['carId'], 'manufacturer': item['carBrand'],
+        #                                'level': item['modelLevel'], 'carName': item['carName']},
+        #                     callback=self.parse_article_config, args={'wait': 1})
 
         # print(item['carBrand'], item['cars'], item['carName'], item['modelLevel'], item['bodyForm'], item['bodySize'], item['combined'], item['EPStandard'], item['engine'], item['driveAndGearbox'], item['mostPowerful'], url)
         # yield item
 
+        yield SplashRequest(url="https://car.autohome.com.cn/config/series/528.html", callback=self.test, args={'wait': 1})
+
+    def test(self, response):
+        html = response.body
+        html = str(html.decode('utf-8'))
+
+        car_info_datas = re.compile(r"<script>((?:.|\\n)*?)</script>").findall(html)
+        js_matches = []
+
+        for strs in car_info_datas:
+            strslist = []
+            for s in strs:
+                s = ord(s)
+                strslist.append(s)
+            if strs.find("try{document.") < 0 and len(strslist) > 500:
+                js_matches = js_matches.append(strs)
+
     def parse_article_config(self, response):
 
-        debug_flag = 1
-
-        if 0 or debug_flag:
-            # 参数配置
-            text = response.body
-            text = str(text.decode('utf-8'))
-            text = get_complete_text_autohome(text)
-            dataConfig = re.search('var config(\s.*?)};', text, re.DOTALL).group()
-            dataOption = re.search('var option(\s.*?)};', text, re.DOTALL).group()
-            print(dataConfig, dataOption)
-            if debug_flag:
-                if "hs_kw" not in dataConfig and "hs_kw" not in dataOption:
-                    print("%s ok !!" % response.url)
-        detailConfig = dataConfig
-        detailOption = dataOption
-        print(detailConfig, detailOption)
+        detail = response.body
+        detail = str(detail.decode('utf-8'))
+        car_info_datas = re.compile(r"<script>((?:.|\\n)*?)</script>").findall(detail)
+        js_matches = []
+        for strs in car_info_datas:
+            if strs.find("try{document.") < 0 and len(ord(strs)) > 500:
+                js_matches = js_matches.append(strs)
+        pass
 
         # if len(detail) > 0:
         #     item = CarItem()

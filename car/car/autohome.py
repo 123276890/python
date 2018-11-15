@@ -1,366 +1,286 @@
 # -*- coding: utf-8 -*-
 
 import re
-import string
-import urllib
-import traceback
-from collections import defaultdict
 
-
-def get_char(js, replace_count):
-    all_var = {}
-    # 判断混淆 无参数 返回常量 函数
-    if_else_no_args_return_constant_function_functions = []
-    """
-    function zX_() {
-            function _z() {
-                return '09';
-            };
-            if (_z() == '09,') {
-                return 'zX_';
-            } else {
-                return _z();
-            }
-        }
-    """
-    constant_function_regex4 = re.compile(r'''
-        function\s+\w+\(\)\s*\{\s*
-            function\s+\w+\(\)\s*\{\s*
-                return\s+[\'\"][^\'\"]+[\'\"];\s*
-            \};\s*
-            if\s*\(\w+\(\)\s*==\s*[\'\"][^\'\"]+[\'\"]\)\s*\{\s*
-                return\s*[\'\"][^\'\"]+[\'\"];\s*
-            \}\s*else\s*\{\s*
-                return\s*\w+\(\);\s*
-            \}\s*
-        \}
-        ''', re.X)
-    l = constant_function_regex4.findall(js)
-    for i in l:
-        function_name = re.search(r'''
-        function\s+(\w+)\(\)\s*\{\s*
-            function\s+\w+\(\)\s*\{\s*
-                return\s+[\'\"]([^\'\"]+)[\'\"];\s*
-            \};\s*
-            if\s*\(\w+\(\)\s*==\s*[\'\"]([^\'\"]+)[\'\"]\)\s*\{\s*
-                return\s*[\'\"]([^\'\"]+)[\'\"];\s*
-            \}\s*else\s*\{\s*
-                return\s*\w+\(\);\s*
-            \}\s*
-        \}
-        ''', i, re.X)
-        if_else_no_args_return_constant_function_functions.append(function_name.groups())
-        js = js.replace(i, "")
-        # 替换全文
-        a, b, c, d = function_name.groups()
-        all_var["%s()" % a] = d if b == c else b
-
-    # 判断混淆 无参数 返回函数 常量
-    if_else_no_args_return_function_constant_functions = []
-    """
-    function wu_() {
-            function _w() {
-                return 'wu_';
-            };
-            if (_w() == 'wu__') {
-                return _w();
-            } else {
-                return '5%';
-            }
-        }
-    """
-    constant_function_regex5 = re.compile(r'''
-        function\s+\w+\(\)\s*\{\s*
-            function\s+\w+\(\)\s*\{\s*
-                return\s+[\'\"][^\'\"]+[\'\"];\s*
-            \};\s*
-            if\s*\(\w+\(\)\s*==\s*[\'\"][^\'\"]+[\'\"]\)\s*\{\s*
-                return\s*\w+\(\);\s*
-            \}\s*else\s*\{\s*
-                return\s*[\'\"][^\'\"]+[\'\"];\s*
-            \}\s*
-        \}
-        ''', re.X)
-    l = constant_function_regex5.findall(js)
-    for i in l:
-        function_name = re.search(r'''
-        function\s+(\w+)\(\)\s*\{\s*
-            function\s+\w+\(\)\s*\{\s*
-                return\s+[\'\"]([^\'\"]+)[\'\"];\s*
-            \};\s*
-            if\s*\(\w+\(\)\s*==\s*[\'\"]([^\'\"]+)[\'\"]\)\s*\{\s*
-                return\s*\w+\(\);\s*
-            \}\s*else\s*\{\s*
-                return\s*[\'\"]([^\'\"]+)[\'\"];\s*
-            \}\s*
-        \}
-        ''', i, re.X)
-        if_else_no_args_return_function_constant_functions.append(function_name.groups())
-        js = js.replace(i, "")
-        # 替换全文
-        a, b, c, d = function_name.groups()
-        all_var["%s()" % a] = b if b == c else d
-
-    # var 参数等于返回值函数
-    var_args_equal_value_functions = []
-    """
-    var ZA_ = function(ZA__) {
-            'return ZA_';
-            return ZA__;
-        };
-    """
-    constant_function_regex1 = re.compile(r"var\s+[^=]+=\s*function\(\w+\)\{\s*[\'\"]return\s*\w+\s*[\'\"];\s*return\s+\w+;\s*\};")
-    l = constant_function_regex1.findall(js)
-    for i in l:
-        function_name = re.search("var\s+([^=]+)", i).group(1)
-        var_args_equal_value_functions.append(function_name)
-        js = js.replace(i, "")
-        # 替换全文
-        a = function_name
-        js = re.sub(r"%s\(([^\)]+)\)" % a, r"\1", js)
-
-    # var 无参数 返回常量 函数
-    var_no_args_return_constant_functions = []
-    """
-    var Qh_ = function() {
-            'return Qh_';
-            return ';';
-        };
-    """
-    constant_function_regex2 = re.compile(r'''
-            var\s+[^=]+=\s*function\(\)\{\s*
-                [\'\"]return\s*\w+\s*[\'\"];\s*
-                return\s+[\'\"][^\'\"]+[\'\"];\s*
-                \};
-            ''', re.X)
-    l = constant_function_regex2.findall(js)
-    for i in l:
-        function_name = re.search(r'''
-            var\s+([^=]+)=\s*function\(\)\{\s*
-                [\'\"]return\s*\w+\s*[\'\"];\s*
-                return\s+[\'\"]([^\'\"]+)[\'\"];\s*
-                \};
-            ''', i, re.X)
-        var_no_args_return_constant_functions.append(function_name.groups())
-        js = js.replace(i, "")
-        # 替换全文
-        a, b = function_name.groups()
-        all_var["%s()" % a] = b
-
-    # 无参数 返回常量 函数
-    no_args_return_constant_functions = []
-    """
-    function ZP_() {
-            'return ZP_';
-            return 'E';
-        }
-    """
-    constant_function_regex3 = re.compile(r'''
-            function\s*\w+\(\)\s*\{\s*
-                [\'\"]return\s*[^\'\"]+[\'\"];\s*
-                return\s*[\'\"][^\'\"]+[\'\"];\s*
-            \}\s*
-        ''', re.X)
-    l = constant_function_regex3.findall(js)
-    for i in l:
-        function_name = re.search(r'''
-            function\s*(\w+)\(\)\s*\{\s*
-                [\'\"]return\s*[^\'\"]+[\'\"];\s*
-                return\s*[\'\"]([^\'\"]+)[\'\"];\s*
-            \}\s*
-        ''', i, re.X)
-        no_args_return_constant_functions.append(function_name.groups())
-        js = js.replace(i, "")
-        # 替换全文
-        a, b = function_name.groups()
-        all_var["%s()" % a] = b
-
-    # 无参数 返回常量 函数 中间无混淆代码
-    no_args_return_constant_sample_functions = []
-    """
-    function do_() {
-            return '';
-        }
-    """
-    constant_function_regex3 = re.compile(r'''
-            function\s*\w+\(\)\s*\{\s*
-                return\s*[\'\"][^\'\"]*[\'\"];\s*
-            \}\s*
-        ''', re.X)
-    l = constant_function_regex3.findall(js)
-    for i in l:
-        function_name = re.search(r'''
-            function\s*(\w+)\(\)\s*\{\s*
-                return\s*[\'\"]([^\'\"]*)[\'\"];\s*
-            \}\s*
-        ''', i, re.X)
-        no_args_return_constant_sample_functions.append(function_name.groups())
-        js = js.replace(i, "")
-        # 替换全文
-        a, b = function_name.groups()
-        all_var["%s()" % a] = b
-# -----------------------------------------------------------------------------------
-    # 字符串拼接时使无参常量函数
-    """
-    (function() {
-                'return sZ_';
-                return '1'
-            })()
-    """
-    constant_function_regex6 = re.compile(r'''
-            \(function\(\)\s*\{\s*
-                [\'\"]return[^\'\"]+[\'\"];\s*
-                return\s*[\'\"][^\'\"]*[\'\"];?
-            \}\)\(\)
-        ''', re.X)
-    l = constant_function_regex6.findall(js)
-    for i in l:
-        function_name = re.search(r'''
-            \(function\(\)\s*\{\s*
-                [\'\"]return[^\'\"]+[\'\"];\s*
-                return\s*([\'\"][^\'\"]*[\'\"]);?
-            \}\)\(\)
-        ''', i, re.X)
-        js = js.replace(i, function_name.group(1))
-
-    # 字符串拼接时使用返回参数的函数
-    """
-    (function(iU__) {
-                'return iU_';
-                return iU__;
-            })('9F')
-    """
-    constant_function_regex6 = re.compile(r'''
-            \(function\(\w+\)\s*\{\s*
-                [\'\"]return[^\'\"]+[\'\"];\s*
-                return\s*\w+;
-            \}\)\([\'\"][^\'\"]*[\'\"]\)
-        ''', re.X)
-
-    l = constant_function_regex6.findall(js)
-    for i in l:
-        function_name = re.search(r'''
-            \(function\(\w+\)\s*\{\s*
-                [\'\"]return[^\'\"]+[\'\"];\s*
-                return\s*\w+;
-            \}\)\(([\'\"][^\'\"]*[\'\"])\)
-        ''', i, re.X)
-        js = js.replace(i, function_name.group(1))
-
-    # 获取所有变量
-    var_regex = "var\s+(\w+)\s*=\s*([\'\"].*?[\'\"]);\s"
-
-    for var_name, var_value in re.findall(var_regex, js):
-        # var_value = re.sub(r"\s", "", var_value).strip("\'\" ")
-        var_value = var_value.strip("\'\"").strip()
-        if "(" in var_value:
-            var_value = ";"
-        all_var[var_name] = var_value
-
-    # 注释掉 此正则可能会把关键js语句删除掉
-    # js = re.sub(var_regex, "", js)
-
-    for var_name, var_value in all_var.items():
-        js = js.replace(var_name, var_value)
-
-    js = re.sub(r"[\s+']", "", js)
-
-    # 寻找%E4%B8%AD%E5%80%92%E 密集区域
-    # string_region = re.findall("((?:%\w\w)+)", js)
-    string_region = re.compile(r"((?:%\w\w|[A-Za-z\d])+)").findall(js)
-    # 去重
-    string_region = set(string_region)
-    # 判断是否存在汉字
-    chinese_flag = 0
-    for string_ in string_region:
-        if re.search(r"%\w\w", string_):
-            chinese_flag = 1
-    if not chinese_flag:
-        # 可能混淆字符为纯英文 。。。尚未解决
-        return []
-    string_str = ""
-    for string_ in string_region:
-        if not re.search(r"%\w\w", string_):
-            continue
-        # 过滤
-        utf8_string = urllib.parse.unquote(string_)
-        if not utf8_string.isalpha():
-            # 去掉可能匹配到的多余字符 \w+  建立在混淆字符串是排好序的 字母在汉字前
-            utf8_string = utf8_string.rstrip(string.letters + string.digits + "_")
+def decodeJsFuncs(string):
+    try:
+        pos = string.index("var")
+    except ValueError:
+        pos = -1
+    if pos > 0:
+        string = string[:pos]
+    key = string.split("()")[0]
+    key = key.replace('function', '')
+    key = key.strip()
+    if string.endswith('function'):
+        string = string.rstrip('function')
+    string = string.strip()
+    if len(re.compile(r'function').findall(string)) > 1:
         try:
-            unicode_string = utf8_string.decode("utf8")
+            function_name = re.search(r'''
+                    function\s+(\w+)\(\)\s*\{\s*
+                        function\s+\w+\(\)\s*\{\s*
+                            return\s+[\'\"]([^\'\"]+)[\'\"];\s*
+                        \};\s*
+                        if\s*\(\w+\(\)\s*==\s*[\'\"]([^\'\"]+)[\'\"]\)\s*\{\s*
+                            return\s*[\'\"]([^\'\"]+)[\'\"];\s*
+                        \}\s*else\s*\{\s*
+                            return\s*\w+\(\);\s*
+                        \}\s*
+                    \}
+                    ''', string, re.X)
+            a, b, c, d = function_name.groups()
+            value = d if b == c else b
+            return key, value
         except:
-            continue
-        if len(unicode_string) < replace_count:
-            continue
-        if len(string_) > len(string_str):
-            string_str = string_
-
-    utf8_string = urllib.parse.unquote(string_str)
-    if not utf8_string.isalpha():
-        # 去掉可能匹配到的多余字符 \w+  建立在混淆字符串是排好序的 字母在汉字前
-        utf8_string = utf8_string.rstrip(string.letters + string.digits + "_")
-
-    unicode_string = utf8_string.decode("utf8")
-
-    # 当只有一个替换字符时 下面正则寻找失败 此时也不用寻找了
-    if len(unicode_string) == 1:
-        return [unicode_string]
-
-    # 从 字符串密集区域后面开始寻找索引区域
-    index_m = re.search(r"([\d,]+(;[\d,]+)+)", js[js.find(string_str) + len(string_str):])
-
-    string_list = list(unicode_string)
-    index_list = index_m.group(1).split(";")
-
-    _word_list = []
-    for word_index_list in index_list:
-        _word = ""
-        if "," in word_index_list:
-            word_index_list = word_index_list.split(",")
-            word_index_list = [int(x) for x in word_index_list]
-        else:
-            word_index_list = [int(word_index_list)]
-        for word_index in word_index_list:
-            _word += string_list[word_index]
-        _word_list.append(_word)
-    return _word_list
+            function_name = re.search(r'''
+                    function\s+(\w+)\(\)\s*\{\s*
+                        function\s+\w+\(\)\s*\{\s*
+                            return\s+[\'\"]([^\'\"]+)[\'\"];\s*
+                        \};\s*
+                        if\s*\(\w+\(\)\s*==\s*[\'\"]([^\'\"]+)[\'\"]\)\s*\{\s*
+                            return\s*\w+\(\);\s*
+                        \}\s*else\s*\{\s*
+                            return\s*[\'\"]([^\'\"]+)[\'\"];\s*
+                        \}\s*
+                    \}
+                    ''', string, re.X)
+            a, b, c, d = function_name.groups()
+            value = b if b == c else d
+            return key, value
+    else:
+        function_name = re.search(r'''
+            function\s*(\w+)\(\)\s*\{\s*
+                [\'\"]return\s*[^\'\"]+[\'\"];\s*
+                return\s*[\'\"]([^\'\"]+)[\'\"];\s*
+            \}\s*
+        ''', string, re.X)
+        a, b = function_name.groups()
+        value = b
+        return key, value
 
 
-def get_complete_text_autohome(text):
-    _types_info = defaultdict(list)
-    types = re.compile(r'hs_kw(\d+_[^\'\"]+)').findall(text)
-    for item in types:
-        idx, typ = item.split("_")
-        _types_info[typ].append(idx)
-    # 获取混淆字符个数
-    types = {typ: len(set(value)) for typ, value in _types_info.items()}
+def decodeJsVars(string):
+    string = string.replace('var', '')
+    string = string.strip()
+    if string.count("=") > 0:
+        pair = string.split("=", 2)
+        key = pair[0].strip()
+        value = pair[1].strip()
+        value = value.strip("'")
+        return key, value
 
-    js_list = re.compile(r"<script>(\(function[\s\S]+?)\(document\);</script>").findall(text)
-    type_charlist = {}
-    for js in js_list:
-        for _type in types:
-            if _type in js:
-                break
+
+def decodeJsVarfuncs(string):
+    string = string.replace("var", "")
+    string = string.strip()
+    if string.count("=") > 0:
+        pair = string.split("=", 2)
+        key = pair[0]
+        if pair[1].count("function") > 0:
+            if len(re.compile(r'function').findall(string)) > 1:
+                function_name = re.search(r'''
+                            [A-z]{0,2}_=function\(\)\{\'\S{0,2}_\';\s*
+                                \s_\w=function\(\)\{return\s*[\'\"]([^\'\"]+)[\'\"];\};\s*
+                                return\s*_[A-z]\(\);\}\s*
+                            ''', string, re.X)
+                a = function_name.group(1)
+                value = a
+                return key, value
             else:
+                function_name = re.search(r'''
+                             [A-z]{0,2}_=function\(\)\s*\{\s*
+                                [\'\"]return\s*[A-z]{0,2}_+[\'\"];\s*
+                                return\s*[\'\"]([^\'\"]+)[\'\"];\s*
+                                \}\s*
+                        ''', string, re.X)
+                a = function_name.group(1)
+                value = a
+                return key, value
+
+
+def getAutoHomeDict(js):
+    map_strs = {}
+    dict_slice = {}
+    map_source = {}
+    dic = ""
+    string = js.replace("})(document);</script>", "function")
+    matches = re.compile(r"function\s\S\S_\(\)\s*\{.*?\}+\s+").findall(js)                                  # 匹配function
+    for fc in matches:
+        key, value = decodeJsFuncs(fc)
+        map_source[key] = fc
+        if key != '':
+            map_strs[key] = value
+    matches = re.compile(r"var\s?\S\S_=\s?'\S*'").findall(string)                                           # 匹配var申明
+    for variable in matches:
+        key, value = decodeJsVars(variable)
+        map_source[key] = variable
+        if key != '':
+            map_strs[key] = value
+    matches = re.compile(r"var\s?\S\S_=\s?function\s?\(\)\s?\{.*?return.*?return.*?\}").findall(string)      # 匹配var和functions
+    for varfunc in matches:
+        key, value = decodeJsVarfuncs(varfunc)
+        map_source[key] = varfunc
+        if key != "":
+            map_strs[key] = value
+    pattren = re.compile(r"function\s*\$FillDicData\$\s*\(\)\s*?{.*?\$RenderToHTML")                         # 拼接字典
+    is_match = pattren.search(js)
+    if is_match != None:
+        str_match = str(pattren.findall(js))
+
+        if str_match.find("$GetWindow$()") == -1:
+            pass
+        position = str_match.index("$GetWindow$()")
+        str_tmp = str_match[position:]
+
+        if str_match.find("$rulePosList$") == -1:
+            pass
+        position = str_match.index("$rulePosList$")
+        str_tmp = str_match[:position]
+
+        if str_match.find("]") == -1:
+            pass
+        position = str_match.index("]")
+        str_tmp = str_tmp[position + 1:]
+        strs_dict = str_tmp.split("+")
+
+        i = 1
+        while i < len(strs_dict):
+            str_to_match = strs_dict[i]
+            is_match = re.compile(r"\(\'\S+\'\)").search(str_to_match)
+
+            if is_match != None:
+                tmp = re.compile(r"\(\'\S+\'\)").findall(str_to_match)[0]
+                tmp = tmp.replace("(", "")
+                tmp = tmp.replace(")", "")
+                tmp = tmp.replace("'", "")
+                tmp = tmp.strip()
+                dic += tmp
+
+            elif re.compile(r"^\'\S+\'$").search(str_to_match) != None:
+                tmp = str_to_match.replace("'", "")
+                tmp = tmp.strip()
+                dic += tmp
+
+            elif re.compile(r"\(function\s{0,3}\(\)\{.*?return.*?return.*?\}\)").search(str_to_match) != None:
+                str_matched = re.compile(r"\(function\s{0,3}\(\)\{.*?return.*?return.*?\}\)").match(str_to_match)
+
+                if re.compile(r"return\s?\'\S+\'").search(str(str_matched)) != None:
+                    str_tmp = re.compile(r"return\s?\'\S+\'").findall(str(str_matched))[0]
+
+                    tmp = str_tmp.replace("return", "")
+                    tmp = tmp.replace("'", "")
+                    tmp = tmp.strip()
+                    dic += tmp
+
+            elif re.compile(r"^\S{2}_\(\)$").search(str_to_match) != None:
+                key = str_to_match.replace("()", "")
+                tmp = map_strs[key]
+                dic += tmp
+
+            elif re.compile(r"^\S{2}_$").search(str_to_match) != None:
+                key = str_to_match
+                dic += map_strs[key]
+
+            elif re.compile(r"\('([A-Z]|[a-z]|[0-9]|[,]|[']|[;]|[\u4e00-\u9fbb]){1,10}'\)").search(str_to_match) != None:
+                tmp = re.compile(r"\('([A-Z]|[a-z]|[0-9]|[,]|[']|[;]|[\u4e00-\u9fbb]){1,10}'\)").match(str_to_match)
+                if len(tmp) >= 2:
+                    tmp = tmp[:2]
+                dic += tmp
+
+            else:
+                dic += "X"
+
+            i += 1
+
+    indexes = ""                                                                                             # 拼接字符串
+    position = str_match.find("$rulePosList$")
+    str_tmp = str_match[position:]
+
+    position = str_tmp.find("$SystemFunction2$")
+    str_tmp = str_tmp[:position - 2]
+    str_tmp = str_tmp.strip()
+    strs_indexes = str_tmp.split("+")
+    i = 1
+    while i < len(strs_indexes):
+        str_to_match = strs_indexes[i]
+        tmp = ""
+
+        if re.compile(r"\(\'\S+\'\)").search(str(str_to_match)) != None:
+            tmp = re.compile(r"\(\'\S+\'\)").findall(str_to_match)
+            tmp = str(tmp).replace("(", "")
+            tmp = tmp.replace(")", "")
+            tmp = tmp.replace("'", "")
+            tmp = tmp.strip()
+            tmp = tmp.strip("[")
+            tmp = tmp.strip("]")
+            tmp = tmp.strip('"')
+            indexes += tmp
+
+        elif re.compile(r"^\'\S+\'$").search(str(str_to_match)) != None:
+            tmp = str_to_match.replace("'", "")
+            tmp = tmp.strip()
+            indexes += tmp
+
+        elif re.compile(r"\(function\s{0,3}\(\)\{.*?return.*?return.*?\}\)").search(str(str_to_match)) != None:
+            str_matched = re.compile(r"\(function\s{0,3}\(\)\{.*?return.*?return.*?\}\)").findall(str_to_match)
+
+            if re.compile(r"return\s?\'\S+\'").search(str(str_to_match)) != None:
+                str_tmp = re.compile(r"return\s?\'\S+\'").findall(str(str_matched))
+
+                tmp = str(str_tmp).replace("return", "")
+                tmp = tmp.replace("'", "")
+                tmp = tmp.strip()
+                tmp = tmp.strip("[")
+                tmp = tmp.strip("]")
+                tmp = tmp.strip('"')
+                indexes += tmp
+
+        elif re.compile(r"^\S{2}_\(\)$").search(str(str_to_match)) != None:
+            key = str_to_match.replace("()", "")
+            tmp = map_strs[key]
+            indexes += tmp
+
+        elif re.compile(r"^\S{2}_$").search(str(str_to_match)) != None:
+            key = str_to_match
+            tmp = map_strs[key]
+            indexes += tmp
+
+        elif str_to_match.strip() == "''":
+            i += 1
+            continue
+
+        else:
+            indexes += "X"
+
+        i += 1
+
+    runes_dic = []
+    for d in dic:
+        d = ord(d)
+        runes_dic.append(d)
+    items = indexes.split(";")
+    for i, string in enumerate(items):
+        sbresult = ""
+        if string =="":
+            continue
+        nums = string.split(",")
+        for num in nums:
+            try:
+                index = int(num)
+            except:
                 continue
-        if not js:
-            continue
-        try:
-            char_list = get_char(js, types[_type])
-        except Exception as e:
-            traceback.print_exc()
-            continue
-        type_charlist.update({_type: char_list})
 
-    def char_replace(m):
-        index = int(m.group(1))
-        typ = m.group(2)
-        char_list = type_charlist.get(typ, [])
-        if not char_list:
-            return m.group()
-        char = char_list[index]
-        return char
+            if index < len(runes_dic):
+                s = chr(runes_dic[index])
+                sbresult += s
 
-    text = re.sub(r"<span\s*class=[\'\"]hs_kw(\d+)_([^\'\"]+)[\'\"]></span>", char_replace, text)
-    return text
+        dict_slice[i] = sbresult
+
+    # return
+
+
+
+
+
+
