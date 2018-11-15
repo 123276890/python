@@ -158,7 +158,7 @@ class CarSpider(scrapy.Spider):
             pass
         str_base = str_base[13:pos_end - 1]
 
-        # 选项配置
+        # 选项配置参数组
 
     def parse_article_config(self, response):
 
