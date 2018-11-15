@@ -5,6 +5,7 @@ import scrapy
 from ..items import CarItem
 from scrapy_splash import SplashRequest
 import re
+from .. import autohome
 
 script = """
 function main(splash)
@@ -73,7 +74,6 @@ class CarSpider(scrapy.Spider):
                     # print(item['carId'])
                     # yield item
                     yield scrapy.Request(url, meta={'carId': item['carId']}, callback=self.parse_article_detail)
-                    # yield scrapy.Request(url='https://www.autohome.com.cn/spec/21220', meta={'carId': item['carId']}, callback=self.parse_article_detail)
 
     def parse_article_detail(self, response):
         detail = response.xpath('//div[@class="container"]')
@@ -127,6 +127,7 @@ class CarSpider(scrapy.Spider):
 
         car_info_datas = re.compile(r"<script>((?:.|\\n)*?)</script>").findall(html)
         js_matches = []
+        dic = {}
 
         for strs in car_info_datas:
             strslist = []
@@ -134,7 +135,15 @@ class CarSpider(scrapy.Spider):
                 s = ord(s)
                 strslist.append(s)
             if strs.find("try{document.") < 0 and len(strslist) > 500:
-                js_matches = js_matches.append(strs)
+                js_matches.append(strs)
+
+        for i, js in enumerate(js_matches):
+            if i == 1:
+                dic["config"] = autohome.getAutoHomeDict(js)
+            elif i == 2:
+                dic["option"] = autohome.getAutoHomeDict(js)
+            else:
+                pass
 
     def parse_article_config(self, response):
 
