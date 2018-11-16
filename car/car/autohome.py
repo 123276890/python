@@ -1,6 +1,138 @@
 # -*- coding: utf-8 -*-
 
 import re
+import json
+from .items import CarItem
+
+
+# 循环抓取数据
+def GraspTheData(v, path, ret, key, dic):
+    for value in v[path]:
+        dealAutoHomeItemValue(value, ret, key, dic)
+
+
+def NewAutoHomeCar(aid):
+    c = CarItem()
+    c['settings'] = "https://car.autohome.com.cn/config/spec/" + str(aid) + ".html"
+    return c
+
+
+def fetchCarInfo(html):
+    car_info_datas = re.compile(r"<script>((?:.|\\n)*?)</script>").findall(html)
+    js_matches = []
+    dic = {}
+
+    for strs in car_info_datas:
+        strslist = []
+        for s in strs:
+            s = ord(s)
+            strslist.append(s)
+        if strs.find("try{document.") < 0:
+            if len(strslist) > 500:
+                js_matches.append(strs)
+
+    for i, js in enumerate(js_matches):
+        if i == 1:
+            dic["config"] = getAutoHomeDict(js)
+        elif i == 2:
+            dic["option"] = getAutoHomeDict(js)
+        else:
+            pass
+
+    # 基本参数组
+    pos_start = html.find("var config =")
+    if pos_start <= 0:
+        pass
+    str_base = html[pos_start:]
+    pos_end = str_base.find('''\n''')
+    if pos_end > len(str_base):
+        pass
+    str_base = str_base[13:pos_end - 1]
+
+    # 选项配置参数组
+    pos_start = html.find("var option =")
+    if pos_start <= 0:
+        pass
+    str_option = html[pos_start:]
+    pos_end = str_option.find('''\n''')
+    if pos_end > len(str_option):
+        pass
+    str_option = str_option[13:pos_end - 1]
+
+    # 外观颜色json
+    pos_start = html.find("var color =")
+    if pos_start <= 0:
+        pass
+    str_color = html[pos_start:]
+    pos_end = str_color.find('''\n''')
+    if pos_end > len(str_color):
+        pass
+    str_color = str_color[12:pos_end - 1]
+
+    # 内饰颜色Json
+    pos_start = html.find("var innerColor =")
+    if pos_start <= 0:
+        pass
+    str_inner = html[pos_start:]
+    pos_end = str_inner.find('''\n''')
+    if pos_end > len(str_inner):
+        pass
+    str_inner = str_inner[16:pos_end - 1]
+
+    # 车型ID抓取
+    result = json.loads(str_base)["result"]["speclist"]
+    ret = {}
+    if type(result) != None and len(result) != 0:
+        items = list(result)
+        for item in items:
+            key_car_id = item["specid"]
+            if key_car_id != None and len(str(key_car_id)) != 0:
+                car_id = int(key_car_id)
+                car = NewAutoHomeCar(car_id)
+                ret[car_id] = car
+
+    # 基本参数抓取
+    result = json.loads(str_base)["result"]["paramtypeitems"]
+    if type(result) != None and len(result) != 0:
+        items = list(result)
+        for item in items:
+            item_name = str(item["name"])
+
+            if item_name == "基本参数":
+                base_params = list(item["paramitems"])
+
+                for v in base_params:
+                    name = str(v["name"])
+                    # 能源类型
+                    if name.count("能源类型") > 0:
+                        GraspTheData(v, "valueitems", ret, "energy_type_str", dic)
+                    # 上市时间
+                    if name.count("上市") > 0:
+                        GraspTheData(v, "valueitems", ret, "market_time", dic)
+                    # 工信部纯电续航里程
+                    if name.count(("工信部纯电续航里程")) > 0:
+                        GraspTheData(v, "valueitems", ret, "e_mileage", dic)
+                    # 变速箱
+                    if name.count(("变速箱")) > 0:
+                        GraspTheData(v, "valueitems", ret, "gearbox", dic)
+
+                    id = int(v["id"])
+                    # 级别
+                    if id == 220:
+                        GraspTheData(v, "valueitems", ret, "car_level_str", dic)
+                    # 车型名称
+                    elif id == 567:
+                        GraspTheData(v, "valueitems", ret, "car_name", dic)
+                    # 最大功率
+                    elif id == 295:
+                        GraspTheData(v, "valueitems", ret, "max_power", dic)
+                    # 最大扭矩
+                    elif id == 571:
+                        GraspTheData(v, "valueitems", ret, "max_torque", dic)
+
+                    else:
+                        pass
+
 
 def decodeJsFuncs(string):
     try:
@@ -97,6 +229,12 @@ def decodeJsVarfuncs(string):
                 a = function_name.group(1)
                 value = a
                 return key, value
+
+
+def replaceDashAsNullString(s):
+    if s.count("&nbsp;") > 0:
+        s = s.replace("&nbsp;", "")
+    return s
 
 
 def getAutoHomeDict(js):
@@ -277,7 +415,54 @@ def getAutoHomeDict(js):
 
         dict_slice[i] = sbresult
 
-    # return
+    return dict_slice
+
+
+def replaceHtmlByDict(origin, dic):
+    value = origin
+    if re.compile(r"<span class='hs_kw.*?'></span>").search(origin) != None:
+        str_matches = re.compile(r"<span class='hs_kw.*?'></span>").findall(origin)
+
+        for str in str_matches:
+            tmp = str.replace("<span class='hs_kw", "")
+            tmp = tmp.replace("></span>", "")
+
+            str_num = re.compile(r"\d*").findall(tmp)
+            num = int(str_num[0])
+
+            if tmp.count("config") > 0:
+                if num < len(dic["config"]):
+                    str_to_replace = dic["config"][num]
+                    value = value.replace(str, str_to_replace)
+                elif tmp.count("option") > 0:
+                    if num < len(dic["option"]):
+                        str_to_replace = dic["option"][num]
+                        value = value.replace(str,str_to_replace)
+                elif tmp.count("keyLink") > 0:
+                    value = str(dic["keyLink"][num])
+        return value
+
+
+def dealAutoHomeItemValue(item, info = {}, key = "", dic = {}):
+    id = item["specid"]
+    if not(type(id) != None and len(str(id)) != 0):
+        return
+    car_id = int(id)
+    try:
+        car = info[car_id]
+    except:
+        pass
+    value = str(item["value"])
+    if key == "Car_type":
+        value = 1
+    if key == "Engine_type":
+        value = car["engine"]
+    if value != "":
+        value = replaceHtmlByDict(value, dic)
+    value = replaceDashAsNullString(value)
+
+    car[key] = value
+
 
 
 

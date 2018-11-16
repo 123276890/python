@@ -127,48 +127,10 @@ class CarSpider(scrapy.Spider):
         html = response.body
         html = str(html.decode('utf-8'))
 
-        car_info_datas = re.compile(r"<script>((?:.|\\n)*?)</script>").findall(html)
-        js_matches = []
-        dic = {}
-
-        for strs in car_info_datas:
-            strslist = []
-            for s in strs:
-                s = ord(s)
-                strslist.append(s)
-            if strs.find("try{document.") < 0:
-                if len(strslist) > 500:
-                    js_matches.append(strs)
-
-        for i, js in enumerate(js_matches):
-            if i == 1:
-                dic["config"] = autohome.getAutoHomeDict(js)
-            elif i == 2:
-                dic["option"] = autohome.getAutoHomeDict(js)
-            else:
-                pass
-
-        # 基本参数组
-        pos_start = html.find("var config =")
-        if pos_start <= 0:
-            pass
-        str_base = html[pos_start:]
-        pos_end = str_base.find("\\n")
-        if pos_end > len(str_base):
-            pass
-        str_base = str_base[13:pos_end - 1]
-
-        # 选项配置参数组
+        info = autohome.fetchCarInfo(html)
 
     def parse_article_config(self, response):
 
-        detail = response.body
-        detail = str(detail.decode('utf-8'))
-        car_info_datas = re.compile(r"<script>((?:.|\\n)*?)</script>").findall(detail)
-        js_matches = []
-        for strs in car_info_datas:
-            if strs.find("try{document.") < 0 and len(ord(strs)) > 500:
-                js_matches = js_matches.append(strs)
         pass
 
         # if len(detail) > 0:
