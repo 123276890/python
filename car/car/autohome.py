@@ -129,7 +129,60 @@ def fetchCarInfo(html):
                     # 最大扭矩
                     elif id == 571:
                         GraspTheData(v, "valueitems", ret, "max_torque", dic)
+                    # 发动机
+                    elif id == 555:
+                        GraspTheData(v, "valueitems", ret, "engine", dic)
+                    # 长*宽*高
+                    elif id == 222:
+                        GraspTheData(v, "valueitems", ret, "car_size", dic)
+                    # 车身结构
+                    elif id == 281:
+                        GraspTheData(v, "valueitems", ret, "car_struct", dic)
+                    # 最高车速
+                    elif id == 267:
+                        GraspTheData(v, "valueitems", ret, "max_speed", dic)
+                    # 官方100加速
+                    elif id == 225:
+                        GraspTheData(v, "valueitems", ret, "official_speedup", dic)
+                    # 实测100加速
+                    elif id == 272:
+                        GraspTheData(v, "valueitems", ret, "actual_speedup", dic)
+                    # 实测100制动
+                    elif id == 273:
+                        GraspTheData(v, "valueitems", ret, "actual_brake", dic)
+                    # 工信部综合油耗
+                    elif id == 271:
+                        GraspTheData(v, "valueitems", ret, "gerenal_fueluse", dic)
+                    # 实测油耗
+                    elif id == 243:
+                        GraspTheData(v, "valueitems", ret, "actual_fueluse", dic)
+                    # 整车质保
+                    elif id == 274:
+                        GraspTheData(v, "valueitems", ret, "quality_guarantee", dic)
+                    else:
+                        pass
 
+            if item_name == "车身":
+                body_params = list(item["paramitems"])
+
+                for v in body_params:
+                    id = int(v["id"])
+
+                    # 长度(mm)
+                    if id == 275:
+                        GraspTheData(v, "valueitems", ret, "length", dic)
+                    # 宽度(mm)
+                    elif id == 276:
+                        GraspTheData(v, "valueitems", ret, "width", dic)
+                    # 高度(mm)
+                    elif id == 277:
+                        GraspTheData(v, "valueitems", ret, "height", dic)
+                    # 轴距(mm)
+                    elif id == 132:
+                        GraspTheData(v, "valueitems", ret, "shaft_distance", dic)
+                    # 前轮距(mm)
+                    elif id == 278:
+                        GraspTheData(v, "valueitems", ret, "front_wheels_gap", dic)
                     else:
                         pass
 
