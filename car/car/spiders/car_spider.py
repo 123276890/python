@@ -85,7 +85,7 @@ class CarSpider(scrapy.Spider):
         url = response.urljoin(item['link'])
 
         yield SplashRequest(url, meta={'carId': item['carId'], 'manufacturer': item['carBrand'],
-                                       'cars': item["cars"]},
+                                       'cars': item["cars"], 'carName': item['carName']},
                             callback=self.parse_article_config, args={'wait': 5})
 
     def parse_article_config(self, response):
@@ -96,14 +96,16 @@ class CarSpider(scrapy.Spider):
             item['type_id'] = int(response.meta["carId"])
         except TypeError:
             item['type_id'] = int(response.meta["carId"][0])
-        item['brand_name'] = response.meta["manufacturer"]
-        item['series_name'] = response.meta["cars"]
+
         time.sleep(3)
         info = autohome.fetchCarInfo(html)
         detail = info[item['type_id']]
         for key in detail:
             item["%s" % key] = detail[key]
 
+        item['brand_name'] = response.meta["manufacturer"]
+        item['series_name'] = response.meta["cars"]
+        item['car_name'] = response.meta["carName"]
         yield item
         pass
 
