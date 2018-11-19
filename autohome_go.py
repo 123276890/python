@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
+'''
 package main
+
 
 import (
 	"net/http"
@@ -2418,3 +2420,4 @@ func dealAutoHomeItemValue(item gjson.Result, info map[int]*CarCrawl, key string
 	}
 	return
 }
+'''

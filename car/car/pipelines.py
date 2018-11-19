@@ -17,24 +17,11 @@ class WebcrawlerScrapyPipeline(object):
     def process_item(self, item, spider):
         db = pymysql.connect(host='127.0.0.1', user='root', password='123456', db='car', charset='utf8')
         cur = db.cursor()
-        # sql = 'INSERT INTO carNameList(carName, link, carId) VALUES (%s,%s,%s)'
-        sql = 'INSERT INTO carDetail(carId,link,carBrand, cars, carName, modelLevel, bodyForm, bodySize, combined, EPStandard, engine, driveAndGearbox, mostPowerful) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)'
-        carBrand = item['carBrand']
-        cars = item['cars']
-        link = item['link']
-        carName = item['carName']
-        carId = item['carId']
-        modelLevel = item['modelLevel']
-        bodyForm = item['bodyForm']
-        bodySize = item['bodySize']
-        combined = item['combined']
-        EPStandard = item['EPStandard']
-        engine = item['engine']
-        driveAndGearbox = item['driveAndGearbox']
-        mostPowerful = item['mostPowerful']
-        # cur.execute(sql, (cars, link))
-        # cur.execute(sql, (carName, link, carId))
-        cur.execute(sql, (carId, link, carBrand, cars, carName, modelLevel, bodyForm, bodySize, combined, EPStandard, engine, driveAndGearbox, mostPowerful))
+        for k in item:
+            sql = 'INSERT INTO lrlz_car_crawl(%s) VALUE (%s)'(k, item[k])
+            cur.execute(sql)
+            pass
+
         db.commit()
         db.rollback()
         db.close()
