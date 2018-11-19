@@ -105,7 +105,7 @@ class CarSpider(scrapy.Spider):
 
         item['brand_name'] = response.meta["manufacturer"]
         item['series_name'] = response.meta["cars"]
-        item['car_name'] = response.meta["carName"]
+        item['car_name'] = item['series_name'] + " " + response.meta["carName"]
         yield item
         pass
 
