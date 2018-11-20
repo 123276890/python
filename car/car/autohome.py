@@ -3,6 +3,8 @@
 import re
 import json
 from .items import CarItem
+import time
+import demjson
 
 
 # 循环抓取数据
@@ -18,6 +20,7 @@ def NewAutoHomeCar(aid):
 
 
 def fetchCarInfo(html):
+    time.sleep(2)
     car_info_datas = re.compile(r"<script>((?:.|\\n)*?)</script>").findall(html)
     js_matches = []
     dic = {}
@@ -80,7 +83,7 @@ def fetchCarInfo(html):
     str_inner = str_inner[16:pos_end - 1]
 
     # 车型ID抓取
-    result = json.loads(str_base)["result"]["speclist"]
+    result = demjson.decode(str_base)["result"]["speclist"]
     ret = {}
     if type(result) != None and len(result) != 0:
         items = list(result)

@@ -7,6 +7,7 @@ from scrapy_splash import SplashRequest
 import re
 import time
 from .. import autohome
+import demjson
 
 script = """
 function main(splash)
@@ -37,16 +38,17 @@ class CarSpider(scrapy.Spider):
             brandList = sel.xpath('dl')
             carList = sel.xpath('dl/dd/ul[@class="rank-list-ul"]/li[contains(@id,"s")]')
             for brand in brandList:
-                item['carBrand'] = brand.xpath('dd/div[@class="h3-tit"]/a/text()').extract()
+                item['brand_name'] = brand.xpath('dt/div/a/text()').extract()
             for cars in carList:
                     item['cars'] = cars.xpath('h4/a/text()').extract()
                     item['link'] = cars.xpath('h4/a/@href')[0].extract()
                     url = response.urljoin(item['link'])
-                    yield scrapy.Request(url, callback=self.parse_article)
+                    yield scrapy.Request(url, meta={'brand_name': item['brand_name']}, callback=self.parse_article)
 
     def parse_article(self, response):
         detail = response.xpath('//div[@class="carseries-main"]/div[@class="series-list"]')
         item = CarItem()
+        brand_name = response.meta['brand_name']
         if len(detail) > 0:
             names = detail.xpath('div[@class="series-content"]/div[@id="specWrap-2"]/dl/dd/div[@class="spec-name"]/div[@class="name-param"]')
             for name in names:
@@ -55,7 +57,12 @@ class CarSpider(scrapy.Spider):
                 item['carName'] = name.xpath('a/text()').extract()
                 item['link'] = name.xpath('a/@href')[0].extract()
                 url = response.urljoin(item['link'])
-                yield scrapy.Request(url, meta={'carId': item['carId']}, callback=self.parse_article_detail)
+                if isinstance(item['carId'], str):
+                    item['carId'] = int(item['carId'])
+                else:
+                    item['carId'] = int(item['carId'][0])
+                yield scrapy.Request(url, meta={'carId': item['carId'], 'brand_name': brand_name}, callback=self.parse_article_detail)
+
         else:
             detail = response.xpath('//div[@class="title"]/div[@class="title-content"]')
             names = detail.xpath('div')
@@ -65,17 +72,24 @@ class CarSpider(scrapy.Spider):
                     item['carName'] = n.xpath('text()').extract()
                     item['link'] = n.xpath('@href')[0].extract()
                     item['carId'] = item['link'][5:-1]
+                    url = response.urljoin(item['link'])
                     if isinstance(item['carId'], str):
                         item['carId'] = int(item['carId'])
                     else:
                         item['carId'] = int(item['carId'][0])
-                    url = response.urljoin(item['link'])
-                    yield scrapy.Request(url, meta={'carId': item['carId']}, callback=self.parse_article_detail)
+                    yield scrapy.Request(url, meta={'carId': item['carId'], 'brand_name': brand_name}, callback=self.parse_article_detail)
 
     def parse_article_detail(self, response):
         detail = response.xpath('//div[@class="container"]')
         item = CarItem()
+        brand_name = response.meta['brand_name']
         item['carId'] = response.meta['carId']
+        item['market_price_str'] = detail.xpath('/html/body/div[1]/div[2]/div[3]/div[1]/div[1]/div[2]/div[2]/dl[1]/dd[3]/span[1]/text()')[0].extract()
+        item['market_price_str'] = item['market_price_str'].split("：")
+        if item['market_price_str'][1] == "暂无":
+            item['market_price_str'] = item['market_price_str'][1]
+        else:
+            item['market_price_str'] = item['market_price_str'][1] + "万元"
         item['carBrand'] = detail.xpath('div[@class="container athm-sub-nav article-sub-nav"]/div[@class="athm-sub-nav__car"]/div[@class="athm-sub-nav__car__name"]/a/text()')[0].extract()
         item['carBrand'] = item['carBrand'][:len(item['carBrand'])-1]
         item['cars'] = detail.xpath('div[@class="container athm-sub-nav article-sub-nav"]/div[@class="athm-sub-nav__car"]/div[@class="athm-sub-nav__car__name"]/a/h1/text()')[0].extract()
@@ -85,28 +99,40 @@ class CarSpider(scrapy.Spider):
         url = response.urljoin(item['link'])
 
         yield SplashRequest(url, meta={'carId': item['carId'], 'manufacturer': item['carBrand'],
-                                       'cars': item["cars"], 'carName': item['carName']},
+                                       'cars': item["cars"], 'carName': item['carName'],
+                                       'price': item['market_price_str'],  'brand_name': brand_name},
                             callback=self.parse_article_config, args={'wait': 5})
 
     def parse_article_config(self, response):
         html = response.body
         html = str(html.decode('utf-8'))
         item = CarItem()
-        try:
-            item['type_id'] = int(response.meta["carId"])
-        except TypeError:
-            item['type_id'] = int(response.meta["carId"][0])
 
-        time.sleep(3)
-        info = autohome.fetchCarInfo(html)
-        detail = info[item['type_id']]
-        for key in detail:
-            item["%s" % key] = detail[key]
+        time.sleep(2)
+        infos = autohome.fetchCarInfo(html)
+        time.sleep(2)
+        i = 0
+        for info in infos:
+            item['type_id'] = int(info)
+            detail = infos[item['type_id']]
+            for key in detail:
+                item["%s" % key] = detail[key]
 
-        item['brand_name'] = response.meta["manufacturer"]
-        item['series_name'] = response.meta["cars"]
-        item['car_name'] = item['series_name'] + " " + response.meta["carName"]
-        yield item
+            item['brand_name'] = response.meta['brand_name'][0]
+            item['manufacturer'] = response.meta["manufacturer"]
+            item['series_name'] = response.meta["cars"]
+            prices = response.xpath('//*[@id="tr_2000"]/td')
+            p = []
+            for price in prices:
+                try:
+                    price = price.xpath('div/text()')[0].extract()
+                    p.append(price)
+                except:
+                    pass
+            item['market_price_str'] = str(p[i]) + '万元'
+            item['manufacturer'] = response.meta['manufacturer']
+            yield item
+            i += 1
         pass
 
 
