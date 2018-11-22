@@ -83,6 +83,7 @@ def fetchCarInfo(html):
     str_inner = str_inner[16:pos_end - 1]
 
     # 车型ID抓取
+    time.sleep(0.1)
     result = demjson.decode(str_base)["result"]["speclist"]
     ret = {}
     if type(result) != None and len(result) != 0:
@@ -1218,9 +1219,14 @@ def dealAutoHomeItemValue(item, info = {}, key = "", dic = {}):
     except:
         pass
     value = str(item["value"])
-    if key == "Car_type":
-        value = 1
-    if key == "Engine_type":
+    if key == "car_type":
+        value = "1"
+    if key == "engine_type":
+        isexist = 'engine' in car.keys()
+        if isexist == True:
+            car['engine'] = car['engine']
+        else:
+            car['engine'] = ""
         value = car["engine"]
     if value != "":
         value = replaceHtmlByDict(value, dic)

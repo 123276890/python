@@ -35,14 +35,17 @@ class CarSpider(scrapy.Spider):
     def parse(self, response):
         for sel in response.xpath('body'):
             item = CarItem()
-            brandList = sel.xpath('dl')
-            carList = sel.xpath('dl/dd/ul[@class="rank-list-ul"]/li[contains(@id,"s")]')
-            for brand in brandList:
-                item['brand_name'] = brand.xpath('dt/div/a/text()').extract()
-            for cars in carList:
-                    item['cars'] = cars.xpath('h4/a/text()').extract()
-                    item['link'] = cars.xpath('h4/a/@href')[0].extract()
+            Lists = sel.xpath('dl')
+            for list in Lists:
+                item['brand_name'] = list.xpath('dt/div/a/text()')[0].extract()
+                cars = list.xpath('dd/ul[@class="rank-list-ul"]/li[contains(@id,"s")]/h4/a/text()').extract()
+                i = 0
+                for car in cars:
+                    item['cars'] = car
+                    item['link'] = list.xpath('dd/ul[@class="rank-list-ul"]/li[contains(@id,"s")]/h4/a/@href')[i].extract()
                     url = response.urljoin(item['link'])
+                    i += 1
+
                     yield scrapy.Request(url, meta={'brand_name': item['brand_name']}, callback=self.parse_article)
 
     def parse_article(self, response):
@@ -61,6 +64,7 @@ class CarSpider(scrapy.Spider):
                     item['carId'] = int(item['carId'])
                 else:
                     item['carId'] = int(item['carId'][0])
+
                 yield scrapy.Request(url, meta={'carId': item['carId'], 'brand_name': brand_name}, callback=self.parse_article_detail)
 
         else:
@@ -77,6 +81,7 @@ class CarSpider(scrapy.Spider):
                         item['carId'] = int(item['carId'])
                     else:
                         item['carId'] = int(item['carId'][0])
+
                     yield scrapy.Request(url, meta={'carId': item['carId'], 'brand_name': brand_name}, callback=self.parse_article_detail)
 
     def parse_article_detail(self, response):
@@ -108,9 +113,8 @@ class CarSpider(scrapy.Spider):
         html = str(html.decode('utf-8'))
         item = CarItem()
 
-        time.sleep(2)
+        time.sleep(0.1)
         infos = autohome.fetchCarInfo(html)
-        time.sleep(2)
         i = 0
         for info in infos:
             item['type_id'] = int(info)
@@ -118,18 +122,28 @@ class CarSpider(scrapy.Spider):
             for key in detail:
                 item["%s" % key] = detail[key]
 
-            item['brand_name'] = response.meta['brand_name'][0]
+            if item['car_name'] == "-":
+                i += 1
+                continue
+            item['brand_name'] = response.meta['brand_name']
             item['manufacturer'] = response.meta["manufacturer"]
             item['series_name'] = response.meta["cars"]
             prices = response.xpath('//*[@id="tr_2000"]/td')
             p = []
             for price in prices:
                 try:
-                    price = price.xpath('div/text()')[0].extract()
+                    price = price.xpath('div/text()').extract()
                     p.append(price)
                 except:
                     pass
-            item['market_price_str'] = str(p[i]) + '万元'
+            if len(p) == 0:
+                break
+            else:
+                if len(p[i]) > 1:
+                    p[i] = p[i][0] + p[i][1]
+                else:
+                    p[i] = p[i][0]
+            item['market_price_str'] = p[i] + '万元'
             item['manufacturer'] = response.meta['manufacturer']
             yield item
             i += 1
