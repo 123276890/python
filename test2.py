@@ -2,8 +2,10 @@
 # selenium phantomjs
 
 
-from selenium import webdriver
-
-driver = webdriver.PhantomJS()
-driver.get('http://www.baidu.com')
-print(driver.page_source)
+names = ['比T5','2017款','1.5T','自动豪华型']
+series = ['比速T5']
+if names[:len(series)] == series[:len(series)]:
+    pass
+else:
+    item = " ".join(series[:len(series)+1]) + " " + " ".join(names[len(series):])
+print(item)

@@ -106,7 +106,7 @@ class CarSpider(scrapy.Spider):
         yield SplashRequest(url, meta={'carId': item['carId'], 'manufacturer': item['carBrand'],
                                        'cars': item["cars"], 'carName': item['carName'],
                                        'price': item['market_price_str'],  'brand_name': brand_name},
-                            callback=self.parse_article_config, args={'wait': 5})
+                            callback=self.parse_article_config, args={'wait': 2})
 
     def parse_article_config(self, response):
         html = response.body
@@ -115,39 +115,64 @@ class CarSpider(scrapy.Spider):
 
         time.sleep(0.1)
         infos = autohome.fetchCarInfo(html)
-        i = 0
-        for info in infos:
-            item['type_id'] = int(info)
-            detail = infos[item['type_id']]
-            for key in detail:
-                item["%s" % key] = detail[key]
-
-            if item['car_name'] == "-":
-                i += 1
-                continue
+        # i = 0
+        # for info in infos:
+        #     item['type_id'] = int(info)
+        #     detail = infos[item['type_id']]
+        #     for key in detail:
+        #         item["%s" % key] = detail[key]
+        #
+        #     if item['car_name'] == "-":
+        #         i += 1
+        #         continue
+        #     item['brand_name'] = response.meta['brand_name']
+        #     item['manufacturer'] = response.meta["manufacturer"]
+        #     item['series_name'] = response.meta["cars"]
+        #     prices = response.xpath('//*[@id="tr_2000"]/td')
+        #     p = []
+        #     for price in prices:
+        #         try:
+        #             price = price.xpath('div/text()').extract()
+        #             p.append(price)
+        #         except:
+        #             pass
+        #     if len(p) == 0:
+        #         break
+        #     else:
+        #         if len(p[i]) > 1:
+        #             p[i] = p[i][0] + p[i][1]
+        #         else:
+        #             p[i] = p[i][0]
+        #     item['market_price_str'] = p[i] + '万元'
+        #     item['manufacturer'] = response.meta['manufacturer']
+        #     yield item
+        #     i += 1
+        # pass
+        type_id = response.meta['carId']
+        item['type_id'] = type_id
+        detail = infos[type_id]
+        for key in detail:
+            item["%s" % key] = detail[key]
+        if item['car_name'] == "-":
+            pass
+        else:
             item['brand_name'] = response.meta['brand_name']
             item['manufacturer'] = response.meta["manufacturer"]
             item['series_name'] = response.meta["cars"]
-            prices = response.xpath('//*[@id="tr_2000"]/td')
-            p = []
-            for price in prices:
-                try:
-                    price = price.xpath('div/text()').extract()
-                    p.append(price)
-                except:
-                    pass
-            if len(p) == 0:
-                break
-            else:
-                if len(p[i]) > 1:
-                    p[i] = p[i][0] + p[i][1]
-                else:
-                    p[i] = p[i][0]
-            item['market_price_str'] = p[i] + '万元'
+            price = response.xpath('//*[@id="tr_2000"]/td')
+            try:
+                price = price.xpath('div/text()')[0].extract()
+            except:
+                pass
+            item['market_price_str'] = price + '万元'
             item['manufacturer'] = response.meta['manufacturer']
+            names = item['car_name'].split(" ")
+            series = item['series_name'].split(" ")
+            if names[:len(series)] == series[:len(series)]:
+                pass
+            else:
+                item['car_name'] = " ".join(series[:len(series)+1]) + " " + " ".join(names[len(series):])
             yield item
-            i += 1
-        pass
 
 
 

@@ -96,7 +96,7 @@ def fetchCarInfo(html):
                 ret[car_id] = car
 
     # 基本参数抓取
-    result = json.loads(str_base)["result"]["paramtypeitems"]
+    result = demjson.decode(str_base)["result"]["paramtypeitems"]
     if type(result) != None and len(result) != 0:
         items = list(result)
         for item in items:
@@ -409,7 +409,7 @@ def fetchCarInfo(html):
                         pass
 
     # 可选参数抓取
-    result = json.loads(str_option)["result"]["configtypeitems"]
+    result = demjson.decode(str_option)["result"]["configtypeitems"]
     if type(result) != None and len(result) != 0:
         items = list(result)
 
