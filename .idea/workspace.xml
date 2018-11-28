@@ -6,8 +6,16 @@
     <bookmark url="file://$PROJECT_DIR$/SpiderObject/SpiderObject/spiders/stackoverflow_spider.py" description="def parse_question(self, response):" line="12" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec2549ad-63f5-42d0-9b31-0c022d685bfc" name="Default Changelist" comment="数据导入">
+    <list default="true" id="ec2549ad-63f5-42d0-9b31-0c022d685bfc" name="Default Changelist" comment="弹个车金融方案">
+      <change afterPath="$PROJECT_DIR$/tangeche/tangeche/spiders/tangeche_spider.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tangeche/tangeche/stater.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car/car/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/car/car/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car/car/spiders/car_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/car/car/spiders/car_spider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tangeche/tangeche/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/tangeche/tangeche/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tangeche/tangeche/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/tangeche/tangeche/pipelines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tangeche/tangeche/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/tangeche/tangeche/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/test2.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,12 +31,13 @@
     <SUITE FILE_PATH="coverage/python$exercise.coverage" NAME="exercise Coverage Results" MODIFIED="1539683081370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$input.coverage" NAME="input Coverage Results" MODIFIED="1539569973856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$EnumerationClass.coverage" NAME="EnumerationClass Coverage Results" MODIFIED="1540454738068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python$stater__1_.coverage" NAME="stater (1) Coverage Results" MODIFIED="1543401120692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tangeche/tangeche" />
     <SUITE FILE_PATH="coverage/python$exercise1.coverage" NAME="exercise1 Coverage Results" MODIFIED="1539587173099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$FloatAndInteger.coverage" NAME="FloatAndInteger Coverage Results" MODIFIED="1539569442222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$cycle.coverage" NAME="cycle Coverage Results" MODIFIED="1539592245431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$hex__.coverage" NAME="hex() Coverage Results" MODIFIED="1539593474151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$huxiu_spider__1_.coverage" NAME="huxiu_spider (1) Coverage Results" MODIFIED="1539940301176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProjectHuxiu/ProjectHuxiu/spiders" />
-    <SUITE FILE_PATH="coverage/python$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1543220454527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1543386439122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$exercise9.coverage" NAME="exercise9 Coverage Results" MODIFIED="1540438820586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$car_spider.coverage" NAME="car_spider Coverage Results" MODIFIED="1542354205245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/car/car/spiders" />
     <SUITE FILE_PATH="coverage/python$demo.coverage" NAME="demo Coverage Results" MODIFIED="1541664734602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -45,7 +54,7 @@
     <SUITE FILE_PATH="coverage/python$huxiu_spider.coverage" NAME="huxiu_spider Coverage Results" MODIFIED="1539937044758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/projectHuxiu/projectHuxiu/spiders" />
     <SUITE FILE_PATH="coverage/python$phantomJsTest.coverage" NAME="phantomJsTest Coverage Results" MODIFIED="1541575738526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$draft.coverage" NAME="draft Coverage Results" MODIFIED="1541142465734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python$stater.coverage" NAME="stater Coverage Results" MODIFIED="1543301114918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/car/car" />
+    <SUITE FILE_PATH="coverage/python$stater.coverage" NAME="stater Coverage Results" MODIFIED="1543401522639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/car/car" />
     <SUITE FILE_PATH="coverage/python$exercise8.coverage" NAME="exercise8 Coverage Results" MODIFIED="1540434711791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$first2.coverage" NAME="first2 Coverage Results" MODIFIED="1539337216226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$stackoverflow__1_.coverage" NAME="stackoverflow (1) Coverage Results" MODIFIED="1539936428391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SpiderObject/SpiderObject" />
@@ -104,14 +113,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="tangeche_spider.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tangeche/tangeche/spiders/tangeche_spider.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="113">
+              <caret line="17" column="63" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
+              <folding>
+                <element signature="e#26#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tangeche/tangeche/pipelines.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="616">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/car/car/pipelines.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-186">
+              <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stater.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tangeche/tangeche/stater.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="car_spider.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/car/car/spiders/car_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="169" column="51" selection-start-line="169" selection-start-column="51" selection-end-line="169" selection-end-column="51" />
+            <state relative-caret-position="270">
+              <caret line="152" column="107" selection-start-line="152" selection-start-column="107" selection-end-line="152" selection-end-column="107" />
               <folding>
                 <element signature="e#26#39#0" expanded="true" />
-                <element signature="e#5758#5765#0" />
               </folding>
             </state>
           </provider>
@@ -167,11 +214,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/exercise.py" />
-        <option value="$PROJECT_DIR$/Scrapy/stackoverflow.py" />
-        <option value="$PROJECT_DIR$/SpiderObject/SpiderObject/stackoverflow.py" />
-        <option value="$PROJECT_DIR$/SpiderObject/SpiderObject/spiders/stackoverflow.py" />
-        <option value="$PROJECT_DIR$/SpiderObject/SpiderObject/spiders/stackoverflow_spider.py" />
         <option value="$PROJECT_DIR$/projectHuxiu/projectHuxiu/items.py" />
         <option value="$PROJECT_DIR$/projectHuxiu/projectHuxiu/settings.py" />
         <option value="$PROJECT_DIR$/projectHuxiu/projectHuxiu/spiders/huxiu_spider.py" />
@@ -194,7 +236,6 @@
         <option value="$PROJECT_DIR$/draft.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/phantomJsTest.py" />
-        <option value="$PROJECT_DIR$/car/car/settings.py" />
         <option value="$PROJECT_DIR$/car/car/middlewares/middleware.py" />
         <option value="$PROJECT_DIR$/car/car/func.py" />
         <option value="$PROJECT_DIR$/autohome.py" />
@@ -216,7 +257,13 @@
         <option value="$PROJECT_DIR$/sql_test.py" />
         <option value="$PROJECT_DIR$/car/car/pipelines.py" />
         <option value="$PROJECT_DIR$/car/car/autohome.py" />
+        <option value="$PROJECT_DIR$/tangeche/tangeche/stater.py" />
+        <option value="$PROJECT_DIR$/tangeche/tangeche/items.py" />
+        <option value="$PROJECT_DIR$/tangeche/tangeche/pipelines.py" />
+        <option value="$PROJECT_DIR$/car/car/settings.py" />
+        <option value="$PROJECT_DIR$/tangeche/tangeche/settings.py" />
         <option value="$PROJECT_DIR$/test2.py" />
+        <option value="$PROJECT_DIR$/tangeche/tangeche/spiders/tangeche_spider.py" />
         <option value="$PROJECT_DIR$/car/car/spiders/car_spider.py" />
       </list>
     </option>
@@ -254,6 +301,17 @@
             <path>
               <item name="python" type="b2602c69:ProjectViewProjectNode" />
               <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="car" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="car" type="462c0819:PsiDirectoryNode" />
+              <item name="car" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
               <item name="tangeche" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -261,13 +319,6 @@
               <item name="python" type="462c0819:PsiDirectoryNode" />
               <item name="tangeche" type="462c0819:PsiDirectoryNode" />
               <item name="tangeche" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="tangeche" type="462c0819:PsiDirectoryNode" />
-              <item name="tangeche" type="462c0819:PsiDirectoryNode" />
-              <item name="spiders" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -282,14 +333,15 @@
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/car/car" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/car/car" />
       <recent name="$PROJECT_DIR$/SpiderObject/SpiderObject/spiders" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tangeche/tangeche" />
+      <recent name="$PROJECT_DIR$/car/car" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -381,6 +433,25 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="stater (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tangeche/tangeche" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tangeche/tangeche/stater.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="stater" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -419,41 +490,22 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="test3" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <list>
       <item itemvalue="Python.hex()" />
       <item itemvalue="Python.Unicode" />
       <item itemvalue="Python.stater" />
       <item itemvalue="Python.car_spider" />
-      <item itemvalue="Python.test3" />
       <item itemvalue="Python.crawler_test" />
       <item itemvalue="Python.test2" />
+      <item itemvalue="Python.stater (1)" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.stater" />
+        <item itemvalue="Python.stater (1)" />
         <item itemvalue="Python.test2" />
         <item itemvalue="Python.car_spider" />
         <item itemvalue="Python.crawler_test" />
-        <item itemvalue="Python.test3" />
       </list>
     </recent_temporary>
   </component>
@@ -688,7 +740,14 @@
       <option name="project" value="LOCAL" />
       <updated>1543299379975</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="弹个车金融方案">
+      <created>1543301354770</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1543301354770</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -696,6 +755,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="991" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5005325" side_tool="true" weight="0.4227273" />
@@ -703,7 +763,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32954547" />
       <window_info anchor="bottom" x="328" y="128" width="1292" height="728" id="Run" order="2" sideWeight="0.4992636" weight="0.49328858" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49946752" visible="true" weight="0.4217002" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49946752" weight="0.4217002" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49776286" visible="true" weight="0.15814696" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
@@ -762,7 +822,8 @@
     <MESSAGE value="破解成功 插入调试" />
     <MESSAGE value="调试导入" />
     <MESSAGE value="数据导入" />
-    <option name="LAST_COMMIT_MESSAGE" value="数据导入" />
+    <MESSAGE value="弹个车金融方案" />
+    <option name="LAST_COMMIT_MESSAGE" value="弹个车金融方案" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -818,19 +879,29 @@
           <option name="timeStamp" value="593" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test2.py</url>
-          <line>4</line>
-          <option name="timeStamp" value="598" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/car/car/spiders/car_spider.py</url>
-          <line>174</line>
+          <line>180</line>
           <option name="timeStamp" value="601" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/car/car/spiders/car_spider.py</url>
-          <line>152</line>
+          <line>158</line>
           <option name="timeStamp" value="613" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tangeche/tangeche/pipelines.py</url>
+          <line>32</line>
+          <option name="timeStamp" value="629" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tangeche/tangeche/spiders/tangeche_spider.py</url>
+          <line>103</line>
+          <option name="timeStamp" value="631" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test2.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="632" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -840,7 +911,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="614" />
+      <option name="time" value="634" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -851,51 +922,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ProjectHuxiu/ProjectHuxiu/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectHuxiu/ProjectHuxiu/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="73" column="61" lean-forward="true" selection-start-line="73" selection-start-column="61" selection-end-line="73" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/venv/lib/python3.7/site-packages/scrapy/utils/python.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="195" column="21" selection-start-line="195" selection-start-column="21" selection-end-line="195" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectHuxiu/ProjectHuxiu/spiders/huxiu_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1007">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
-          <folding>
-            <element signature="e#25#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/draft.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phantomJsTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="83" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/func.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1106,13 +1132,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/car/car/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1224">
-          <caret line="44" column="22" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/venv/lib/python3.7/site-packages/scrapy/utils/defer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
@@ -1141,24 +1160,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/venv/lib/python3.7/site-packages/twisted/internet/defer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="653" selection-start-line="653" selection-end-line="653" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/car/car/stater.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car/car/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
@@ -1183,20 +1188,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car/car/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3705">
-          <caret line="195" column="54" selection-start-line="195" selection-start-column="54" selection-end-line="195" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/car/car/autohome.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2356">
@@ -1207,13 +1198,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/car/car/spiders/car_spider.py">
+    <entry file="file://$PROJECT_DIR$/tangeche/tangeche/stater.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="169" column="51" selection-start-line="169" selection-start-column="51" selection-end-line="169" selection-end-column="51" />
+        <state relative-caret-position="114">
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/car/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3705">
+          <caret line="195" column="54" selection-start-line="195" selection-start-column="54" selection-end-line="195" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tangeche/tangeche/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/venv/lib/python3.7/site-packages/twisted/internet/defer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="653" selection-start-line="653" selection-end-line="653" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/car/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="38" column="125" selection-start-line="38" selection-start-column="125" selection-end-line="38" selection-end-column="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/venv/lib/python3.7/site-packages/scrapy/core/downloader/middleware.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tangeche/tangeche/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tangeche/tangeche/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tangeche/tangeche/spiders/tangeche_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="17" column="63" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
           <folding>
             <element signature="e#26#39#0" expanded="true" />
-            <element signature="e#5758#5765#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/car/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-186">
+          <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/car/spiders/car_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="152" column="107" selection-start-line="152" selection-start-column="107" selection-end-line="152" selection-end-column="107" />
+          <folding>
+            <element signature="e#26#39#0" expanded="true" />
           </folding>
         </state>
       </provider>

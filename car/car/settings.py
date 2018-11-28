@@ -35,7 +35,8 @@ USER_AGENT_LIST = [
     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:9.0) Gecko/20100101 Firefox/9.0',
     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:16.0) Gecko/20120813 Firefox/16.0',
     'Mozilla/4.77 [en] (X11; I; IRIX;64 6.5 IP30)',
-    'Mozilla/4.8 [en] (X11; U; SunOS; 5.7 sun4u)'
+    'Mozilla/4.8 [en] (X11; U; SunOS; 5.7 sun4u)',
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3622.0 Safari/537.36'
 ]
 # 随机生成user agent
 USER_AGENT = random.choice(USER_AGENT_LIST)
