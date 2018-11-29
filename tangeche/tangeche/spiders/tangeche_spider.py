@@ -74,7 +74,7 @@ class TangecheSpider(scrapy.Spider):
                           '车辆归属': ['前1年用车期间，车辆及车牌所有权归属弹个车平台'],
                           '上牌': ['上牌手续由弹个车负责办理，客户无需支付任何费用'],
                           '购置税': ['弹个车方案已含购置税，您无需支付额外费用']}
-        item['riders'] = json.dumps(item['riders'])
+        item['riders'] = json.dumps(item['riders'], ensure_ascii=False)
         item['riders'] = item['riders'].replace('"', "'")
         item['schemes'] = [{'period': '12',
                             'first_price': first_price10,

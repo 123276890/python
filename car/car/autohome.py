@@ -128,10 +128,10 @@ def fetchCarInfo(html):
                     elif id == 567:
                         GraspTheData(v, "valueitems", ret, "car_name", dic)
                     # 最大功率
-                    elif id == 295:
+                    elif id == 1185 or id == 295:
                         GraspTheData(v, "valueitems", ret, "max_power", dic)
                     # 最大扭矩
-                    elif id == 571:
+                    elif id == 1186 or id == 571:
                         GraspTheData(v, "valueitems", ret, "max_torque", dic)
                     # 发动机
                     elif id == 555:
@@ -140,28 +140,28 @@ def fetchCarInfo(html):
                     elif id == 222:
                         GraspTheData(v, "valueitems", ret, "car_size", dic)
                     # 车身结构
-                    elif id == 281:
+                    elif id == 1147 or id == 281:
                         GraspTheData(v, "valueitems", ret, "car_struct", dic)
                     # 最高车速
-                    elif id == 267:
+                    elif id == 1246 or id == 267:
                         GraspTheData(v, "valueitems", ret, "max_speed", dic)
                     # 官方100加速
-                    elif id == 225:
+                    elif id == 1250 or id == 225:
                         GraspTheData(v, "valueitems", ret, "official_speedup", dic)
                     # 实测100加速
-                    elif id == 272:
+                    elif id == 1252 or id == 272:
                         GraspTheData(v, "valueitems", ret, "actual_speedup", dic)
                     # 实测100制动
-                    elif id == 273:
+                    elif id == 1253 or id == 273:
                         GraspTheData(v, "valueitems", ret, "actual_brake", dic)
                     # 工信部综合油耗
-                    elif id == 271:
+                    elif id == 1251 or id == 271:
                         GraspTheData(v, "valueitems", ret, "gerenal_fueluse", dic)
                     # 实测油耗
-                    elif id == 243:
+                    elif id == 1254 or id == 243:
                         GraspTheData(v, "valueitems", ret, "actual_fueluse", dic)
                     # 整车质保
-                    elif id == 274:
+                    elif id == 1255 or id == 274:
                         GraspTheData(v, "valueitems", ret, "quality_guarantee", dic)
                     else:
                         pass
@@ -182,7 +182,7 @@ def fetchCarInfo(html):
                     elif id == 277:
                         GraspTheData(v, "valueitems", ret, "height", dic)
                     # 轴距(mm)
-                    elif id == 132:
+                    elif id == 1169 or id == 132:
                         GraspTheData(v, "valueitems", ret, "shaft_distance", dic)
                     # 前轮距(mm)
                     elif id == 278:
@@ -191,25 +191,25 @@ def fetchCarInfo(html):
                     elif id == 638:
                         GraspTheData(v, "valueitems", ret, "back_wheels_gap", dic)
                     # 最小离地间隙(mm)
-                    elif id == 279:
+                    elif id == 1268 or id == 279:
                         GraspTheData(v, "valueitems", ret, "min_ground", dic)
                     # 整备质量(kg)
-                    elif id == 280:
+                    elif id == 1171 or id == 280:
                         GraspTheData(v, "valueitems", ret, "total_weight", dic)
                     # 车身结构
-                    elif id == 281:
+                    elif id == 1147 or id == 281:
                         GraspTheData(v, "valueitems", ret, "body_struct", dic)
                     # 车门数
-                    elif id == 282:
+                    elif id == 1172 or id == 282:
                         GraspTheData(v, "valueitems", ret, "doors", dic)
                     # 座位数
-                    elif id == 283:
+                    elif id == 1173 or id == 283:
                         GraspTheData(v, "valueitems", ret, "seats", dic)
                     # 油箱容积(L)
-                    elif id == 284:
+                    elif id == 1174 or id == 284:
                         GraspTheData(v, "valueitems", ret, "fuel_vol", dic)
                     # 行李厢容积(L)
-                    elif id == 285:
+                    elif id == 1175 or id == 285:
                         GraspTheData(v, "valueitems", ret, "cargo_vol", dic)
                     else:
                         pass
@@ -224,67 +224,67 @@ def fetchCarInfo(html):
                     if id == 570:
                         GraspTheData(v, "valueitems", ret, "engine_type", dic)
                     # 排量(mL)
-                    elif id == 287:
+                    elif id == 1182 or id == 287:
                         GraspTheData(v, "valueitems", ret, "cc", dic)
                     # 进气形式
-                    elif id == 640:
+                    elif id == 1183 or id == 640:
                         GraspTheData(v, "valueitems", ret, "air_intake", dic)
                     # 气缸排列形式
-                    elif id == 289:
+                    elif id == 1184 or id == 289:
                         GraspTheData(v, "valueitems", ret, "cylinder_arrange", dic)
                     # 气缸个数
-                    elif id == 290:
+                    elif id == 1191 or id == 290:
                         GraspTheData(v, "valueitems", ret, "cylinders", dic)
                     # 每缸气门数
-                    elif id == 291:
+                    elif id == 1192 or id == 291:
                         GraspTheData(v, "valueitems", ret, "valves", dic)
                     # 压缩比
-                    elif id == 182:
+                    elif id == 1193 or id == 182:
                         GraspTheData(v, "valueitems", ret, "compress_rate", dic)
                     # 配气机构
-                    elif id == 641:
+                    elif id == 1194 or id == 641:
                         GraspTheData(v, "valueitems", ret, "valve_machanism", dic)
                     # 缸径(mm)
-                    elif id == 181:
+                    elif id == 1195 or id == 181:
                         GraspTheData(v, "valueitems", ret, "cylinder_radius", dic)
                     # 行程(mm)
-                    elif id == 293:
+                    elif id == 1196 or id == 293:
                         GraspTheData(v, "valueitems", ret, "stroke", dic)
                     # 最大马力(Ps)
-                    elif id == 294:
+                    elif id == 1294 or id == 294:
                         GraspTheData(v, "valueitems", ret, "engine_hp", dic)
                     # 最大功率(kW)
-                    elif id == 295:
+                    elif id == 1185 or id == 295:
                         GraspTheData(v, "valueitems", ret, "engine_power", dic)
                     # 最大功率转速(rpm)
-                    elif id == 296:
+                    elif id == 1278 or id == 296:
                         GraspTheData(v, "valueitems", ret, "engine_rpm", dic)
                     # 最大扭矩(N·m)
-                    elif id == 571:
+                    elif id == 1186 or id == 571:
                         GraspTheData(v, "valueitems", ret, "engine_torque", dic)
                     # 最大扭矩转速(rpm)
-                    elif id == 642:
+                    elif id == 1279 or id == 642:
                         GraspTheData(v, "valueitems", ret, "torque_rpm", dic)
                     # 发动机特有技术
-                    elif id == 642:
+                    elif id == 643:
                         GraspTheData(v, "valueitems", ret, "tech_spec", dic)
                     # 燃料形式
-                    elif id == 572:
+                    elif id == 1280 or id == 572:
                         GraspTheData(v, "valueitems", ret, "engine_energy", dic)
                     # 燃油标号
-                    elif id == 573:
+                    elif id == 1187 or id == 573:
                         GraspTheData(v, "valueitems", ret, "roz", dic)
                     # 供油方式
-                    elif id == 574:
+                    elif id == 1188 or id == 574:
                         GraspTheData(v, "valueitems", ret, "oil_drive", dic)
                     # 缸盖材料
                     elif id == 575:
                         GraspTheData(v, "valueitems", ret, "cylinder_cover", dic)
                     # 缸体材料
-                    elif id == 576:
+                    elif id == 1190 or id == 576:
                         GraspTheData(v, "valueitems", ret, "cylinder_body", dic)
                     # 环保标准
-                    elif id == 577:
+                    elif id == 1311 or id == 577:
                         GraspTheData(v, "valueitems", ret, "environmental_standard", dic)
                     else:
                         pass
@@ -307,28 +307,28 @@ def fetchCarInfo(html):
                     id = int(v["id"])
 
                     # 电动机总功率
-                    if id == 1325:
+                    if id == 1198 or id == 1325:
                         GraspTheData(v, "valueitems", ret, "motor_power", dic)
                     # 电动机总扭矩
-                    elif id == 1326:
+                    elif id == 1199 or id == 1326:
                         GraspTheData(v, "valueitems", ret, "engine_type", dic)
                     # 前电动机最大功率
-                    elif id == 1327:
+                    elif id == 1234 or id == 1327:
                         GraspTheData(v, "valueitems", ret, "motor_front_power", dic)
                     # 前电动机最大扭矩
-                    elif id == 1328:
+                    elif id == 1287 or id == 1328:
                         GraspTheData(v, "valueitems", ret, "motor_front_torque", dic)
                     # 后电动机最大功率
-                    elif id == 1329:
+                    elif id == 1288 or id == 1329:
                         GraspTheData(v, "valueitems", ret, "motor_back_power", dic)
                     # 后电动机最大扭矩
-                    elif id == 1330:
+                    elif id == 1289 or id == 1330:
                         GraspTheData(v, "valueitems", ret, "motor_back_torque", dic)
                     # 工信部续航里程
-                    elif id == 1013:
+                    elif id == 1291 or id == 1013:
                         GraspTheData(v, "valueitems", ret, "mileage", dic)
                     # 电池容量
-                    elif id == 1124:
+                    elif id == 1233 or id == 1124:
                         GraspTheData(v, "valueitems", ret, "bat_cap", dic)
                     else:
                         pass
@@ -340,13 +340,13 @@ def fetchCarInfo(html):
                     id = int(v["id"])
 
                     # 挡位个数
-                    if id == 559:
+                    if id == 1295 or id == 559:
                         GraspTheData(v, "valueitems", ret, "gears_num", dic)
                     # 变速箱类型
-                    elif id == 221:
+                    elif id == 1230 or id == 221:
                         GraspTheData(v, "valueitems", ret, "gears_type", dic)
                     # 简称
-                    elif id == 1072:
+                    elif id == 1265 or id == 1072:
                         GraspTheData(v, "valueitems", ret, "gearbox_name", dic)
                     else:
                         pass
@@ -361,22 +361,22 @@ def fetchCarInfo(html):
                     if id == 395:
                         GraspTheData(v, "valueitems", ret, "drive_method", dic)
                     # 前悬架类型
-                    elif id == 578:
+                    elif id == 1226 or id == 578:
                         GraspTheData(v, "valueitems", ret, "susp_front_type", dic)
                     # 后悬架类型
-                    elif id == 579:
+                    elif id == 1227 or id == 579:
                         GraspTheData(v, "valueitems", ret, "susp_back_type", dic)
                     # 助力类型
-                    elif id == 510:
+                    elif id == 1225 or id == 510:
                         GraspTheData(v, "valueitems", ret, "assist_type", dic)
                     # 车体结构
-                    elif id == 223:
+                    elif id == 75 or id == 223:
                         GraspTheData(v, "valueitems", ret, "structure", dic)
                     # 四驱形式
-                    elif id == 412:
+                    elif id == 412 or id == 412:
                         GraspTheData(v, "valueitems", ret, "four_wheel_drive", dic)
                     # 中央差速器结构
-                    elif id == 415:
+                    elif id == 415 or id == 415:
                         GraspTheData(v, "valueitems", ret, "central_diff", dic)
                     else:
                         pass
@@ -388,22 +388,22 @@ def fetchCarInfo(html):
                     id = int(v["id"])
 
                     # 前制动器类型
-                    if id == 511:
+                    if id == 1219 or id == 511:
                         GraspTheData(v, "valueitems", ret, "front_brake", dic)
                     # 后制动器类型
-                    elif id == 512:
+                    elif id == 1220 or id == 512:
                         GraspTheData(v, "valueitems", ret, "back_brake", dic)
                     # 驻车制动类型
-                    elif id == 513:
+                    elif id == 1200 or id == 513:
                         GraspTheData(v, "valueitems", ret, "park_brake", dic)
                     # 前轮胎规格
-                    elif id == 580:
+                    elif id == 1222 or id == 580:
                         GraspTheData(v, "valueitems", ret, "front_wheel_size", dic)
                     # 后轮胎规格
-                    elif id == 581:
+                    elif id == 1223 or id == 581:
                         GraspTheData(v, "valueitems", ret, "back_wheel_size", dic)
                     # 备胎规格
-                    elif id == 515:
+                    elif id == 1224 or id == 515:
                         GraspTheData(v, "valueitems", ret, "backup_wheel", dic)
                     else:
                         pass
@@ -420,57 +420,56 @@ def fetchCarInfo(html):
                 if isinstance(item["configitems"], list):
                     secure_params = list(item["configitems"])
 
-                    # 疲劳驾驶提示id为0
                     for v in secure_params:
                         id = int(v["id"])
 
                         # 主/副驾驶座安全气囊
-                        if id == 1082:
+                        if id == 28 or id == 1082:
                             GraspTheData(v, "valueitems", ret, "seat_srs", dic)
                         # 前/后排侧气囊
-                        elif id == 421:
+                        elif id == 27 or id == 421:
                             GraspTheData(v, "valueitems", ret, "side_airbag", dic)
                         # 前/后排头部气囊(气帘)
-                        elif id == 422:
+                        elif id == 26 or id == 422:
                             GraspTheData(v, "valueitems", ret, "head_srs", dic)
                         # 膝部气囊
-                        elif id == 423:
+                        elif id == 22 or id == 423:
                             GraspTheData(v, "valueitems", ret, "knee_srs", dic)
                         # 胎压监测装置
-                        elif id == 551:
+                        elif id == 21 or id == 551:
                             GraspTheData(v, "valueitems", ret, "tire_pres_monitor", dic)
                         # 零胎压继续行驶
-                        elif id == 424:
+                        elif id == 20 or id == 424:
                             GraspTheData(v, "valueitems", ret, "zero_tire_pres", dic)
                         # 安全带未系提示
-                        elif id == 552:
+                        elif id == 19 or id == 552:
                             GraspTheData(v, "valueitems", ret, "unbelt_notice", dic)
                         # ISOFIX儿童座椅接口
-                        elif id == 1084:
+                        elif id == 18 or id == 1084:
                             GraspTheData(v, "valueitems", ret, "isofix", dic)
                         # ABS防抱死
-                        elif id == 110:
+                        elif id == 2 or id == 110:
                             GraspTheData(v, "valueitems", ret, "anti_lock", dic)
                         # 刹车辅助(EBA/BAS/BA等)
-                        elif id == 437:
+                        elif id == 9 or id == 437:
                             GraspTheData(v, "valueitems", ret, "bas", dic)
                         # 牵引力控制(ASR/TCS/TRC等)
-                        elif id == 438:
+                        elif id == 10 or id == 438:
                             GraspTheData(v, "valueitems", ret, "tcs", dic)
                         # 车身稳定控制(ESC/ESP/DSC等)
-                        elif id == 109:
+                        elif id == 11 or id == 109:
                             GraspTheData(v, "valueitems", ret, "stable_control", dic)
                         # 并线辅助
-                        elif id == 426:
+                        elif id == 12 or id == 426:
                             GraspTheData(v, "valueitems", ret, "bsa", dic)
                         # 车道偏离预警系统
-                        elif id == 788:
+                        elif id == 13 or id == 788:
                             GraspTheData(v, "valueitems", ret, "ldw", dic)
                         # 主动刹车/主动安全系统
-                        elif id == 436:
+                        elif id == 14 or id == 436:
                             GraspTheData(v, "valueitems", ret, "abs", dic)
                         # 夜视系统
-                        elif id == 637:
+                        elif id == 15 or id == 637:
                             GraspTheData(v, "valueitems", ret, "nvs", dic)
                         else:
                             pass
@@ -488,52 +487,52 @@ def fetchCarInfo(html):
                         id = int(v["id"])
 
                         # 前/后驻车雷达
-                        if id == 1086:
+                        if id == 31 or id == 1086:
                             GraspTheData(v, "valueitems", ret, "radar", dic)
                         # 倒车视频影像
-                        elif id == 448:
+                        elif id == 33 or id == 448:
                             GraspTheData(v, "valueitems", ret, "reverse_video", dic)
                         # 全景摄像头
-                        elif id == 473:
+                        elif id == 32 or id == 473:
                             GraspTheData(v, "valueitems", ret, "panorama", dic)
                         # 定速巡航
-                        elif id == 445:
+                        elif id == 34 or id == 445:
                             GraspTheData(v, "valueitems", ret, "cruise_ctrl", dic)
                         # 自适应巡航
                         elif id == 446:
                             GraspTheData(v, "valueitems", ret, "self_adpt_cruise", dic)
                         # 自动泊车入位
-                        elif id == 472:
+                        elif id == 35 or id == 472:
                             GraspTheData(v, "valueitems", ret, "auto_park_in", dic)
                         # 发动机启停技术
-                        elif id == 334:
+                        elif id == 36 or id == 334:
                             GraspTheData(v, "valueitems", ret, "engine_start_stop", dic)
                         # 自动驻车
-                        elif id == 363:
+                        elif id == 40 or id == 363:
                             GraspTheData(v, "valueitems", ret, "auto_park", dic)
                         # 陡坡缓降
-                        elif id == 138:
+                        elif id == 39 or id == 138:
                             GraspTheData(v, "valueitems", ret, "hdc", dic)
                         # 可变悬架
-                        elif id == 399:
+                        elif id == 41 or id == 399:
                             GraspTheData(v, "valueitems", ret, "variable_susp", dic)
                         # 空气悬架
-                        elif id == 167:
+                        elif id == 42 or id == 167:
                             GraspTheData(v, "valueitems", ret, "air_susp", dic)
                         # 可变转向比
-                        elif id == 409:
+                        elif id == 44 or id == 409:
                             GraspTheData(v, "valueitems", ret, "vgrs", dic)
                         # 前桥限滑差速器/差速锁
                         elif id == 975:
                             GraspTheData(v, "valueitems", ret, "front_diff_lock", dic)
                         # 中央差速器锁止功能
-                        elif id == 976:
+                        elif id == 48 or id == 976:
                             GraspTheData(v, "valueitems", ret, "central_diff_lock", dic)
                         # 后桥限滑差速器/差速锁
                         elif id == 977:
                             GraspTheData(v, "valueitems", ret, "back_diff_lock", dic)
                         # 整体主动转向系统
-                        elif id == 404:
+                        elif id == 46 or id == 404:
                             GraspTheData(v, "valueitems", ret, "ads", dic)
                         else:
                             pass
@@ -554,6 +553,18 @@ def fetchCarInfo(html):
                         if name == "感应后备厢":
                             GraspTheData(v, "valueitems", ret, "react_cargo", dic)
 
+                        if name == "侧滑门形式":
+                            GraspTheData(v, "valueitems", ret, "slide_door", dic)
+
+                        if name.count('轮圈') > 0:
+                            GraspTheData(v, "valueitems", ret, "alloy_wheel", dic)
+
+                        if name == "电动吸合车门":
+                            GraspTheData(v, "valueitems", ret, "e_suction_door", dic)
+
+                        if name.count('进入功能') > 0:
+                            GraspTheData(v, "valueitems", ret, "keyless_enter", dic)
+
                         id = int(v["id"])
 
                         # 电动天窗
@@ -563,34 +574,28 @@ def fetchCarInfo(html):
                         elif id == 584:
                             GraspTheData(v, "valueitems", ret, "pano_sunroof", dic)
                         # 运动外观套件
-                        elif id == 585:
+                        elif id == 51 or id == 585:
                             GraspTheData(v, "valueitems", ret, "pano_sunroof", dic)
                         # 铝合金轮圈
-                        elif id == 525:
+                        elif id == 54 or id == 525:
                             GraspTheData(v, "valueitems", ret, "alloy_wheel", dic)
-                        # 电动吸合门
-                        elif id == 443:
-                            GraspTheData(v, "valueitems", ret, "e_suction_door", dic)
-                        # 侧滑门
-                        elif id == 1122:
-                            GraspTheData(v, "valueitems", ret, "slide_door", dic)
                         # 电动后备厢
-                        elif id == 452:
+                        elif id == 452 or id == 452:
                             GraspTheData(v, "valueitems", ret, "e_cargo", dic)
                         # 发动机电子防盗
-                        elif id == 481:
+                        elif id == 63 or id == 481:
                             GraspTheData(v, "valueitems", ret, "engine_e_guard", dic)
                         # 车内中控锁
-                        elif id == 558:
+                        elif id == 64 or id == 558:
                             GraspTheData(v, "valueitems", ret, "e_ctrl_lock", dic)
                         # 遥控钥匙
-                        elif id == 582:
+                        elif id == 66 or id == 582:
                             GraspTheData(v, "valueitems", ret, "remote_key", dic)
                         # 无钥匙启动系统
-                        elif id == 431:
+                        elif id == 67 or id == 431:
                             GraspTheData(v, "valueitems", ret, "keyless_start", dic)
                         # 无钥匙进入系统
-                        elif id == 1066:
+                        elif id == 68 or id == 1066:
                             GraspTheData(v, "valueitems", ret, "keyless_enter", dic)
                         else:
                             pass
@@ -601,9 +606,6 @@ def fetchCarInfo(html):
 
                     for v in inside_params:
                         name = str(v["name"])
-
-                        if name == "皮质方向盘":
-                            GraspTheData(v, "valueitems", ret, "leather_steering", dic)
 
                         if name == "方向盘记忆":
                             GraspTheData(v, "valueitems", ret, "steer_mem", dic)
@@ -617,28 +619,29 @@ def fetchCarInfo(html):
                         if name.count("手机无线") > 0:
                             GraspTheData(v, "valueitems", ret, "wireless_charge", dic)
 
+
                         id = int(v["id"])
 
                         # 方向盘调节
-                        if id == 1085:
+                        if id == 72 or id == 1085:
                             GraspTheData(v, "valueitems", ret, "steer_adjt", dic)
-                        # 方向盘电动调节
-                        elif id == 589:
-                            GraspTheData(v, "valueitems", ret, "steer_e_adjt", dic)
+                        # 方向盘材质
+                        elif id == 71 or id == 589:
+                            GraspTheData(v, "valueitems", ret, "leather_steering", dic)
                         # 多功能方向盘
-                        elif id == 444:
+                        elif id == 73 or id == 444:
                             GraspTheData(v, "valueitems", ret, "functional_steer", dic)
                         # 方向盘换挡
-                        elif id == 468:
+                        elif id == 74 or id == 468:
                             GraspTheData(v, "valueitems", ret, "steer_shift", dic)
                         # 方向盘加热
-                        elif id == 1064:
+                        elif id == 76 or id == 1064:
                             GraspTheData(v, "valueitems", ret, "steer_heat", dic)
                         # 行车电脑显示屏
-                        elif id == 590:
+                        elif id == 79 or id == 590:
                             GraspTheData(v, "valueitems", ret, "computer_scr", dic)
                         # HUD抬头数字显示
-                        elif id == 471:
+                        elif id == 82 or id == 471:
                             GraspTheData(v, "valueitems", ret, "hud", dic)
                         else:
                             pass
@@ -655,10 +658,10 @@ def fetchCarInfo(html):
                             GraspTheData(v, "valueitems", ret, "seat_mat", dic)
 
                         # 运动风格座椅
-                        if id == 592:
+                        if id == 88 or id == 592:
                             GraspTheData(v, "valueitems", ret, "sport_seat", dic)
                         # 座椅高低调节
-                        elif id == 639:
+                        elif id == 90 or id == 639:
                             GraspTheData(v, "valueitems", ret, "height_adjt", dic)
                         # 腰部支撑调节
                         elif id == 449:
@@ -667,22 +670,22 @@ def fetchCarInfo(html):
                         elif id == 593:
                             GraspTheData(v, "valueitems", ret, "shoulder_support", dic)
                         # 主/副驾驶座电动调节
-                        elif id == 1087:
+                        elif id == 89 or id == 1087:
                             GraspTheData(v, "valueitems", ret, "seat_e_adjt", dic)
                         # 第二排靠背角度调节
                         elif id == 595:
                             GraspTheData(v, "valueitems", ret, "snd_backrest_adjt", dic)
                         # 第二排座椅移动
-                        elif id == 596:
+                        elif id == 99 or id == 596:
                             GraspTheData(v, "valueitems", ret, "snd_seat_mv", dic)
                         # 后排座椅电动调节
-                        elif id == 597:
+                        elif id == 98 or id == 597:
                             GraspTheData(v, "valueitems", ret, "back_seat_adjt", dic)
                         # 电动座椅记忆
                         elif id == 598:
                             GraspTheData(v, "valueitems", ret, "e_seat_mem", dic)
                         # 前/后排座椅加热
-                        elif id == 1088:
+                        elif id == 93 or id == 1088:
                             GraspTheData(v, "valueitems", ret, "seat_heat", dic)
                         # 前/后排座椅通风
                         elif id == 1089:
@@ -694,13 +697,13 @@ def fetchCarInfo(html):
                         elif id == 603:
                             GraspTheData(v, "valueitems", ret, "third_row_seat", dic)
                         # 后排座椅放倒方式
-                        elif id == 1091:
+                        elif id == 105 or id == 1091:
                             GraspTheData(v, "valueitems", ret, "back_seat_down", dic)
                         # 前/后中央扶手
-                        elif id == 1092:
+                        elif id == 95 or id == 1092:
                             GraspTheData(v, "valueitems", ret, "handrail", dic)
                         # 后排杯架
-                        elif id == 606:
+                        elif id == 96 or id == 606:
                             GraspTheData(v, "valueitems", ret, "back_cup_hold", dic)
                         else:
                             pass
@@ -729,28 +732,28 @@ def fetchCarInfo(html):
                         id = int(v["id"])
 
                         # GPS导航系统
-                        if id == 607:
+                        if id == 107 or id == 607:
                             GraspTheData(v, "valueitems", ret, "gps", dic)
                         # 定位互动服务
                         elif id == 455:
                             GraspTheData(v, "valueitems", ret, "gps_interact", dic)
                         # 中控台彩色大屏
-                        elif id == 608:
+                        elif id == 110 or id == 608:
                             GraspTheData(v, "valueitems", ret, "colorful_scr", dic)
                         # 中控液晶屏分屏显示
-                        elif id == 464:
+                        elif id == 112 or id == 464:
                             GraspTheData(v, "valueitems", ret, "lcd_sep", dic)
                         # 蓝牙/车载电话
-                        elif id == 609:
+                        elif id == 115 or id == 609:
                             GraspTheData(v, "valueitems", ret, "blueteeth", dic)
                         # 车载电视
-                        elif id == 610:
+                        elif id == 118 or id == 610:
                             GraspTheData(v, "valueitems", ret, "television", dic)
                         # 后排液晶屏
-                        elif id == 611:
+                        elif id == 611 or id == 611:
                             GraspTheData(v, "valueitems", ret, "back_lcd", dic)
                         # 扬声器品牌
-                        elif id == 1212:
+                        elif id == 123 or id == 1212:
                             GraspTheData(v, "valueitems", ret, "speaker_brand", dic)
                         # 扬声器数量
                         elif id == 618:
@@ -762,11 +765,11 @@ def fetchCarInfo(html):
                 if isinstance(item["configitems"], list):
                     light_params = list(item["configitems"])
 
-                    for i, v in enumerate(light_params):
+                    for i,v in enumerate(light_params):
+
                         # 近光灯
                         if i == 0:
                             GraspTheData(v, "valueitems", ret, "low_beam", dic)
-
                         # 远光灯
                         if i == 1:
                             GraspTheData(v, "valueitems", ret, "high_beam", dic)
@@ -781,7 +784,11 @@ def fetchCarInfo(html):
                         if name.count("应远近光") > 0:
                             GraspTheData(v, "valueitems", ret, "adaptive_beam", dic)
 
+                        if name.count("雾灯") > 0:
+                            GraspTheData(v, "valueitems", ret, "front_fog_lamp", dic)
+
                         id = int(v["id"])
+
 
                         # 自动头灯
                         if id == 441:
@@ -790,7 +797,7 @@ def fetchCarInfo(html):
                         elif id == 1161:
                             GraspTheData(v, "valueitems", ret, "turn_light", dic)
                         # 前雾灯
-                        elif id == 619:
+                        elif id == 1242 or id == 619:
                             GraspTheData(v, "valueitems", ret, "front_fog_lamp", dic)
                         # 大灯高度可调
                         elif id == 620:
@@ -819,22 +826,22 @@ def fetchCarInfo(html):
                         id = int(v["id"])
 
                         # 前/后电动车窗
-                        if id == 622:
+                        if id == 137 or id == 622:
                             GraspTheData(v, "valueitems", ret, "power_window", dic)
                         # 车窗防夹手功能
-                        elif id == 623:
+                        elif id == 139 or id == 623:
                             GraspTheData(v, "valueitems", ret, "anti_pinch_hand", dic)
                         # 防紫外线/隔热玻璃
-                        elif id == 624:
+                        elif id == 140 or id == 624:
                             GraspTheData(v, "valueitems", ret, "insulating_glass", dic)
                         # 后视镜电动调节
-                        elif id == 625:
+                        elif id == 142 or id == 625:
                             GraspTheData(v, "valueitems", ret, "e_adjt_rearview", dic)
                         # 后视镜加热
                         elif id == 626:
                             GraspTheData(v, "valueitems", ret, "heat_rearview", dic)
                         # 内/外后视镜自动防眩目
-                        elif id == 1095:
+                        elif id == 143 or id == 1095:
                             GraspTheData(v, "valueitems", ret, "dimming_mirror", dic)
                         # 后视镜电动折叠
                         elif id == 628:
@@ -843,22 +850,22 @@ def fetchCarInfo(html):
                         elif id == 629:
                             GraspTheData(v, "valueitems", ret, "mirror_mem", dic)
                         # 后风挡遮阳帘
-                        elif id == 630:
+                        elif id == 144 or id == 630:
                             GraspTheData(v, "valueitems", ret, "abat_vent", dic)
                         # 后排侧遮阳帘
                         elif id == 631:
                             GraspTheData(v, "valueitems", ret, "side_abat_vent", dic)
                         # 后排侧隐私玻璃
-                        elif id == 1063:
+                        elif id == 146 or id == 1063:
                             GraspTheData(v, "valueitems", ret, "side_priv_glass", dic)
                         # 遮阳板化妆镜
-                        elif id == 632:
+                        elif id == 147 or id == 632:
                             GraspTheData(v, "valueitems", ret, "sun_shield", dic)
                         # 后雨刷
-                        elif id == 633:
+                        elif id == 148 or id == 633:
                             GraspTheData(v, "valueitems", ret, "back_wiper", dic)
                         # 感应雨刷
-                        elif id == 454:
+                        elif id == 149 or id == 454:
                             GraspTheData(v, "valueitems", ret, "react_wiper", dic)
                         else:
                             pass
@@ -875,22 +882,22 @@ def fetchCarInfo(html):
                         id = int(v["id"])
 
                         # 空调控制方式
-                        if id == 1097:
+                        if id == 150 or id == 1097:
                             GraspTheData(v, "valueitems", ret, "air_type", dic)
                         # 后排独立空调
-                        elif id == 459:
+                        elif id == 1143 or id == 459:
                             GraspTheData(v, "valueitems", ret, "back_air", dic)
                         # 后座出风口
-                        elif id == 634:
+                        elif id == 1144 or id == 634:
                             GraspTheData(v, "valueitems", ret, "back_outlet", dic)
                         # 温度分区控制
-                        elif id == 463:
+                        elif id == 151 or id == 463:
                             GraspTheData(v, "valueitems", ret, "temper_zone_ctrl", dic)
                         # 车内空气调节/花粉过滤
-                        elif id == 635:
+                        elif id == 1142 or id == 635:
                             GraspTheData(v, "valueitems", ret, "air_adjt", dic)
                         # 车载冰箱
-                        elif id == 636:
+                        elif id == 1145 or id == 636:
                             GraspTheData(v, "valueitems", ret, "car_fridge", dic)
                         else:
                             pass

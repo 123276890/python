@@ -6,6 +6,7 @@
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
 import pymysql
+import time
 
 
 class CarPipeline(object):
@@ -38,6 +39,9 @@ class WebcrawlerScrapyPipeline(object):
 
         sql = 'INSERT INTO lrlz_car_crawl(%s) select "%s" from dual where not EXISTS (select 1 from lrlz_car_crawl a where type_id ="%s")' % (k, v, id)
         cur.execute(sql)
+        now = int(round(time.time() * 1000))
+        updatetime = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(now / 1000))
+        kv = kv + ',' + 'update_at' + '=' + '"' + updatetime + '"'
         sql1 = 'UPDATE lrlz_car_crawl SET %s WHERE type_id = "%s"' % (kv, id)
         cur.execute(sql1)
         db.commit()
