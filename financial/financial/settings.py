@@ -14,12 +14,78 @@ BOT_NAME = 'financial'
 SPIDER_MODULES = ['financial.spiders']
 NEWSPIDER_MODULE = 'financial.spiders'
 
+DOWNLOADER_MIDDLEWARES = {
+    'jdSpider.middlewares.middleware.JavaScriptMiddleware': 543,          # 键为中间件类的路径，值为中间件的顺序
+    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None    # 禁止内置的中间件
+}
 
-# Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'financial (+http://www.yourdomain.com)'
+
+
+import random
+# user agent 列表
+USER_AGENT_LIST = [
+    'MSIE (MSIE 6.0; X11; Linux; i686) Opera 7.23',
+    'Opera/9.20 (Macintosh; Intel Mac OS X; U; en)',
+    'Opera/9.0 (Macintosh; PPC Mac OS X; U; en)',
+    'iTunes/9.0.3 (Macintosh; U; Intel Mac OS X 10_6_2; en-ca)',
+    'Mozilla/4.76 [en_jp] (X11; U; SunOS 5.8 sun4u)',
+    'iTunes/4.2 (Macintosh; U; PPC Mac OS X 10.2)',
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:5.0) Gecko/20100101 Firefox/5.0',
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:9.0) Gecko/20100101 Firefox/9.0',
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:16.0) Gecko/20120813 Firefox/16.0',
+    'Mozilla/4.77 [en] (X11; I; IRIX;64 6.5 IP30)',
+    'Mozilla/4.8 [en] (X11; U; SunOS; 5.7 sun4u)',
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3622.0 Safari/537.36'
+]
+# 随机生成user agent
+USER_AGENT = random.choice(USER_AGENT_LIST)
+
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
+
+
+
+# Crawl responsibly by identifying yourself (and your website) on the user-agent
+#USER_AGENT = 'car (+http://www.yourdomain.com)'
+
+# Obey robots.txt rules
+ROBOTSTXT_OBEY = False
+
+
+#配置pipelines,数据库信息
+
+ITEM_PIPELINES = {
+    'financial.pipelines.WebcrawlerScrapyPipeline': 300,#保存到mysql数据库
+}
+
+
+
+
+
+# 将splash middleware添加到DOWNLOADER_MIDDLEWARE中
+DOWNLOADER_MIDDLEWARES = {
+    'scrapy_splash.SplashCookiesMiddleware': 723,
+    'scrapy_splash.SplashMiddleware': 725,
+    'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
+}
+
+# Enable SplashDeduplicateArgsMiddleware
+SPIDER_MIDDLEWARES = {
+    'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,
+}
+
+
+# 添加splash服务器地址
+SPLASH_URL = 'http://localhost:8050'
+
+# Set a custom DUPEFILTER_CLASS
+DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
+
+
+# a custom cache storage backend
+HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
+
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -47,13 +113,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'financial.middlewares.FinancialSpiderMiddleware': 543,
+#    'car.middlewares.CarSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'financial.middlewares.FinancialDownloaderMiddleware': 543,
+#    'car.middlewares.CarDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,7 +131,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'financial.pipelines.FinancialPipeline': 300,
+#    'car.pipelines.CarPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
