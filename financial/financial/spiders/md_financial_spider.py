@@ -8,6 +8,13 @@ import json
 import re
 
 
+class func():
+    # 价格转换 例6.58万->65800
+    def conversion_price(p):
+        p = p.replace('万', '')
+        p = int(float(p) * 10000)
+        return p
+
 class mdFinancialSpider(scrapy.Spider):
     name = "maodou"
     allowed_domains = ["www.maodou.com"]
@@ -50,4 +57,15 @@ class mdFinancialSpider(scrapy.Spider):
 
     def parse_detail(self, response):
         detail = response.xpath('//*[@id="banner"]/div/div[2]')
+        item = FinancialItem()
+        item['original_id'] = response.meta['oId']
+        item['model_name'] = response.meta['mName']
+        item['brand_name'] = response.meta['brand']
+        item['guidance_price'] = ((detail.xpath('p/text()')[0].extract()).split('：'))[1]
+        item['guidance_price'] = func.conversion_price(item['guidance_price'])
+        plan = detail.xpath('div[1]')
+        pros = []
+        payment = plan.xpath('div[2]/ul/li/text()').extract()
+        for p in payment:
+            pros.append(p)
         pass
