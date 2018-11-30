@@ -9,3 +9,6 @@
 class BevolPipeline(object):
     def process_item(self, item, spider):
         return item
+
+class WebcrawlerScrapyPipeline(object):
+    pass
