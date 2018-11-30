@@ -13,6 +13,7 @@ class FinancialItem(scrapy.Item):
     # name = scrapy.Field()
 
     original_id = scrapy.Field()                            # 原系统ID
+    original_url = scrapy.Field()                           # 原系统url
     model_name = scrapy.Field()                             # 车型名
     series_name = scrapy.Field()                            # 车系名
     brand_name = scrapy.Field()                             # 品牌名

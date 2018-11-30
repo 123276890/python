@@ -109,6 +109,7 @@ class CarSpider(scrapy.Spider):
                             callback=self.parse_article_config, args={'wait': 2})
 
     def parse_article_config(self, response):
+        time.sleep(2)
         html = response.body
         html = str(html.decode('utf-8'))
         item = CarItem()

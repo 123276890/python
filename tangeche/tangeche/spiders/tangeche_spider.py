@@ -6,6 +6,7 @@ from ..items import TangecheItem
 from scrapy_splash import SplashRequest
 import requests
 import json
+import time
 
 
 class TangecheSpider(scrapy.Spider):
@@ -31,6 +32,7 @@ class TangecheSpider(scrapy.Spider):
             yield SplashRequest(url, callback=self.parse_detail, args={'wait': 5}, meta={'carId': item['original_id']})
 
     def parse_detail(self, response):
+        time.sleep(3)
         item = TangecheItem()
         item['original_id'] = response.meta['carId']
         content = {'modelCode': item['original_id']}
@@ -101,4 +103,5 @@ class TangecheSpider(scrapy.Spider):
         item['schemes'] = item['schemes'].replace('"', "'")
         if item['original_id'].count('-') > 0:
             item['original_id'] = (item['original_id'].split("-"))[0]
+        item['original_url'] = response.url
         yield item
