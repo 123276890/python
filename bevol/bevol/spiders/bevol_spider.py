@@ -47,7 +47,7 @@ class bevolSpider(scrapy.Spider):
                 url = 'https://www.bevol.cn' + l.xpath('@href')[0].extract()
                 item['cosmetics_name'] = l.xpath('@title')[0].extract()
                 item['cosmetics_id'] = re.compile(r'\/.*?\/(.*)\.(html)').search(l.xpath('@href')[0].extract()).group(1)
-                yield SplashRequest(url, callback=self.parse_detail, args={'wait': 3}, meta={'splash': {
+                yield SplashRequest(url='https://www.bevol.cn/product/e1f5c2993ae0b4dbce99c2d3ef1a7ca0.html', callback=self.parse_detail, args={'wait': 5}, meta={'splash': {
                                         'endpoint': 'render.html'}, 'id': item['cosmetics_id'], 'name': item['cosmetics_name']
                                 })
         else:
@@ -60,7 +60,8 @@ class bevolSpider(scrapy.Spider):
         item['cosmetics_id'] = response.meta['id']
         detail = response.xpath('/html/body/div[2]/div[4]')
         starList = detail.xpath('div[1]/div[2]/div[1]/div[1]/img/@src').extract()
-        item['cosmetics_absolute'] = response.xpath('//*[@id="goods-info-html"]/div[2]/p/text()')[0].extract()
+        item['cosmetics_absolute'] = response.xpath('//*[@id="goods-info-html"]/div[2]/p[2]/text()')[0].extract()
+        item['cosmetics_absolute'] = item['cosmetics_absolute'].strip()
         item['cosmetics_url'] = response.url
         stars = []
         for star in starList:
@@ -111,13 +112,14 @@ class bevolSpider(scrapy.Spider):
                 compositions.append(composition)
         item['cosmetics_ingredients'] = json.dumps(ingreduents, ensure_ascii=False)
         item['cosmetics_ingredients'] = item['cosmetics_ingredients'].replace('"', "'")
-        item['composition'] = json.dumps(compositions, ensure_ascii=False)
-        item['composition'] = item['composition'].replace('"', "'")
-        pass
+        item['compositions'] = json.dumps(compositions, ensure_ascii=False)
+        item['compositions'] = item['compositions'].replace('"', "'")
+        yield item
 
     def detail_info(url):
         response = requests.get(url)
         time.sleep(2)
         response.encoding = 'utf-8'
-        ingredient_overview = re.compile(r'\<div\sclass\=\"component-info-box\"\>\s*<p>(.*)</p>\s*</div>').search(response.text).group(1)
+        ingredient_overview = re.compile(r'\<div\s*class\=\"component-info-box\"\>\s*<p>(.*)</p>\s*</div>').search(response.text)
+        ingredient_overview = ingredient_overview.group(1)
         return ingredient_overview
