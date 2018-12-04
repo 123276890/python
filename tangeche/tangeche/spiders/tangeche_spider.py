@@ -16,7 +16,7 @@ class TangecheSpider(scrapy.Spider):
 
     def start_requests(self):
         for i in range(1, 8):
-            yield SplashRequest(url=self.url + "?page=" + str(i), callback=self.parse, args={'wait': 2}, meta={'splash': {
+            yield SplashRequest(url=self.url + "?page=" + str(i), callback=self.parse, args={'wait': 4}, meta={'splash': {
                     'endpoint': 'render.html'
                     }
                 })
@@ -29,7 +29,7 @@ class TangecheSpider(scrapy.Spider):
             carId = (detail.xpath('a/@href')[0].extract()).split("/")
             item['original_id'] = carId[3]
             url = 'https://www.tangeche.com' + link
-            yield SplashRequest(url, callback=self.parse_detail, args={'wait': 5}, meta={'carId': item['original_id']})
+            yield SplashRequest(url, callback=self.parse_detail, args={'wait': 4}, meta={'carId': item['original_id']})
 
     def parse_detail(self, response):
         time.sleep(3)
@@ -42,21 +42,13 @@ class TangecheSpider(scrapy.Spider):
         result2 = requests.post(url2, data=content)
         financialPlan = (json.loads(result.text))['data'][0]
         financeInfo = financialPlan['layeredFinanceInfo']
-        first_price10 = financeInfo[0]['prepaidAmount']
-        month_price10 = financeInfo[0]['installmentStr']
-        first_price15 = financeInfo[1]['prepaidAmount']
-        month_price15 = financeInfo[1]['installmentStr']
-        first_price20 = financeInfo[2]['prepaidAmount']
-        month_price20 = financeInfo[2]['installmentStr']
-        final_month_price = financialPlan['finalPayInstallment']
-        final_payment = financialPlan['allFinalPayment']
         carInfo = (json.loads(result2.text))['data']['carInfo']
         financeInfoStandard = (json.loads(result2.text))['data']['financeInfoList'][0]
         item['source_id'] = 2
         item['brand_name'] = carInfo['brandName']
         item['series_name'] = carInfo['seriesName']
         item['model_name'] = carInfo['modelName']
-        item['guidance_price'] = carInfo['guidePrice']
+        item['guidance_price'] = int(carInfo['guidePrice']/100)
         item['service_charge'] = int(financeInfoStandard['deliveryCarServiceCost']/100)
         item['pickup_mode'] = "到店提车"
         leaseTags = financeInfoStandard['leaseTags']
@@ -77,30 +69,24 @@ class TangecheSpider(scrapy.Spider):
                           '上牌': ['上牌手续由弹个车负责办理，客户无需支付任何费用'],
                           '购置税': ['弹个车方案已含购置税，您无需支付额外费用']}
         item['riders'] = json.dumps(item['riders'], ensure_ascii=False)
-        item['riders'] = item['riders'].replace('"', "'")
-        item['schemes'] = [{'period': '12',
-                            'first_price': first_price10,
-                            'month_price': month_price10,
-                            'final': [{'final_month_price': final_month_price,
-                                       'final_payment': final_payment,
-                                       'final_period': '36'}],
-                            'first_ratio': '10'},
-                           {'period': '12',
-                            'first_price': first_price15,
-                            'month_price': month_price15,
-                            'final': [{'final_month_price': final_month_price,
-                                       'final_payment': final_payment,
-                                       'final_period': '36'}],
-                            'first_ratio': '15'},
-                           {'period': '12',
-                            'first_price': first_price20,
-                            'month_price': month_price20,
-                            'final': [{'final_month_price': final_month_price,
-                                       'final_payment': final_payment,
-                                       'final_period': '36'}],
-                            'first_ratio': '20'}]
-        item['schemes'] = json.dumps(item['schemes'])
-        item['schemes'] = item['schemes'].replace('"', "'")
+        schemes = []
+        i = 0
+        for f in financeInfo:
+            first_price = financeInfo[i]['prepaidAmount']
+            month_price = financeInfo[i]['installmentStr']
+            first_ratio = int(financeInfo[i]['prepaidRate']/100)
+            final_month_price = financialPlan['finalPayInstallment']
+            final_payment = financialPlan['allFinalPayment']
+            item['schemes'] = {"period": "12",
+                                "first_price": first_price,
+                                "month_price": month_price,
+                                "final": [{"final_month_price": final_month_price,
+                                           "final_payment": final_payment,
+                                           "final_period": "36"}],
+                                "first_ratio": first_ratio},
+            schemes.append(item['schemes'])
+            i += 1
+        item['schemes'] = json.dumps(schemes)
         if item['original_id'].count('-') > 0:
             item['original_id'] = (item['original_id'].split("-"))[0]
         item['original_url'] = response.url

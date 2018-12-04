@@ -13,7 +13,7 @@ class func():
     # 价格转换 例6.58万->65800
     def conversion_price(p):
         p = p.replace('万', '')
-        p = int(float(p) * 10000)
+        p = int((float(p) + 10**-5) * 10000)
         return p
 
 class mdFinancialSpider(scrapy.Spider):
@@ -82,7 +82,7 @@ class mdFinancialSpider(scrapy.Spider):
                 m = 1
                 while m <= len(pays.xpath('div')):
                     first_price = func.conversion_price(p.xpath('div[%s]/div[1]/div[1]/p[2]/text()' % m)[0].extract())
-                    month_price = (p.xpath('div[%s]/div[1]/div[2]/p[1]/span/text()' % m)[0].extract()).replace('元', '')
+                    month_price = (p.xpath('div[%s]/div[1]/div[2]/p[2]/text()' % m)[0].extract()).replace('元', '')
                     period = (p.xpath('div[%s]/div[1]/div[3]/p[2]/text()' % m)[0].extract()).replace('期', '')
                     first_ratio = pros[i]
                     pay = {'period': period, 'first_price': first_price, 'month_price': month_price, 'first_ratio': first_ratio}
@@ -98,11 +98,9 @@ class mdFinancialSpider(scrapy.Spider):
                           "上牌": ["毛豆负责办理车辆上牌，您无需到现场和额外支付费用。"],
                           "购置税": ["首年费用已经包含购置税，您无需支付额外费用"]}
         item['riders'] = json.dumps(item['riders'], ensure_ascii=False)
-        item['riders'] = item['riders'].replace('"', "'")
 
         item['schemes'] = payPlans
         item['schemes'] = json.dumps(item['schemes'])
-        item['schemes'] = item['schemes'].replace('"', "'")
 
         item['give_license_ex'] = '毛豆负责办理车辆上牌，您无需到现场和额外支付费用'
         item['give_license'] = '1'

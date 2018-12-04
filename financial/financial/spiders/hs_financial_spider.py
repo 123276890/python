@@ -13,7 +13,7 @@ class func():
     # 价格转换 例6.58万->65800
     def conversion_price(p):
         p = p.replace('万', '')
-        p = int(float(p) * 10000)
+        p = int((float(p) + 10**-5) * 10000)
         return p
 
 
@@ -52,7 +52,7 @@ class hsFinancialSpider(scrapy.Spider):
         item['original_url'] = response.url
         item['brand_name'] = (item['model_name'].split())[0]
         item['series_name'] = (item['model_name'].split())[1]
-        item['guidance_price'] = response.meta['price']
+        item['guidance_price'] = func.conversion_price(response.meta['price'])
         plans = detail.xpath('div[2]/ul')
         payment = []
         for plan in plans:
@@ -69,11 +69,9 @@ class hsFinancialSpider(scrapy.Spider):
                           "上牌": ["花生好车负责办理车辆上牌，您无需到场、无需额外支付费用"],
                           "免手续费": ["除综合保证金外，用户无需支付其他额外费用"]}
         item['riders'] = json.dumps(item['riders'], ensure_ascii=False)
-        item['riders'] = item['riders'].replace('"', "'")
 
         item['schemes'] = payment
         item['schemes'] = json.dumps(item['schemes'])
-        item['schemes'] = item['schemes'].replace('"', "'")
 
         item['source_id'] = '7'
         item['give_license_ex'] = '花生好车负责办理车辆上牌，您无需到场、无需额外支付费用'
