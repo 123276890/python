@@ -9,6 +9,7 @@ import json
 import time
 import requests
 from lxml import etree
+from bs4 import BeautifulSoup
 
 
 
@@ -49,7 +50,7 @@ class bevolSpider(scrapy.Spider):
                 item['cosmetics_absolute'] = l.xpath('li/div[2]/p[@class="absolute p4"]/text()')[0].extract()
                 item['cosmetics_absolute'] = item['cosmetics_absolute'].strip()
                 item['cosmetics_id'] = re.compile(r'\/.*?\/(.*)\.(html)').search(l.xpath('@href')[0].extract()).group(1)
-                yield SplashRequest(url, callback=self.parse_detail, args={'wait': 8}, meta={'splash': {
+                yield SplashRequest(url, callback=self.parse_detail, args={'wait': 15}, meta={'splash': {
                                         'endpoint': 'render.html'}, 'id': item['cosmetics_id'],
                                         'name': item['cosmetics_name'], 'absolute': item['cosmetics_absolute']
                                 })
@@ -59,10 +60,11 @@ class bevolSpider(scrapy.Spider):
     def parse_detail(self, response):
         time.sleep(2)
         item = BevolItem()
-        item['cosmetics_name'] = response.meta['name']
+        item['cosmetics_name'] = (response.meta['name']).strip()
         item['cosmetics_id'] = response.meta['id']
         detail = response.xpath('/html/body/div[2]/div[4]')
         starList = detail.xpath('div[1]/div[2]/div[1]/div[1]/img/@src').extract()
+        item['cosmetics_img'] = response.xpath('//*[@id="goods-info-html"]/div[1]/img/@src')[0].extract()
         item['cosmetics_absolute'] = response.meta['absolute']
         item['cosmetics_url'] = response.url
         stars = []
@@ -96,10 +98,19 @@ class bevolSpider(scrapy.Spider):
                     security_risks = ingreduent.xpath('td[2]/span/text()')[0].extract()
                 except IndexError:
                     security_risks = ""
+
                 active_ingredient = ingreduent.xpath('td[3]/img/@src').extract()
                 if len(active_ingredient) == 0:
                     active_ingredient = ""
-                risk_blain = (ingreduent.xpath('td[4]/text()')[0].extract()).strip()
+                else:
+                    active_ingredient = active_ingredient[0]
+
+                risk_blain = (ingreduent.xpath('td[4]/img/@src').extract())
+                if len(risk_blain) == 0:
+                    risk_blain = ""
+                else:
+                    risk_blain = risk_blain[0]
+
                 purpose = (((ingreduent.xpath('td[5]/text()')[0].extract()).strip()).replace(' ', '')).replace('\n', ' ')
                 composition_list = {"component_name": component_name, "security_risks": security_risks,
                                     "active_ingredient": active_ingredient, "risk_blain": risk_blain,
@@ -116,9 +127,9 @@ class bevolSpider(scrapy.Spider):
         yield item
 
     def detail_info(url):
-        response = requests.get(url)
         time.sleep(2)
-        response.encoding = 'utf-8'
-        ingredient_overview = re.compile(r'\<div\s*class\=\"component-info-box\"\>\s*<p>(.*)</p>\s*</div>').search(response.text)
-        ingredient_overview = ingredient_overview.group(1)
+        response = requests.get(url)
+        soup = BeautifulSoup(response.content, "html5lib")
+        ingredient_overview = soup.select('div.component-info-box p')[0].text
+        ingredient_overview = ingredient_overview.replace('\n', '')
         return ingredient_overview
