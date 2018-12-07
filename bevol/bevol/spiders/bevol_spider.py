@@ -12,7 +12,6 @@ from lxml import etree
 from bs4 import BeautifulSoup
 
 
-
 class bevolSpider(scrapy.Spider):
     name = "bevol"
     allowed_domains = ["www.bevol.cn"]
@@ -30,7 +29,7 @@ class bevolSpider(scrapy.Spider):
         url = (response.url).split('?')
         category = response.meta['category']
         i = 1
-        while i <= int(page):
+        while i < 260:
             # url[0] + '?v=2.0' + '&' + url[1] + '&p=' + str(i)
             yield SplashRequest(url=url[0] + '?v=2.0' + '&' + url[1] + '&p=' + str(i), callback=self.parse_list, args={'wait': 5},
                                 meta={'splash': {'endpoint': 'render.html'}, 'category': category
@@ -51,7 +50,7 @@ class bevolSpider(scrapy.Spider):
                 item['cosmetics_absolute'] = item['cosmetics_absolute'].strip()
                 item['cosmetics_img'] = l.xpath('li/div[1]/img/@src')[0].extract()
                 item['cosmetics_id'] = re.compile(r'\/.*?\/(.*)\.(html)').search(l.xpath('@href')[0].extract()).group(1)
-                yield SplashRequest(url, callback=self.parse_detail, args={'wait': 20}, meta={'splash': {
+                yield SplashRequest(url, callback=self.parse_detail, args={'wait': 24}, meta={'splash': {
                                         'endpoint': 'render.html'}, 'id': item['cosmetics_id'],
                                         'name': item['cosmetics_name'], 'absolute': item['cosmetics_absolute'],
                                         'img': item['cosmetics_img'], 'category': category
