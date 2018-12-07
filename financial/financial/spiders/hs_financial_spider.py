@@ -38,13 +38,12 @@ class hsFinancialSpider(scrapy.Spider):
             item['original_id'] = car.xpath('div[1]/@data-carid')[0].extract()
             item['model_name'] = car.xpath('p[1]/text()')[0].extract()
             item['guidance_price'] = car.xpath('p[2]/span/text()')[0].extract()
-            yield SplashRequest(url, callback=self.parse_detail, args={'wait': 3}, meta={'splash': {
+            yield SplashRequest(url, callback=self.parse_detail, args={'wait': 6}, meta={'splash': {
                 'endpoint': 'render.html'}, 'oId': item['original_id'], 'mName': item['model_name'],
                 'price': item['guidance_price']
             })
 
     def parse_detail(self, response):
-        time.sleep(3)
         detail = response.xpath('/html/body/div[3]/div[1]/div[2]')
         item = FinancialItem()
         item['original_id'] = response.meta['oId']

@@ -29,10 +29,9 @@ class TangecheSpider(scrapy.Spider):
             carId = (detail.xpath('a/@href')[0].extract()).split("/")
             item['original_id'] = carId[3]
             url = 'https://www.tangeche.com' + link
-            yield SplashRequest(url, callback=self.parse_detail, args={'wait': 4}, meta={'carId': item['original_id']})
+            yield SplashRequest(url, callback=self.parse_detail, args={'wait': 7}, meta={'carId': item['original_id']})
 
     def parse_detail(self, response):
-        time.sleep(3)
         item = TangecheItem()
         item['original_id'] = response.meta['carId']
         content = {'modelCode': item['original_id']}

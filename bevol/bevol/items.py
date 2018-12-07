@@ -24,4 +24,5 @@ class BevolItem(scrapy.Item):
     ingredient_overview = scrapy.Field()                            # 成分简介
     security_risks = scrapy.Field()                                 # 安全风险
     cosmetics_url = scrapy.Field()                                  # 产品url
-    compositions = scrapy.Field()                                    # 成分
+    compositions = scrapy.Field()                                   # 成分
+    category = scrapy.Field()                                       # 类别
