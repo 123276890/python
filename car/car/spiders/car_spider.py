@@ -43,15 +43,17 @@ class CarSpider(scrapy.Spider):
                 for car in cars:
                     item['cars'] = car
                     item['link'] = list.xpath('dd/ul[@class="rank-list-ul"]/li[contains(@id,"s")]/h4/a/@href')[i].extract()
+                    item['series_id'] = int(re.compile(r'\/\/.*\/(.*)\/.*').findall(item['link'])[0])
                     url = response.urljoin(item['link'])
                     i += 1
 
-                    yield scrapy.Request(url, meta={'brand_name': item['brand_name']}, callback=self.parse_article)
+                    yield scrapy.Request(url, meta={'brand_name': item['brand_name'], 'sid': item['series_id']}, callback=self.parse_article)
 
     def parse_article(self, response):
         detail = response.xpath('//div[@class="carseries-main"]/div[@class="series-list"]')
         item = CarItem()
         brand_name = response.meta['brand_name']
+        sid = response.meta['sid']
         if len(detail) > 0:
             names = detail.xpath('div[@class="series-content"]/div[@id="specWrap-2"]/dl/dd/div[@class="spec-name"]/div[@class="name-param"]')
             for name in names:
@@ -65,7 +67,7 @@ class CarSpider(scrapy.Spider):
                 else:
                     item['carId'] = int(item['carId'][0])
 
-                yield scrapy.Request(url, meta={'carId': item['carId'], 'brand_name': brand_name}, callback=self.parse_article_detail)
+                yield scrapy.Request(url, meta={'carId': item['carId'], 'brand_name': brand_name, 'sid': sid}, callback=self.parse_article_detail)
 
         else:
             detail = response.xpath('//div[@class="title"]/div[@class="title-content"]')
@@ -82,18 +84,19 @@ class CarSpider(scrapy.Spider):
                     else:
                         item['carId'] = int(item['carId'][0])
 
-                    yield scrapy.Request(url, meta={'carId': item['carId'], 'brand_name': brand_name}, callback=self.parse_article_detail)
+                    yield scrapy.Request(url, meta={'carId': item['carId'], 'brand_name': brand_name, 'sid': sid}, callback=self.parse_article_detail)
 
     def parse_article_detail(self, response):
         detail = response.xpath('//div[@class="container"]')
         item = CarItem()
         brand_name = response.meta['brand_name']
+        sid = response.meta['sid']
         item['carId'] = response.meta['carId']
-        item['market_price_str'] = detail.xpath('/html/body/div[1]/div[2]/div[3]/div[1]/div[1]/div[2]/div[2]/dl[1]/dd[3]/span[1]/text()')[0].extract()
-        item['market_price_str'] = item['market_price_str'].split("：")
-        if item['market_price_str'][1] == "暂无":
-            item['market_price_str'] = item['market_price_str'][1]
+        item['market_price_str'] = detail.xpath('div[@class="carspec-wrapper"]/div[@class="carspec-main"]/div[@class="spec-information"]/div[@class="information-con"]/div[@class="information-summary"]/dl[@class="information-price"]/dd[3]/span[@class="factoryprice"]/text()')[0].extract()
+        if item['market_price_str'] == "暂无":
+            item['market_price_str'] = "暂无"
         else:
+            item['market_price_str'] = item['market_price_str'].split("：")
             item['market_price_str'] = item['market_price_str'][1] + "万元"
         item['carBrand'] = detail.xpath('div[@class="container athm-sub-nav article-sub-nav"]/div[@class="athm-sub-nav__car"]/div[@class="athm-sub-nav__car__name"]/a/text()')[0].extract()
         item['carBrand'] = item['carBrand'][:len(item['carBrand'])-1]
@@ -105,16 +108,15 @@ class CarSpider(scrapy.Spider):
 
         yield SplashRequest(url, meta={'carId': item['carId'], 'manufacturer': item['carBrand'],
                                        'cars': item["cars"], 'carName': item['carName'],
-                                       'price': item['market_price_str'],  'brand_name': brand_name},
-                            callback=self.parse_article_config, args={'wait': 2})
+                                       'price': item['market_price_str'],  'brand_name': brand_name,
+                                       'sid': sid},
+                            callback=self.parse_article_config, args={'wait': 5})
 
     def parse_article_config(self, response):
-        time.sleep(2)
         html = response.body
         html = str(html.decode('utf-8'))
         item = CarItem()
 
-        time.sleep(0.1)
         infos = autohome.fetchCarInfo(html)
         i = 0
         for info in infos:
@@ -129,6 +131,7 @@ class CarSpider(scrapy.Spider):
             item['brand_name'] = response.meta['brand_name']
             item['manufacturer'] = response.meta["manufacturer"]
             item['series_name'] = response.meta["cars"]
+            item['series_id'] = response.meta['sid']
             prices = response.xpath('//*[@id="tr_2000"]/td')
             p = []
             for price in prices:

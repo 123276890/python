@@ -29,7 +29,7 @@ class TangecheSpider(scrapy.Spider):
             carId = (detail.xpath('a/@href')[0].extract()).split("/")
             item['original_id'] = carId[3]
             url = 'https://www.tangeche.com' + link
-            yield SplashRequest(url, callback=self.parse_detail, args={'wait': 7}, meta={'carId': item['original_id']})
+            yield scrapy.Request(url, callback=self.parse_detail, meta={'carId': item['original_id']})
 
     def parse_detail(self, response):
         item = TangecheItem()
@@ -76,14 +76,16 @@ class TangecheSpider(scrapy.Spider):
             first_ratio = int(financeInfo[i]['prepaidRate']/100)
             final_month_price = financialPlan['finalPayInstallment']
             final_payment = financialPlan['allFinalPayment']
-            item['schemes'] = {"period": "12",
+            period = '12'
+            final_period = '36'
+            scheme = {"period": period,
                                 "first_price": first_price,
                                 "month_price": month_price,
                                 "final": [{"final_month_price": final_month_price,
                                            "final_payment": final_payment,
-                                           "final_period": "36"}],
-                                "first_ratio": first_ratio},
-            schemes.append(item['schemes'])
+                                           "final_period": final_period}],
+                                "first_ratio": first_ratio}
+            schemes.append(scheme)
             i += 1
         item['schemes'] = json.dumps(schemes)
         if item['original_id'].count('-') > 0:

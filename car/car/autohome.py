@@ -529,7 +529,7 @@ def fetchCarInfo(html):
                         elif id == 48 or id == 976:
                             GraspTheData(v, "valueitems", ret, "central_diff_lock", dic)
                         # 后桥限滑差速器/差速锁
-                        elif id == 977:
+                        elif id == 977 or id == 1339:
                             GraspTheData(v, "valueitems", ret, "back_diff_lock", dic)
                         # 整体主动转向系统
                         elif id == 46 or id == 404:
@@ -568,7 +568,7 @@ def fetchCarInfo(html):
                         id = int(v["id"])
 
                         # 电动天窗
-                        if id == 583:
+                        if id == 583 or id == 50:
                             GraspTheData(v, "valueitems", ret, "e_sunroof", dic)
                         # 全景天窗
                         elif id == 584:
@@ -580,7 +580,7 @@ def fetchCarInfo(html):
                         elif id == 54 or id == 525:
                             GraspTheData(v, "valueitems", ret, "alloy_wheel", dic)
                         # 电动后备厢
-                        elif id == 452 or id == 452:
+                        elif id == 452 or id == 57:
                             GraspTheData(v, "valueitems", ret, "e_cargo", dic)
                         # 发动机电子防盗
                         elif id == 63 or id == 481:
@@ -791,22 +791,22 @@ def fetchCarInfo(html):
 
 
                         # 自动头灯
-                        if id == 441:
+                        if id == 441 or id == 129:
                             GraspTheData(v, "valueitems", ret, "head_light", dic)
                         # 转向辅助灯
-                        elif id == 1161:
+                        elif id == 1161 or id == 130:
                             GraspTheData(v, "valueitems", ret, "turn_light", dic)
                         # 前雾灯
                         elif id == 1242 or id == 619:
                             GraspTheData(v, "valueitems", ret, "front_fog_lamp", dic)
                         # 大灯高度可调
-                        elif id == 620:
+                        elif id == 620 or id == 132:
                             GraspTheData(v, "valueitems", ret, "light_height_adjt", dic)
                         # 大灯清洗装置
-                        elif id == 621:
+                        elif id == 621 or id == 134:
                             GraspTheData(v, "valueitems", ret, "light_clean_dev", dic)
                         # 车内氛围灯
-                        elif id == 453:
+                        elif id == 453 or id == 136:
                             GraspTheData(v, "valueitems", ret, "mood_light", dic)
                         else:
                             pass

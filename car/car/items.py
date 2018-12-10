@@ -32,6 +32,7 @@ class CarItem(scrapy.Item):
     car_name = scrapy.Field()
     car_type = scrapy.Field()                      # 0/1是否显示电动机表
     series_name = scrapy.Field()                   # 车系名称
+    series_id = scrapy.Field()                     # 车系id
     brand_name = scrapy.Field()                    # 品牌名称
     produce_type_str = scrapy.Field()              # 生产方式
     manufacturer = scrapy.Field()                  # 厂商
