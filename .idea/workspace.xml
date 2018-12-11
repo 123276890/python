@@ -7,56 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec2549ad-63f5-42d0-9b31-0c022d685bfc" name="Default Changelist" comment="小改">
-      <change afterPath="$PROJECT_DIR$/class_func.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASF.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/ASF.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Class.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/Class.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClassPrivate.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/ClassPrivate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CustomClasses.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/CustomClasses.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnumerationClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/EnumerationClass.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FloatAndInteger.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/FloatAndInteger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unicode.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/Unicode.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome.js" beforeDir="false" afterPath="$PROJECT_DIR$/study/autohome.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/autohome.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome_go.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/autohome_go.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/car/car/autohome.py" beforeDir="false" afterPath="$PROJECT_DIR$/car/car/autohome.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/car/car/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/car/car/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/car/car/spiders/car_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/car/car/spiders/car_spider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/car_car_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/car_car_spider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/car_pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/car_pipelines.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conditional.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/conditional.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cycle.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/cycle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataTypeAndVariable.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/dataTypeAndVariable.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/def.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/def.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/draft.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/draft.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/exercise.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise1.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/exercise1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise10.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/exercise10.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise11.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/exercise11.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise2.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/exercise2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise3.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/exercise3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise4.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/exercise4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise5.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/exercise5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise6.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/exercise6.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise7.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/exercise7.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise8.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/exercise8.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise9.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/exercise9.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/first.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/first.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/first2.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/first2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/func.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/func.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hex().py" beforeDir="false" afterPath="$PROJECT_DIR$/study/hex().py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/input.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/list.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metaclass.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/metaclass.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phantomJsTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/phantomJsTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/sql_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tangeche/tangeche/spiders/tangeche_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/tangeche/tangeche/spiders/tangeche_spider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/study/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/test2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test3.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/test3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text_strip.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/text_strip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_func.py" beforeDir="false" afterPath="$PROJECT_DIR$/class_func.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -73,6 +26,7 @@
     <SUITE FILE_PATH="coverage/python$input.coverage" NAME="input Coverage Results" MODIFIED="1539569973856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$EnumerationClass.coverage" NAME="EnumerationClass Coverage Results" MODIFIED="1540454738068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$stater__1_.coverage" NAME="stater (1) Coverage Results" MODIFIED="1544424868929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tangeche/tangeche" />
+    <SUITE FILE_PATH="coverage/python$1.coverage" NAME="1 Coverage Results" MODIFIED="1544493640795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/python$exercise1.coverage" NAME="exercise1 Coverage Results" MODIFIED="1539587173099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$FloatAndInteger.coverage" NAME="FloatAndInteger Coverage Results" MODIFIED="1539569442222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$cycle.coverage" NAME="cycle Coverage Results" MODIFIED="1539592245431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -96,7 +50,7 @@
     <SUITE FILE_PATH="coverage/python$huxiu_spider.coverage" NAME="huxiu_spider Coverage Results" MODIFIED="1539937044758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/projectHuxiu/projectHuxiu/spiders" />
     <SUITE FILE_PATH="coverage/python$phantomJsTest.coverage" NAME="phantomJsTest Coverage Results" MODIFIED="1541575738526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$draft.coverage" NAME="draft Coverage Results" MODIFIED="1541142465734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python$stater.coverage" NAME="stater Coverage Results" MODIFIED="1544428541684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/car/car" />
+    <SUITE FILE_PATH="coverage/python$stater.coverage" NAME="stater Coverage Results" MODIFIED="1544490507559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/car/car" />
     <SUITE FILE_PATH="coverage/python$exercise8.coverage" NAME="exercise8 Coverage Results" MODIFIED="1540434711791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$first2.coverage" NAME="first2 Coverage Results" MODIFIED="1539337216226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$stackoverflow__1_.coverage" NAME="stackoverflow (1) Coverage Results" MODIFIED="1539936428391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SpiderObject/SpiderObject" />
@@ -160,22 +114,10 @@
       <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/car/car/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="18" column="76" selection-start-line="18" selection-start-column="76" selection-end-line="18" selection-end-column="76" />
+            <state relative-caret-position="13">
+              <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
               <folding>
                 <element signature="e#194#208#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="autohome.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/car/car/autohome.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-294">
-              <caret line="114" column="78" lean-forward="true" selection-start-line="114" selection-start-column="78" selection-end-line="114" selection-end-column="78" />
-              <folding>
-                <element signature="e#25#34#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -184,8 +126,8 @@
       <file leaf-file-name="car_spider.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/car/car/spiders/car_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="776">
-              <caret line="170" column="57" lean-forward="true" selection-start-line="170" selection-start-column="57" selection-end-line="170" selection-end-column="57" />
+            <state relative-caret-position="1762">
+              <caret line="100" column="59" lean-forward="true" selection-start-line="100" selection-start-column="59" selection-end-line="100" selection-end-column="59" />
               <folding>
                 <element signature="e#26#39#0" expanded="true" />
               </folding>
@@ -193,11 +135,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/car/car/items.py">
+      <file leaf-file-name="class_func.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/class_func.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="34" column="13" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="13" />
+            <state relative-caret-position="423">
+              <caret line="42" column="75" selection-start-line="42" selection-start-column="75" selection-end-line="42" selection-end-column="75" />
+              <folding>
+                <element signature="e#30#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -207,6 +161,18 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="114">
               <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tangeche_spider.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tangeche/tangeche/spiders/tangeche_spider.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="381">
+              <caret line="83" column="35" selection-start-line="83" selection-start-column="35" selection-end-line="83" selection-end-column="35" />
+              <folding>
+                <element signature="e#26#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -223,7 +189,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>brand</find>
       <find>sett</find>
       <find>'settings'</find>
       <find>settings</find>
@@ -253,6 +218,7 @@
       <find>DOWNLOAD</find>
       <find>motor</find>
       <find>e_car</find>
+      <find>market</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -261,7 +227,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CustomClasses.py" />
         <option value="$PROJECT_DIR$/EnumerationClass.py" />
         <option value="$PROJECT_DIR$/exercise10.py" />
         <option value="$PROJECT_DIR$/metaclass.py" />
@@ -305,13 +270,14 @@
         <option value="$PROJECT_DIR$/financial/financial/spiders/hs_financial_spider.py" />
         <option value="$PROJECT_DIR$/bevol/bevol/spiders/bevol_spider.py" />
         <option value="$PROJECT_DIR$/financial/financial/spiders/md_financial_spider.py" />
-        <option value="$PROJECT_DIR$/class_func.py" />
         <option value="$PROJECT_DIR$/tangeche/tangeche/settings.py" />
         <option value="$PROJECT_DIR$/tangeche/tangeche/spiders/tangeche_spider.py" />
         <option value="$PROJECT_DIR$/car/car/items.py" />
         <option value="$PROJECT_DIR$/car/car/spiders/car_spider.py" />
         <option value="$PROJECT_DIR$/car/car/pipelines.py" />
         <option value="$PROJECT_DIR$/car/car/autohome.py" />
+        <option value="$PROJECT_DIR$/test/1.py" />
+        <option value="$PROJECT_DIR$/class_func.py" />
       </list>
     </option>
   </component>
@@ -343,24 +309,6 @@
             <path>
               <item name="python" type="b2602c69:ProjectViewProjectNode" />
               <item name="python" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="car" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="car" type="462c0819:PsiDirectoryNode" />
-              <item name="car" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="car" type="462c0819:PsiDirectoryNode" />
-              <item name="car" type="462c0819:PsiDirectoryNode" />
-              <item name="spiders" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -402,7 +350,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.stater">
+  <component name="RunManager" selected="Python.1">
+    <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="Unicode" type="PythonConfigurationType" factoryName="Python">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -517,25 +484,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="text_strip" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/study/text_strip.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <list>
       <item itemvalue="Python.hex()" />
       <item itemvalue="Python.Unicode" />
@@ -543,15 +491,15 @@
       <item itemvalue="Python.stater (1)" />
       <item itemvalue="Python.stater (2)" />
       <item itemvalue="Python.stater (3)" />
-      <item itemvalue="Python.text_strip" />
+      <item itemvalue="Python.1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.1" />
         <item itemvalue="Python.stater" />
         <item itemvalue="Python.stater (1)" />
         <item itemvalue="Python.stater (2)" />
         <item itemvalue="Python.stater (3)" />
-        <item itemvalue="Python.text_strip" />
       </list>
     </recent_temporary>
   </component>
@@ -877,7 +825,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544176415769</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="小改">
+      <created>1544429757251</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1544429757251</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -892,7 +847,7 @@
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32954547" />
-      <window_info active="true" anchor="bottom" x="328" y="128" width="1292" height="728" id="Run" order="2" sideWeight="0.49733758" visible="true" weight="0.49328858" />
+      <window_info active="true" anchor="bottom" x="328" y="128" width="1292" height="728" id="Run" order="2" sideWeight="0.49733758" visible="true" weight="0.2427293" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49946752" weight="0.4217002" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49668875" visible="true" weight="0.16613418" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -1093,13 +1048,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/autohome_test/autohome.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="288" selection-start-line="288" selection-end-line="288" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/study/autohome_go.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1601">
@@ -1209,13 +1157,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="488">
           <caret line="243" column="46" lean-forward="true" selection-start-line="243" selection-start-column="46" selection-end-line="243" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car/car/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="38" column="125" selection-start-line="38" selection-start-column="125" selection-end-line="38" selection-end-column="125" />
         </state>
       </provider>
     </entry>
@@ -1388,27 +1329,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tangeche/tangeche/spiders/tangeche_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="59" column="22" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
-          <folding>
-            <element signature="e#26#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tangeche/tangeche/stater.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class_func.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1429,13 +1353,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/car/car/stater.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/car/car/items.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="397">
@@ -1443,10 +1360,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/car/car/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="91" column="1" lean-forward="true" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/car/stater.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/car/autohome.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2166">
+          <caret line="114" column="78" lean-forward="true" selection-start-line="114" selection-start-column="78" selection-end-line="114" selection-end-column="78" />
+          <folding>
+            <element signature="e#25#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/car/car/spiders/car_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="776">
-          <caret line="170" column="57" lean-forward="true" selection-start-line="170" selection-start-column="57" selection-end-line="170" selection-end-column="57" />
+        <state relative-caret-position="1762">
+          <caret line="100" column="59" lean-forward="true" selection-start-line="100" selection-start-column="59" selection-end-line="100" selection-end-column="59" />
           <folding>
             <element signature="e#26#39#0" expanded="true" />
           </folding>
@@ -1455,20 +1396,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/car/car/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="18" column="76" selection-start-line="18" selection-start-column="76" selection-end-line="18" selection-end-column="76" />
+        <state relative-caret-position="13">
+          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
           <folding>
             <element signature="e#194#208#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/car/car/autohome.py">
+    <entry file="file://$PROJECT_DIR$/tangeche/tangeche/spiders/tangeche_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-294">
-          <caret line="114" column="78" lean-forward="true" selection-start-line="114" selection-start-column="78" selection-end-line="114" selection-end-column="78" />
+        <state relative-caret-position="381">
+          <caret line="83" column="35" selection-start-line="83" selection-start-column="35" selection-end-line="83" selection-end-column="35" />
           <folding>
-            <element signature="e#25#34#0" expanded="true" />
+            <element signature="e#26#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class_func.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="42" column="75" selection-start-line="42" selection-start-column="75" selection-end-line="42" selection-end-column="75" />
+          <folding>
+            <element signature="e#30#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
