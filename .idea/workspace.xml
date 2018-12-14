@@ -6,10 +6,13 @@
     <bookmark url="file://$PROJECT_DIR$/SpiderObject/SpiderObject/spiders/stackoverflow_spider.py" description="def parse_question(self, response):" line="12" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec2549ad-63f5-42d0-9b31-0c022d685bfc" name="Default Changelist" comment="小改">
-      <change afterPath="$PROJECT_DIR$/test/1.py" afterDir="false" />
+    <list default="true" id="ec2549ad-63f5-42d0-9b31-0c022d685bfc" name="Default Changelist" comment="default">
+      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/Collatz.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/characterGraphNetwork.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/guessTheNumber.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/itemListing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/splitList.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_func.py" beforeDir="false" afterPath="$PROJECT_DIR$/class_func.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,18 +27,34 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/python$exercise.coverage" NAME="exercise Coverage Results" MODIFIED="1539683081370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$input.coverage" NAME="input Coverage Results" MODIFIED="1539569973856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python$EnumerationClass.coverage" NAME="EnumerationClass Coverage Results" MODIFIED="1540454738068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$stater__1_.coverage" NAME="stater (1) Coverage Results" MODIFIED="1544424868929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tangeche/tangeche" />
-    <SUITE FILE_PATH="coverage/python$1.coverage" NAME="1 Coverage Results" MODIFIED="1544493640795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/python$exercise1.coverage" NAME="exercise1 Coverage Results" MODIFIED="1539587173099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$FloatAndInteger.coverage" NAME="FloatAndInteger Coverage Results" MODIFIED="1539569442222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1543386439122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python$car_spider.coverage" NAME="car_spider Coverage Results" MODIFIED="1542354205245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/car/car/spiders" />
+    <SUITE FILE_PATH="coverage/python$exercise5.coverage" NAME="exercise5 Coverage Results" MODIFIED="1539675681328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python$first.coverage" NAME="first Coverage Results" MODIFIED="1539337220921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python$phantomJsTest.coverage" NAME="phantomJsTest Coverage Results" MODIFIED="1541575738526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python$stater.coverage" NAME="stater Coverage Results" MODIFIED="1544771573198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/car/car" />
+    <SUITE FILE_PATH="coverage/python$characterGraphNetwork.coverage" NAME="characterGraphNetwork Coverage Results" MODIFIED="1544772919523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getStartedWithQuickProgramming" />
+    <SUITE FILE_PATH="coverage/python$first2.coverage" NAME="first2 Coverage Results" MODIFIED="1539337216226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python$stackoverflow__1_.coverage" NAME="stackoverflow (1) Coverage Results" MODIFIED="1539936428391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SpiderObject/SpiderObject" />
+    <SUITE FILE_PATH="coverage/python$ASF.coverage" NAME="ASF Coverage Results" MODIFIED="1539337204283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1542094997552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python$def.coverage" NAME="def Coverage Results" MODIFIED="1539597874396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python$exercise4.coverage" NAME="exercise4 Coverage Results" MODIFIED="1539671311171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python$Class.coverage" NAME="Class Coverage Results" MODIFIED="1540432567698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python$stater__3_.coverage" NAME="stater (3) Coverage Results" MODIFIED="1544175915443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bevol/bevol" />
+    <SUITE FILE_PATH="coverage/python$EnumerationClass.coverage" NAME="EnumerationClass Coverage Results" MODIFIED="1540454738068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python$1.coverage" NAME="1 Coverage Results" MODIFIED="1544493640795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/python$splitList.coverage" NAME="splitList Coverage Results" MODIFIED="1544771456374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getStartedWithQuickProgramming" />
     <SUITE FILE_PATH="coverage/python$cycle.coverage" NAME="cycle Coverage Results" MODIFIED="1539592245431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$hex__.coverage" NAME="hex() Coverage Results" MODIFIED="1539593474151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$huxiu_spider__1_.coverage" NAME="huxiu_spider (1) Coverage Results" MODIFIED="1539940301176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProjectHuxiu/ProjectHuxiu/spiders" />
-    <SUITE FILE_PATH="coverage/python$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1543386439122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$exercise9.coverage" NAME="exercise9 Coverage Results" MODIFIED="1540438820586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python$car_spider.coverage" NAME="car_spider Coverage Results" MODIFIED="1542354205245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/car/car/spiders" />
+    <SUITE FILE_PATH="coverage/python$guessTheNumber.coverage" NAME="guessTheNumber Coverage Results" MODIFIED="1544756147996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getStartedWithQuickProgramming" />
     <SUITE FILE_PATH="coverage/python$demo.coverage" NAME="demo Coverage Results" MODIFIED="1541664734602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python$Collatz.coverage" NAME="Collatz Coverage Results" MODIFIED="1544757126393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getStartedWithQuickProgramming" />
     <SUITE FILE_PATH="coverage/python$exercise6.coverage" NAME="exercise6 Coverage Results" MODIFIED="1539678547296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$Unicode.coverage" NAME="Unicode Coverage Results" MODIFIED="1542267013230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$CustomClasses.coverage" NAME="CustomClasses Coverage Results" MODIFIED="1540453519892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -44,28 +63,17 @@
     <SUITE FILE_PATH="coverage/python$exercise3.coverage" NAME="exercise3 Coverage Results" MODIFIED="1539659442265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$conditional.coverage" NAME="conditional Coverage Results" MODIFIED="1539590330122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$crawler_test.coverage" NAME="crawler_test Coverage Results" MODIFIED="1542354106052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/autohome_test" />
-    <SUITE FILE_PATH="coverage/python$exercise5.coverage" NAME="exercise5 Coverage Results" MODIFIED="1539675681328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python$first.coverage" NAME="first Coverage Results" MODIFIED="1539337220921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$exercise2.coverage" NAME="exercise2 Coverage Results" MODIFIED="1539590715687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$huxiu_spider.coverage" NAME="huxiu_spider Coverage Results" MODIFIED="1539937044758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/projectHuxiu/projectHuxiu/spiders" />
-    <SUITE FILE_PATH="coverage/python$phantomJsTest.coverage" NAME="phantomJsTest Coverage Results" MODIFIED="1541575738526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$draft.coverage" NAME="draft Coverage Results" MODIFIED="1541142465734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python$stater.coverage" NAME="stater Coverage Results" MODIFIED="1544490507559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/car/car" />
     <SUITE FILE_PATH="coverage/python$exercise8.coverage" NAME="exercise8 Coverage Results" MODIFIED="1540434711791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python$first2.coverage" NAME="first2 Coverage Results" MODIFIED="1539337216226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python$stackoverflow__1_.coverage" NAME="stackoverflow (1) Coverage Results" MODIFIED="1539936428391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SpiderObject/SpiderObject" />
+    <SUITE FILE_PATH="coverage/python$itemListing.coverage" NAME="itemListing Coverage Results" MODIFIED="1544777989869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getStartedWithQuickProgramming" />
     <SUITE FILE_PATH="coverage/python$exercise10.coverage" NAME="exercise10 Coverage Results" MODIFIED="1540456354654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$text_strip.coverage" NAME="text_strip Coverage Results" MODIFIED="1543918321947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$stackoverflow.coverage" NAME="stackoverflow Coverage Results" MODIFIED="1539839930705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Scrapy" />
-    <SUITE FILE_PATH="coverage/python$ASF.coverage" NAME="ASF Coverage Results" MODIFIED="1539337204283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1542094997552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python$def.coverage" NAME="def Coverage Results" MODIFIED="1539597874396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$ClassPrivate.coverage" NAME="ClassPrivate Coverage Results" MODIFIED="1540434662864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python$exercise4.coverage" NAME="exercise4 Coverage Results" MODIFIED="1539671311171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python$Class.coverage" NAME="Class Coverage Results" MODIFIED="1540432567698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$exercise11.coverage" NAME="exercise11 Coverage Results" MODIFIED="1541817220907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$metaclass.coverage" NAME="metaclass Coverage Results" MODIFIED="1540517869836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python$stater__3_.coverage" NAME="stater (3) Coverage Results" MODIFIED="1544175915443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bevol/bevol" />
     <SUITE FILE_PATH="coverage/python$dataTypeAndVariable.coverage" NAME="dataTypeAndVariable Coverage Results" MODIFIED="1539585976968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/Applications/Python 3.7" />
     <SUITE FILE_PATH="coverage/python$ASF2.coverage" NAME="ASF2 Coverage Results" MODIFIED="1539337196047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$exercise7.coverage" NAME="exercise7 Coverage Results" MODIFIED="1539679700887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -110,74 +118,7 @@
     <favorites_list name="python" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/car/car/pipelines.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13">
-              <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-              <folding>
-                <element signature="e#194#208#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="car_spider.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/car/car/spiders/car_spider.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1762">
-              <caret line="100" column="59" lean-forward="true" selection-start-line="100" selection-start-column="59" selection-end-line="100" selection-end-column="59" />
-              <folding>
-                <element signature="e#26#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="class_func.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/class_func.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="42" column="75" selection-start-line="42" selection-start-column="75" selection-end-line="42" selection-end-column="75" />
-              <folding>
-                <element signature="e#30#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stater.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/car/car/stater.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tangeche_spider.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tangeche/tangeche/spiders/tangeche_spider.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="83" column="35" selection-start-line="83" selection-start-column="35" selection-end-line="83" selection-end-column="35" />
-              <folding>
-                <element signature="e#26#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -227,11 +168,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/EnumerationClass.py" />
-        <option value="$PROJECT_DIR$/exercise10.py" />
-        <option value="$PROJECT_DIR$/metaclass.py" />
-        <option value="$PROJECT_DIR$/list.py" />
-        <option value="$PROJECT_DIR$/draft.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/phantomJsTest.py" />
         <option value="$PROJECT_DIR$/car/car/middlewares/middleware.py" />
@@ -278,6 +214,11 @@
         <option value="$PROJECT_DIR$/car/car/autohome.py" />
         <option value="$PROJECT_DIR$/test/1.py" />
         <option value="$PROJECT_DIR$/class_func.py" />
+        <option value="$PROJECT_DIR$/getStartedWithQuickProgramming/guessTheNumber.py" />
+        <option value="$PROJECT_DIR$/getStartedWithQuickProgramming/Collatz.py" />
+        <option value="$PROJECT_DIR$/getStartedWithQuickProgramming/splitList.py" />
+        <option value="$PROJECT_DIR$/getStartedWithQuickProgramming/characterGraphNetwork.py" />
+        <option value="$PROJECT_DIR$/getStartedWithQuickProgramming/itemListing.py" />
       </list>
     </option>
   </component>
@@ -291,7 +232,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="1912" />
+    <option name="y" value="31" />
     <option name="width" value="1920" />
     <option name="height" value="991" />
   </component>
@@ -309,6 +251,11 @@
             <path>
               <item name="python" type="b2602c69:ProjectViewProjectNode" />
               <item name="python" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="getStartedWithQuickProgramming" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -350,8 +297,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.1">
-    <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.itemListing">
+    <configuration name="Collatz" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -359,12 +306,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getStartedWithQuickProgramming" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getStartedWithQuickProgramming/Collatz.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -389,6 +336,25 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="characterGraphNetwork" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getStartedWithQuickProgramming" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getStartedWithQuickProgramming/characterGraphNetwork.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="hex()" type="PythonConfigurationType" factoryName="Python">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -408,7 +374,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="stater (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="itemListing" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -416,18 +382,18 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tangeche/tangeche" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getStartedWithQuickProgramming" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tangeche/tangeche/stater.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getStartedWithQuickProgramming/itemListing.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="stater (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="splitList" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -435,31 +401,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/financial/financial" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getStartedWithQuickProgramming" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/financial/financial/stater.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="stater (3)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bevol/bevol" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bevol/bevol/stater.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getStartedWithQuickProgramming/splitList.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -488,18 +435,18 @@
       <item itemvalue="Python.hex()" />
       <item itemvalue="Python.Unicode" />
       <item itemvalue="Python.stater" />
-      <item itemvalue="Python.stater (1)" />
-      <item itemvalue="Python.stater (2)" />
-      <item itemvalue="Python.stater (3)" />
-      <item itemvalue="Python.1" />
+      <item itemvalue="Python.Collatz" />
+      <item itemvalue="Python.splitList" />
+      <item itemvalue="Python.characterGraphNetwork" />
+      <item itemvalue="Python.itemListing" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.1" />
+        <item itemvalue="Python.itemListing" />
+        <item itemvalue="Python.characterGraphNetwork" />
         <item itemvalue="Python.stater" />
-        <item itemvalue="Python.stater (1)" />
-        <item itemvalue="Python.stater (2)" />
-        <item itemvalue="Python.stater (3)" />
+        <item itemvalue="Python.splitList" />
+        <item itemvalue="Python.Collatz" />
       </list>
     </recent_temporary>
   </component>
@@ -832,15 +779,21 @@
       <option name="project" value="LOCAL" />
       <updated>1544429757251</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="default">
+      <created>1544493780457</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1544493780457</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="3290000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="991" extended-state="0" />
-    <editor active="true" />
+    <frame x="1912" y="31" width="1920" height="991" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5026624" side_tool="true" weight="0.49328858" />
@@ -849,7 +802,7 @@
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32954547" />
       <window_info active="true" anchor="bottom" x="328" y="128" width="1292" height="728" id="Run" order="2" sideWeight="0.49733758" visible="true" weight="0.2427293" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49946752" weight="0.4217002" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49668875" visible="true" weight="0.16613418" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49668875" visible="true" weight="0.16773163" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32960597" />
@@ -866,28 +819,28 @@
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32997763" />
     </layout>
     <layout-to-restore>
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49668875" visible="true" weight="0.16613418" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.32960597" />
+      <window_info anchor="bottom" x="328" y="128" width="1292" height="728" id="Run" order="2" sideWeight="0.49733758" weight="0.49328858" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info id="Favorites" order="2" sideWeight="0.5033113" side_tool="true" weight="0.1629393" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49668875" visible="true" weight="0.16613418" />
       <window_info id="Structure" order="1" sideWeight="0.50223714" side_tool="true" weight="0.15335463" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" x="328" y="128" width="1292" height="728" id="Run" order="2" sideWeight="0.49733758" weight="0.49328858" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32885906" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32954547" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" x="2178" y="93" width="1364" height="694" id="Debug" order="5" sideWeight="0.49733758" weight="0.37807608" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49946752" weight="0.4217002" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5026624" side_tool="true" weight="0.49328858" />
-      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32960597" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32885906" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32997763" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Favorites" order="2" sideWeight="0.5033113" side_tool="true" weight="0.1629393" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32954547" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -913,7 +866,8 @@
     <MESSAGE value="金融方案" />
     <MESSAGE value="美丽修行" />
     <MESSAGE value="小改" />
-    <option name="LAST_COMMIT_MESSAGE" value="小改" />
+    <MESSAGE value="default" />
+    <option name="LAST_COMMIT_MESSAGE" value="default" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1028,6 +982,16 @@
           <line>67</line>
           <option name="timeStamp" value="812" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/getStartedWithQuickProgramming/itemListing.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="818" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/getStartedWithQuickProgramming/itemListing.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="821" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -1036,7 +1000,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="817" />
+      <option name="time" value="822" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -1048,34 +1012,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/study/autohome_go.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1601">
-          <caret line="2422" column="3" lean-forward="true" selection-start-line="2422" selection-start-column="3" selection-end-line="2422" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/venv/lib/python3.7/site-packages/scrapy/item.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.1/python_stubs/1684234341/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="5180" column="8" selection-start-line="5180" selection-start-column="8" selection-end-line="5180" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/study/car_pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="37" column="19" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/venv/lib/python3.7/site-packages/pymysql/cursors.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-309">
@@ -1289,9 +1225,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="52" column="85" selection-start-line="52" selection-start-column="85" selection-end-line="52" selection-end-column="85" />
-          <folding>
-            <element signature="e#26#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1318,9 +1251,6 @@
           <caret line="26" column="68" lean-forward="true" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tangeche/tangeche/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/tangeche/tangeche/settings.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1360,46 +1290,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/car/car/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="91" column="1" lean-forward="true" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car/car/stater.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/car/car/autohome.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2166">
           <caret line="114" column="78" lean-forward="true" selection-start-line="114" selection-start-column="78" selection-end-line="114" selection-end-column="78" />
           <folding>
             <element signature="e#25#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car/car/spiders/car_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1762">
-          <caret line="100" column="59" lean-forward="true" selection-start-line="100" selection-start-column="59" selection-end-line="100" selection-end-column="59" />
-          <folding>
-            <element signature="e#26#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car/car/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-          <folding>
-            <element signature="e#194#208#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1414,6 +1310,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/car/car/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1159">
+          <caret line="61" selection-start-line="58" selection-start-column="18" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/car/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="893">
+          <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+          <folding>
+            <element signature="e#194#208#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/guessTheNumber.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/Collatz.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/splitList.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/characterGraphNetwork.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/itemListing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/car/spiders/car_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="100" column="59" selection-start-line="100" selection-start-column="59" selection-end-line="100" selection-end-column="59" />
+          <folding>
+            <element signature="e#26#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class_func.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="37" column="67" lean-forward="true" selection-start-line="37" selection-start-column="67" selection-end-line="37" selection-end-column="67" />
+          <folding>
+            <element signature="e#30#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -1421,13 +1389,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/class_func.py">
+    <entry file="file://$PROJECT_DIR$/car/car/stater.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="42" column="75" selection-start-line="42" selection-start-column="75" selection-end-line="42" selection-end-column="75" />
-          <folding>
-            <element signature="e#30#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="114">
+          <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
         </state>
       </provider>
     </entry>
