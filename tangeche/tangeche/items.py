@@ -41,3 +41,17 @@ class TangecheItem(scrapy.Item):
     schemes = scrapy.Field()                             # 金融方案
     lisense_city = scrapy.Field()                        # 上牌城市
     shops = scrapy.Field()                               # 门店
+    shopList = scrapy.Field()
+
+
+class TgcShopItem(scrapy.Item):
+    source_id = scrapy.Field()                           # 数据来源ID 弹个车 2
+    original_id = scrapy.Field()                         # 店铺id
+    shop_type = scrapy.Field()                           # 店铺类型 0:4S店，1:融资方案店
+    shop_name = scrapy.Field()                           # 店铺名称
+    shop_province = scrapy.Field()                       # 所在省份
+    shop_city = scrapy.Field()                           # 所在城市
+    shop_district = scrapy.Field()                       # 所在区
+    shop_address = scrapy.Field()                        # 地址
+    shop_telphone = scrapy.Field()                       # 店铺电话
+

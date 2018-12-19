@@ -10,7 +10,7 @@ import os, re, shutil
 fName = re.compile(r'spam(\d{3})\.txt')
 NFname = []
 
-for foldername, subfoldersm,filename in os.walk('/Users/zhuangganglong/explore'):
+for foldername, subfoldersm, filename in os.walk('/Users/zhuangganglong/explore'):
     for f in filename:
         if fName.search(f) != None:
             fSource = str(foldername) + '/' + str(f)

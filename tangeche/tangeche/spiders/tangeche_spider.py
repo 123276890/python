@@ -2,8 +2,9 @@
 
 
 import scrapy
-from ..items import TangecheItem
+from ..items import TangecheItem, TgcShopItem
 from scrapy_splash import SplashRequest
+from .tgcShop_spider import tgcShop
 import requests
 import json
 import time
@@ -39,6 +40,12 @@ class TangecheSpider(scrapy.Spider):
         result = requests.post(url, data=content)
         url2 = 'https://leaseconsumer.souche.com//v1/newCarDetailApi/getModelDetailForPC.json'
         result2 = requests.post(url2, data=content)
+        content1 = {'modelCode': item['original_id'], 'page': 1, 'pageSize': 100}
+        url3 = 'https://leaseconsumer.souche.com//v1/followShopApi/getShopPage.json'
+        result3 = requests.post(url3, data=content1)
+        shopData = (json.loads(result3.text))['data']
+        total_page = shopData['totalPage']
+        item['shopList'] = tgcShop.tgc_shop(total_page, item['original_id'])
         financialPlan = (json.loads(result.text))['data'][0]
         financeInfo = financialPlan['layeredFinanceInfo']
         carInfo = (json.loads(result2.text))['data']['carInfo']

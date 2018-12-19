@@ -127,7 +127,8 @@ class bevolSpider(scrapy.Spider):
                 compositions.append(composition)
         item['cosmetics_ingredients'] = json.dumps(ingreduents, ensure_ascii=False)
         item['compositions'] = json.dumps(compositions, ensure_ascii=False)
-        yield item
+        if len(item['compositions']) > 0:
+            yield item
 
     def detail_info(url):
         response = requests.get(url)
