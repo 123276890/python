@@ -10,9 +10,15 @@ class func(object):
     def __init__(self):
         pass
 
-    # 价格换算
-    def conversion_price(p):
-        if type(p) == str:
+    # 价格去掉.00
+    def price_reduce(p):
+        p = p.split('.')
+        p = p[0]
+        return p
+
+    # 价格换算 万元->元
+    def conversion_price(p, isWan=''):
+        if type(p) == str and isWan == '':
             # 暂无
             if p.count("暂无") > 0:
                p = "暂无"
@@ -31,7 +37,12 @@ class func(object):
                 pass
         # 6.58 -> 65800
         else:
-            p = int((float(p) + 10 ** -5) * 10000)
+            if p.count('厂商') > 0 and isWan != '':
+                p = p.split("：")
+                p = p[1].replace('万', '')
+                p = int((float(p) + 10 ** -5) * 10000)
+            else:
+                p = int((float(p) + 10 ** -5) * 10000)
         return p
 
     # final尾款方案
@@ -48,4 +59,15 @@ class func(object):
             n = {'period': period, 'first_price': first_price, 'month_price': month_price, 'first_ratio': first_ratio}
 
         return n
+
+    # 取出省份 城市 区
+    def provinceCity(address):
+        # 直辖市
+        central_government = ['北京', '天津', '上海', '重庆']
+        province = re.compile(r"(\w+省|\w+自治区|内蒙古)?").match(address)
+        city = re.compile(r"(\w+市|\w+盟)").match(address)
+        district = re.compile(r"(\w+省|\w+自治区|内蒙古)?(\w+市|\w+盟)?(\w+区)?").match(address)
+        pass
+
+
 
