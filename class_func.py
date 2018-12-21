@@ -62,12 +62,61 @@ class func(object):
 
     # 取出省份 城市 区
     def provinceCity(address):
+        p_c_d = []
+        province = re.compile(r"(\w+省|\w+自治区|内蒙古|河北)").match(address)
+
+        if province != None:
+            province = province.group(1)
+            p_c_d.append(province)
+            address = address.replace(province, '')
+            func.ReCityDistrict(address, p_c_d)
+        else:
+            func.ReCityDistrict(address, p_c_d)
+
+        return p_c_d
+
+    def ReCityDistrict(address, p_c_d):
         # 直辖市
         central_government = ['北京', '天津', '上海', '重庆']
-        province = re.compile(r"(\w+省|\w+自治区|内蒙古)?").match(address)
-        city = re.compile(r"(\w+市|\w+盟)").match(address)
-        district = re.compile(r"(\w+省|\w+自治区|内蒙古)?(\w+市|\w+盟)?(\w+区)?").match(address)
-        pass
+
+        city = re.compile(r"(\w+?市|\w+盟|石家庄|张家口)").match(address)
+        if city != None:
+            city = city.group(1)
+            for c in central_government:
+                if re.compile(r'%s' % c).search(city) != None:
+                    province = city
+                    p_c_d.append(province)
+                else:
+                    pass
+            p_c_d.append(city)
+            address = address.replace(city, '')
+            district = re.compile(r"(\w+?县|\w+?区)").match(address)
+            if district != None:
+                district = district.group(1)
+                if district.count('小区') > 0:
+                    pass
+                elif district.count('园区') > 0:
+                    pass
+                elif re.compile(r'[a-zA-Z0-9]区').search(district) != None:
+                    pass
+                else:
+                    p_c_d.append(district)
+        else:
+            district = re.compile(r"(\w+?县|\w+?区)").match(address)
+            if district != None:
+                district = district.group(1)
+                if district.count('小区') > 0:
+                    pass
+                elif district.count('园区') > 0:
+                    pass
+                elif re.compile(r'[a-zA-Z0-9]区').search(district) != None:
+                    pass
+                else:
+                    p_c_d.append(district)
+            else:
+                pass
+
+        return p_c_d
 
 
 

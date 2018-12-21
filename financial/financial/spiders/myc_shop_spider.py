@@ -33,5 +33,15 @@ class mycShopSpider(scrapy.Spider):
                 item['shop_address'] = row['detailAddress']
                 item['shop_telphone'] = row['francTelephone']
                 provinceCity = func.provinceCity(item['shop_address'])
-                pass
+                if len(provinceCity) > 2:
+                    item['shop_province'] = provinceCity[0]
+                    item['shop_city'] = provinceCity[1]
+                    item['shop_district'] = provinceCity[2]
+                elif len(provinceCity) > 1:
+                    item['shop_province'] = provinceCity[0]
+                    item['shop_city'] = provinceCity[1]
+                else:
+                    pass
+                item['shop_type'] = '1'
+                yield item
 

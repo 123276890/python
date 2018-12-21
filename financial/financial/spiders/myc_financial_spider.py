@@ -12,12 +12,12 @@ class mycFinancialSpider(scrapy.Spider):
 
     def start_requests(self):
         for i in range(1, 12):
-            yield scrapy.Request(url=self.url + '/www/car?curPage' + str(i), callback=self.parse)
+            yield scrapy.Request(url=self.url + '/www/car?curPage=' + str(i), callback=self.parse)
 
     def parse(self, response):
-        carList = response.xpath('/html/body/div/div[@class="content"]/div/ul')
+        carList = response.xpath('/html/body/div/div[@class="content"]/div/ul/li')
         for car in carList:
-            link = car.xpath('li/a/@href')[0].extract()
+            link = car.xpath('a/@href')[0].extract()
             url = response.urljoin(link)
             carId = (re.compile(r'\d+').findall(link))[0]
             yield scrapy.Request(url, callback=self.detail_parse, meta={'carId': carId})
@@ -66,4 +66,5 @@ class mycFinancialSpider(scrapy.Spider):
                           "购置税": ["妙优车方案已含购置税，您无需支付额外费用"]}
         item['riders'] = json.dumps(item['riders'], ensure_ascii=False)
         item['schemes'] = json.dumps(schemes)
-        pass
+        item['source_id'] = '12'
+        yield item
