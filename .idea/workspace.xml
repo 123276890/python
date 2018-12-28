@@ -6,17 +6,8 @@
     <bookmark url="file://$PROJECT_DIR$/SpiderObject/SpiderObject/spiders/stackoverflow_spider.py" description="def parse_question(self, response):" line="12" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec2549ad-63f5-42d0-9b31-0c022d685bfc" name="Default Changelist" comment="妙优车">
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/downloadXkcd.py" afterDir="false" />
+    <list default="true" id="ec2549ad-63f5-42d0-9b31-0c022d685bfc" name="Default Changelist" comment="default">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bevol/bevol/spiders/bevol_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/bevol/bevol/spiders/bevol_spider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bevol/bevol/stater.py" beforeDir="false" afterPath="$PROJECT_DIR$/bevol/bevol/stater.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/car/car/stater.py" beforeDir="false" afterPath="$PROJECT_DIR$/car/car/stater.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_func.py" beforeDir="false" afterPath="$PROJECT_DIR$/class_func.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/financial/financial/spiders/myc_shop_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/financial/financial/spiders/myc_shop_spider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/financial/financial/stater.py" beforeDir="false" afterPath="$PROJECT_DIR$/financial/financial/stater.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/splitList.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/splitList.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/1.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/1.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -496,13 +487,6 @@
       <workItem from="1539332630195" duration="128000" />
       <workItem from="1539332794045" duration="2009000" />
     </task>
-    <task id="LOCAL-00005" summary="取出数据 破解未成功">
-      <created>1541669570470</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1541669570470</updated>
-    </task>
     <task id="LOCAL-00006" summary="取出数据 破解未成功">
       <created>1541758254517</created>
       <option name="number" value="00006" />
@@ -839,7 +823,14 @@
       <option name="project" value="LOCAL" />
       <updated>1545647437955</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="default">
+      <created>1545964024850</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1545964024850</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -856,13 +847,13 @@
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32954547" />
       <window_info anchor="bottom" x="328" y="128" width="1292" height="728" id="Run" order="2" sideWeight="0.4968051" weight="0.33668903" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49893504" weight="0.42729306" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49668875" visible="true" weight="0.17252396" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49668875" visible="true" weight="0.17252396" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32960597" />
       <window_info id="Structure" order="1" sideWeight="0.50223714" side_tool="true" weight="0.15335463" />
       <window_info id="Favorites" order="2" sideWeight="0.5033113" side_tool="true" weight="0.1629393" />
-      <window_info active="true" anchor="bottom" x="2178" y="93" width="1364" height="694" id="Debug" order="5" sideWeight="0.4968051" visible="true" weight="0.37807608" />
+      <window_info anchor="bottom" x="2178" y="93" width="1364" height="694" id="Debug" order="5" sideWeight="0.4968051" visible="true" weight="0.37807608" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -920,11 +911,11 @@
     <MESSAGE value="金融方案" />
     <MESSAGE value="美丽修行" />
     <MESSAGE value="小改" />
-    <MESSAGE value="default" />
     <MESSAGE value="编程快速上手" />
     <MESSAGE value="弹个车添加城市" />
     <MESSAGE value="妙优车" />
-    <option name="LAST_COMMIT_MESSAGE" value="妙优车" />
+    <MESSAGE value="default" />
+    <option name="LAST_COMMIT_MESSAGE" value="default" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
