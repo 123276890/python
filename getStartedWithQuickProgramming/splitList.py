@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+#!/usr/bin/env python3
 # 假定有下面这样的列表：
 # spam = ['apples', 'bananas', 'tofu', 'cats']
 # 编写一个函数，它以一个列表值作为参数，返回一个字符串。

@@ -7,8 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec2549ad-63f5-42d0-9b31-0c022d685bfc" name="Default Changelist" comment="妙优车">
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/coinFlip.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/downloadXkcd.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bevol/bevol/spiders/bevol_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/bevol/bevol/spiders/bevol_spider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bevol/bevol/stater.py" beforeDir="false" afterPath="$PROJECT_DIR$/bevol/bevol/stater.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car/car/stater.py" beforeDir="false" afterPath="$PROJECT_DIR$/car/car/stater.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_func.py" beforeDir="false" afterPath="$PROJECT_DIR$/class_func.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/financial/financial/spiders/myc_shop_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/financial/financial/spiders/myc_shop_spider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/financial/financial/stater.py" beforeDir="false" afterPath="$PROJECT_DIR$/financial/financial/stater.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/splitList.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/splitList.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/1.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/1.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,6 +33,7 @@
     <SUITE FILE_PATH="coverage/python$phoneAndEmail.coverage" NAME="phoneAndEmail Coverage Results" MODIFIED="1545013570209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getStartedWithQuickProgramming" />
     <SUITE FILE_PATH="coverage/python$exercise.coverage" NAME="exercise Coverage Results" MODIFIED="1539683081370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$input.coverage" NAME="input Coverage Results" MODIFIED="1539569973856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python$downloadXkcd.coverage" NAME="downloadXkcd Coverage Results" MODIFIED="1545963447961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getStartedWithQuickProgramming" />
     <SUITE FILE_PATH="coverage/python$stater__1_.coverage" NAME="stater (1) Coverage Results" MODIFIED="1545199246312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tangeche/tangeche" />
     <SUITE FILE_PATH="coverage/python$exercise1.coverage" NAME="exercise1 Coverage Results" MODIFIED="1539587173099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$deleteUnwantedFiles.coverage" NAME="deleteUnwantedFiles Coverage Results" MODIFIED="1545038948571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getStartedWithQuickProgramming" />
@@ -36,7 +45,7 @@
     <SUITE FILE_PATH="coverage/python$exercise5.coverage" NAME="exercise5 Coverage Results" MODIFIED="1539675681328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$first.coverage" NAME="first Coverage Results" MODIFIED="1539337220921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$phantomJsTest.coverage" NAME="phantomJsTest Coverage Results" MODIFIED="1541575738526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python$stater.coverage" NAME="stater Coverage Results" MODIFIED="1545634509182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bevol/bevol" />
+    <SUITE FILE_PATH="coverage/python$stater.coverage" NAME="stater Coverage Results" MODIFIED="1545817927757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bevol/bevol" />
     <SUITE FILE_PATH="coverage/python$characterGraphNetwork.coverage" NAME="characterGraphNetwork Coverage Results" MODIFIED="1544772919523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getStartedWithQuickProgramming" />
     <SUITE FILE_PATH="coverage/python$first2.coverage" NAME="first2 Coverage Results" MODIFIED="1539337216226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$stackoverflow__1_.coverage" NAME="stackoverflow (1) Coverage Results" MODIFIED="1539936428391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SpiderObject/SpiderObject" />
@@ -49,7 +58,7 @@
     <SUITE FILE_PATH="coverage/python$Class.coverage" NAME="Class Coverage Results" MODIFIED="1540432567698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$stater__3_.coverage" NAME="stater (3) Coverage Results" MODIFIED="1544175915443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bevol/bevol" />
     <SUITE FILE_PATH="coverage/python$EnumerationClass.coverage" NAME="EnumerationClass Coverage Results" MODIFIED="1540454738068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python$1.coverage" NAME="1 Coverage Results" MODIFIED="1544493640795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/python$1.coverage" NAME="1 Coverage Results" MODIFIED="1545722218532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/python$splitList.coverage" NAME="splitList Coverage Results" MODIFIED="1544771456374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getStartedWithQuickProgramming" />
     <SUITE FILE_PATH="coverage/python$cycle.coverage" NAME="cycle Coverage Results" MODIFIED="1539592245431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$hex__.coverage" NAME="hex() Coverage Results" MODIFIED="1539593474151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -64,7 +73,7 @@
     <SUITE FILE_PATH="coverage/python$CustomClasses.coverage" NAME="CustomClasses Coverage Results" MODIFIED="1540453519892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$list.coverage" NAME="list Coverage Results" MODIFIED="1540798336503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$selectiveCopy.coverage" NAME="selectiveCopy Coverage Results" MODIFIED="1545037516391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getStartedWithQuickProgramming" />
-    <SUITE FILE_PATH="coverage/python$stater__2_.coverage" NAME="stater (2) Coverage Results" MODIFIED="1545366288965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/financial/financial" />
+    <SUITE FILE_PATH="coverage/python$stater__2_.coverage" NAME="stater (2) Coverage Results" MODIFIED="1545721906768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/financial/financial" />
     <SUITE FILE_PATH="coverage/python$exercise3.coverage" NAME="exercise3 Coverage Results" MODIFIED="1539659442265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$pw.coverage" NAME="pw Coverage Results" MODIFIED="1544781174052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getStartedWithQuickProgramming" />
     <SUITE FILE_PATH="coverage/python$conditional.coverage" NAME="conditional Coverage Results" MODIFIED="1539590330122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -129,32 +138,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="class_func.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/class_func.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="54" column="23" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
-              <folding>
-                <element signature="e#30#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="coinFlip.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/coinFlip.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stater.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="stater.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bevol/bevol/stater.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+            <state relative-caret-position="76">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -209,26 +197,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/car/car/settings.py" />
-        <option value="$PROJECT_DIR$/test2.py" />
-        <option value="$PROJECT_DIR$/financial/financial/spiders/financial_spider.py" />
         <option value="$PROJECT_DIR$/financial/financial/settings.py" />
-        <option value="$PROJECT_DIR$/bevol/bevol/stater.py" />
         <option value="$PROJECT_DIR$/bevol/bevol/settings.py" />
         <option value="$PROJECT_DIR$/text_strip.py" />
         <option value="$PROJECT_DIR$/bevol/bevol/pipelines.py" />
         <option value="$PROJECT_DIR$/bevol/bevol/items.py" />
-        <option value="$PROJECT_DIR$/financial/financial/spiders/hs_financial_spider.py" />
-        <option value="$PROJECT_DIR$/financial/financial/spiders/md_financial_spider.py" />
         <option value="$PROJECT_DIR$/tangeche/tangeche/settings.py" />
         <option value="$PROJECT_DIR$/car/car/items.py" />
         <option value="$PROJECT_DIR$/car/car/spiders/car_spider.py" />
         <option value="$PROJECT_DIR$/car/car/pipelines.py" />
         <option value="$PROJECT_DIR$/car/car/autohome.py" />
-        <option value="$PROJECT_DIR$/test/1.py" />
         <option value="$PROJECT_DIR$/getStartedWithQuickProgramming/guessTheNumber.py" />
         <option value="$PROJECT_DIR$/getStartedWithQuickProgramming/Collatz.py" />
-        <option value="$PROJECT_DIR$/getStartedWithQuickProgramming/splitList.py" />
         <option value="$PROJECT_DIR$/getStartedWithQuickProgramming/characterGraphNetwork.py" />
         <option value="$PROJECT_DIR$/getStartedWithQuickProgramming/itemListing.py" />
         <option value="$PROJECT_DIR$/getStartedWithQuickProgramming/pw.py" />
@@ -247,19 +227,27 @@
         <option value="$PROJECT_DIR$/getStartedWithQuickProgramming/selectiveCopy.py" />
         <option value="$PROJECT_DIR$/getStartedWithQuickProgramming/deleteUnwantedFiles.py" />
         <option value="$PROJECT_DIR$/getStartedWithQuickProgramming/removeMissingNumbers.py" />
-        <option value="$PROJECT_DIR$/bevol/bevol/spiders/bevol_spider.py" />
         <option value="$PROJECT_DIR$/tangeche/tangeche/spiders/tgcShop.py" />
         <option value="$PROJECT_DIR$/tangeche/tangeche/items.py" />
         <option value="$PROJECT_DIR$/tangeche/tangeche/spiders/tgcShop_spider.py" />
         <option value="$PROJECT_DIR$/tangeche/tangeche/pipelines.py" />
         <option value="$PROJECT_DIR$/tangeche/tangeche/spiders/tangeche_spider.py" />
-        <option value="$PROJECT_DIR$/class_func.py" />
         <option value="$PROJECT_DIR$/financial/financial/items.py" />
-        <option value="$PROJECT_DIR$/financial/financial/spiders/myc_shop_spider.py" />
-        <option value="$PROJECT_DIR$/financial/financial/spiders/myc_financial_spider.py" />
-        <option value="$PROJECT_DIR$/financial/financial/stater.py" />
         <option value="$PROJECT_DIR$/financial/financial/pipelines.py" />
         <option value="$PROJECT_DIR$/getStartedWithQuickProgramming/coinFlip.py" />
+        <option value="$PROJECT_DIR$/bevol/bevol/spiders/bevol_spider.py" />
+        <option value="$PROJECT_DIR$/bevol/bevol/stater.py" />
+        <option value="$PROJECT_DIR$/car/car/stater.py" />
+        <option value="$PROJECT_DIR$/getStartedWithQuickProgramming/splitList.py" />
+        <option value="$PROJECT_DIR$/financial/financial/spiders/md_financial_spider.py" />
+        <option value="$PROJECT_DIR$/financial/financial/spiders/myc_financial_spider.py" />
+        <option value="$PROJECT_DIR$/financial/financial/spiders/myc_shop_spider.py" />
+        <option value="$USER_HOME$/venv/lib/python3.7/site-packages/scrapy_splash/__init__.py" />
+        <option value="$PROJECT_DIR$/financial/financial/spiders/hs_financial_spider.py" />
+        <option value="$PROJECT_DIR$/financial/financial/stater.py" />
+        <option value="$PROJECT_DIR$/test/1.py" />
+        <option value="$PROJECT_DIR$/getStartedWithQuickProgramming/downloadXkcd.py" />
+        <option value="$PROJECT_DIR$/class_func.py" />
       </list>
     </option>
   </component>
@@ -296,18 +284,11 @@
             <path>
               <item name="python" type="b2602c69:ProjectViewProjectNode" />
               <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="bevol" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="bevol" type="462c0819:PsiDirectoryNode" />
-              <item name="bevol" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
               <item name="getStartedWithQuickProgramming" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -319,21 +300,21 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test" />
+      <recent name="$PROJECT_DIR$/bevol/bevol" />
+      <recent name="$PROJECT_DIR$/financial/financial" />
+      <recent name="$PROJECT_DIR$/tangeche/tangeche" />
+      <recent name="$PROJECT_DIR$/car/car" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/study" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/car/car" />
       <recent name="$PROJECT_DIR$/SpiderObject/SpiderObject/spiders" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/bevol/bevol" />
-      <recent name="$PROJECT_DIR$/financial/financial" />
-      <recent name="$PROJECT_DIR$/tangeche/tangeche" />
-      <recent name="$PROJECT_DIR$/car/car" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -348,7 +329,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.coinFlip">
+  <component name="RunManager" selected="Python.downloadXkcd">
+    <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="Unicode" type="PythonConfigurationType" factoryName="Python">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -387,6 +387,25 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="downloadXkcd" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getStartedWithQuickProgramming" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getStartedWithQuickProgramming/downloadXkcd.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="hex()" type="PythonConfigurationType" factoryName="Python">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -401,44 +420,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/study/hex().py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="removeMissingNumbers" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getStartedWithQuickProgramming" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getStartedWithQuickProgramming/removeMissingNumbers.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="stater (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tangeche/tangeche" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tangeche/tangeche/stater.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -485,19 +466,19 @@
     <list>
       <item itemvalue="Python.hex()" />
       <item itemvalue="Python.Unicode" />
-      <item itemvalue="Python.removeMissingNumbers" />
       <item itemvalue="Python.stater" />
-      <item itemvalue="Python.stater (1)" />
       <item itemvalue="Python.stater (2)" />
       <item itemvalue="Python.coinFlip" />
+      <item itemvalue="Python.1" />
+      <item itemvalue="Python.downloadXkcd" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.coinFlip" />
+        <item itemvalue="Python.downloadXkcd" />
         <item itemvalue="Python.stater" />
+        <item itemvalue="Python.1" />
         <item itemvalue="Python.stater (2)" />
-        <item itemvalue="Python.stater (1)" />
-        <item itemvalue="Python.removeMissingNumbers" />
+        <item itemvalue="Python.coinFlip" />
       </list>
     </recent_temporary>
   </component>
@@ -514,13 +495,6 @@
       <workItem from="1539331098166" duration="1153000" />
       <workItem from="1539332630195" duration="128000" />
       <workItem from="1539332794045" duration="2009000" />
-    </task>
-    <task id="LOCAL-00004" summary="Default Changelist">
-      <created>1541586935657</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1541586935657</updated>
     </task>
     <task id="LOCAL-00005" summary="取出数据 破解未成功">
       <created>1541669570470</created>
@@ -858,7 +832,14 @@
       <option name="project" value="LOCAL" />
       <updated>1545373788847</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="妙优车">
+      <created>1545647437954</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1545647437955</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -866,6 +847,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="991" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50319487" side_tool="true" weight="0.33668903" />
@@ -873,7 +855,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32954547" />
       <window_info anchor="bottom" x="328" y="128" width="1292" height="728" id="Run" order="2" sideWeight="0.4968051" weight="0.33668903" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49946752" weight="0.4217002" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49893504" weight="0.42729306" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49668875" visible="true" weight="0.17252396" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
@@ -1107,6 +1089,31 @@
           <line>15</line>
           <option name="timeStamp" value="910" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/bevol/bevol/spiders/bevol_spider.py</url>
+          <line>132</line>
+          <option name="timeStamp" value="911" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/venv/lib/python3.7/site-packages/scrapy_splash/__init__.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="912" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/financial/financial/stater.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="913" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test/1.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="914" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/getStartedWithQuickProgramming/downloadXkcd.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="920" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -1115,68 +1122,10 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="911" />
+      <option name="time" value="921" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/class_func.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="e#30#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car/car/autohome.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2166">
-          <caret line="114" column="78" lean-forward="true" selection-start-line="114" selection-start-column="78" selection-end-line="114" selection-end-column="78" />
-          <folding>
-            <element signature="e#25#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car/car/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1159">
-          <caret line="61" selection-start-line="58" selection-start-column="18" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car/car/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="893">
-          <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
-          <folding>
-            <element signature="e#194#208#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/guessTheNumber.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/Collatz.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/splitList.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/characterGraphNetwork.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="554">
@@ -1188,13 +1137,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="516">
           <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -1233,20 +1175,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/stripRe.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/randomQuizGenerator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="62" column="41" lean-forward="true" selection-start-line="62" selection-start-column="41" selection-end-line="62" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/mcb.db" />
     <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/madList.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -1276,27 +1204,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/backupToZip.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="36" column="48" lean-forward="true" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/renameDates.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="37" column="68" lean-forward="true" selection-start-line="37" selection-start-column="68" selection-end-line="37" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="309" selection-start-line="309" selection-end-line="309" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/selectiveCopy.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -1318,36 +1225,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/car/car/stater.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bevol/bevol/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="445">
           <caret line="37" column="83" lean-forward="true" selection-start-line="37" selection-start-column="83" selection-end-line="37" selection-end-column="83" />
           <folding>
             <element signature="e#193#207#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bevol/bevol/spiders/bevol_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="129" column="41" lean-forward="true" selection-start-line="129" selection-start-column="41" selection-end-line="129" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/financial/financial/spiders/hs_financial_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-301">
-          <caret line="40" column="80" selection-start-line="40" selection-start-column="80" selection-end-line="40" selection-end-column="80" />
-          <folding>
-            <element signature="e#25#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1397,16 +1280,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/financial/financial/spiders/md_financial_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="101" column="53" lean-forward="true" selection-start-line="101" selection-start-column="8" selection-end-line="101" selection-end-column="53" />
-          <folding>
-            <element signature="e#25#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tangeche/tangeche/spiders/tgcShop_spider.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1438,13 +1311,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/financial/financial/spiders/myc_shop_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/financial/financial/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -1459,44 +1325,170 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/financial/financial/stater.py">
+    <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/coinFlip.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+        <state relative-caret-position="342">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/venv/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bevol/bevol/spiders/bevol_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/car/stater.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/backupToZip.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="36" column="48" lean-forward="true" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/stripRe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/randomQuizGenerator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="62" column="41" lean-forward="true" selection-start-line="62" selection-start-column="41" selection-end-line="62" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/renameDates.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="37" column="68" lean-forward="true" selection-start-line="37" selection-start-column="68" selection-end-line="37" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/financial/financial/spiders/md_financial_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="e#26#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/financial/financial/spiders/myc_financial_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="65" column="54" selection-start-line="65" selection-start-column="54" selection-end-line="65" selection-end-column="54" />
+        <state relative-caret-position="19">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
           <folding>
-            <element signature="e#25#48#0" expanded="true" />
+            <element signature="e#26#49#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/financial/financial/spiders/myc_shop_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/splitList.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/financial/financial/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2569" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/class_func.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/venv/lib/python3.7/site-packages/demjson.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/venv/lib/python3.7/site-packages/scrapy_splash/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
+          <folding>
+            <element signature="e#24#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/financial/financial/spiders/hs_financial_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="309" selection-start-line="309" selection-end-line="309" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/downloadXkcd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/financial/financial/stater.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/class_func.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="54" column="23" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
+        <state relative-caret-position="-1904">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
           <folding>
-            <element signature="e#30#39#0" expanded="true" />
+            <element signature="e#31#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bevol/bevol/stater.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/coinFlip.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        <state relative-caret-position="76">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>

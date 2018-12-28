@@ -1,5 +1,8 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import sys
+sys.path.append('../')
 from class_func import func
 
 

@@ -2,7 +2,7 @@
 
 import scrapy, re, json, requests, time
 from ..items import shopItem
-from  class_func import func
+from class_func import func
 
 
 class mycShopSpider(scrapy.Spider):

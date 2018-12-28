@@ -23,6 +23,9 @@ class bevolSpider(scrapy.Spider):
             yield SplashRequest(url=self.url + '?category=' + str(i), callback=self.parse, args={'wait': 5}, meta={'splash': {
                         'endpoint': 'render.html'}, 'category': str(i)
             })
+            # yield SplashRequest(url=self.url + '?category=' + '38', callback=self.parse, args={'wait': 5}, meta={'splash': {
+            #             'endpoint': 'render.html'}, 'category': '38'
+            # })
 
     def parse(self, response):
         page = response.xpath('/html/body/div[2]/div[3]/div[4]/div/a[4]/text()')[0].extract()
@@ -127,7 +130,7 @@ class bevolSpider(scrapy.Spider):
                 compositions.append(composition)
         item['cosmetics_ingredients'] = json.dumps(ingreduents, ensure_ascii=False)
         item['compositions'] = json.dumps(compositions, ensure_ascii=False)
-        if len(item['compositions']) > 0:
+        if len(compositions) > 0:
             yield item
 
     def detail_info(url):

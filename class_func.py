@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 # 类方法
+
 import re
 import json
 import demjson
