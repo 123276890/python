@@ -1,0 +1,650 @@
+1546051757252	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.HWzFv6ZQLIUQ"
+1546051760408	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546051760408	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546051765261	Marionette	INFO	Listening on port 56385
+1546051765368	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+1546051810877	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.u25BL3xawyhb"
+1546051814596	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546051814596	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546051817003	Marionette	INFO	Listening on port 56724
+1546051817070	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 133: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1546051998838	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.glgYSc04LCq7"
+1546052002237	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546052002238	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546052006049	Marionette	INFO	Listening on port 57641
+1546052006120	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 133: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 1797, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 736
+1546053927989	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.mj6AeI9aQoa1"
+1546053929268	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546053929269	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546053931952	Marionette	INFO	Listening on port 49514
+1546053932006	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 133: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 2071, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 736
+1546054080037	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.KdR0gbE5LCs2"
+1546054082629	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546054082629	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546054085518	Marionette	INFO	Listening on port 50437
+1546054085610	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 133: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1546054483823	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.aXb0k4kqVqEG"
+1546054486452	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546054486452	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546054488812	Marionette	INFO	Listening on port 52344
+1546054488876	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 133: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1546055259724	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.FEu1776wy8wM"
+1546055263462	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546055263462	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546055266163	Marionette	INFO	Listening on port 55812
+1546055266279	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 133: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 133: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1546055440408	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.Ltp4yZDTbi9f"
+1546055444044	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546055444044	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546055446353	Marionette	INFO	Listening on port 56798
+1546055446391	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+JavaScript error: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 1: ReferenceError: NEJ is not defined
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 133: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+1546055955657	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.FxNusSWXZ8jx"
+1546055957425	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546055957426	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546055960131	Marionette	INFO	Listening on port 59335
+1546055960200	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 133: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 133: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+1546056466926	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.hsLuPFgID7g7"
+1546056469861	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546056469862	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546056472845	Marionette	INFO	Listening on port 61699
+1546056472935	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 133: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+1546056573209	Marionette	INFO	Stopped listening on port 61699
+1546056709512	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.9PirZofqX6XG"
+1546056711710	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546056711711	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546056714076	Marionette	INFO	Listening on port 62918
+1546056714158	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 133: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 133: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+1546056854176	Marionette	INFO	Stopped listening on port 62918
+1546062638394	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.h0FqQLmxo7d5"
+1546062641607	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546062641608	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546062644907	Marionette	INFO	Listening on port 54417
+1546062644943	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 133: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+JavaScript warning: https://mimg.127.net/xm/all/optimizer/20120216/js/c0_dc75f471b7e13c45402cb2d815cea182.js, line 2574: unreachable code after return statement
+JavaScript warning: https://mimg.127.net/xm/all/optimizer/20120216/js/c0_dc75f471b7e13c45402cb2d815cea182.js, line 2574: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 133: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+1546062752483	Marionette	INFO	Stopped listening on port 54417
+1546063057201	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.zZTwXkJs2gyA"
+1546063059913	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546063059913	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546063063442	Marionette	INFO	Listening on port 56479
+1546063063488	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 133: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x4C0011,name=PHttpChannel::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+1546063148502	Marionette	INFO	Stopped listening on port 56479
+1546063278298	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.jxOYsDyj2CrN"
+1546063281113	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546063281113	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546063283979	Marionette	INFO	Listening on port 57646
+1546063284080	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 133: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1546063377524	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.GYpIIL1vkLPb"
+1546063381579	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546063381579	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546063384947	Marionette	INFO	Listening on port 58254
+1546063385005	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 133: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1546063538265	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.3RFMnvO5RyjK"
+1546063541160	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546063541161	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546063545375	Marionette	INFO	Listening on port 59155
+1546063545443	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 133: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+1546063606468	Marionette	INFO	Stopped listening on port 59155
+1546063724516	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.1j9JCZPhfvBf"
+1546063727042	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546063727042	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546063729771	Marionette	INFO	Listening on port 60119
+1546063729857	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 133: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+1546063790112	Marionette	INFO	Stopped listening on port 60119
+1546063818869	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.ppqKQhTOJNS5"
+1546063821202	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546063821202	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546063823423	Marionette	INFO	Listening on port 60661
+1546063823529	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 133: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+1546063950684	Marionette	INFO	Stopped listening on port 60661
+1546064015077	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.Dvus3LSaLDF2"
+1546064017259	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546064017260	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546064019467	Marionette	INFO	Listening on port 61606
+1546064019491	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 133: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1546064208462	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.PJnGnor1IcXO"
+1546064211125	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546064211126	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546064213959	Marionette	INFO	Listening on port 62538
+1546064214052	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 133: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+1546064285478	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.wuMdIaVpBbCh"
+1546064288744	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546064288744	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546064293824	Marionette	INFO	Listening on port 63009
+1546064293873	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 133: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+1546064541298	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.aKvBYu6K5XRT"
+1546064542987	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546064542987	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546064545887	Marionette	INFO	Listening on port 64245
+1546064545968	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1546064585093	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.pHUsAo7EOd7s"
+1546064585728	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546064585728	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546064587858	Marionette	INFO	Listening on port 64510
+1546064587898	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 133: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 3853, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 736
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1546064720696	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.7RQFXVWIAEPC"
+1546064721715	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546064721715	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546064723928	Marionette	INFO	Listening on port 65195
+1546064724009	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 133: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 3888, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 736
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1546065168982	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.lQDezhbA9n0j"
+1546065170117	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546065170117	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546065172613	Marionette	INFO	Listening on port 50666
+1546065172726	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_82a9dfcc6db3ccfbfa8c6b4eff252183.js?82a9dfcc6db3ccfbfa8c6b4eff252183, line 133: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_9873fa1e8b737f7cc073d10309155e94.js?9873fa1e8b737f7cc073d10309155e94, line 11: unreachable code after return statement
+[Child 3999, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 736
+1546065289430	Marionette	INFO	Stopped listening on port 50666
+1546065312386	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.hZMC93lwyZmy"
+1546065314020	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546065314021	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546065316462	Marionette	INFO	Listening on port 51382
+1546065316556	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+JavaScript warning: https://s3.music.126.net/web/s/core_7dbf0cb5338a1334df33cb7d4f295bb2.js?7dbf0cb5338a1334df33cb7d4f295bb2, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_7dbf0cb5338a1334df33cb7d4f295bb2.js?7dbf0cb5338a1334df33cb7d4f295bb2, line 133: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_649734bc2011682db768a214cb00c474.js?649734bc2011682db768a214cb00c474, line 11: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_649734bc2011682db768a214cb00c474.js?649734bc2011682db768a214cb00c474, line 11: unreachable code after return statement
+[Parent 4026, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 736
+[Child 4028, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 736
+[Child 4028, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 736
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1546065454185	Marionette	INFO	Stopped listening on port 51382
+1546065503449	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.tICun8UzTc3W"
+1546065504262	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546065504262	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546065506313	Marionette	INFO	Listening on port 52324
+1546065506354	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+JavaScript warning: https://s3.music.126.net/web/s/core_7dbf0cb5338a1334df33cb7d4f295bb2.js?7dbf0cb5338a1334df33cb7d4f295bb2, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_7dbf0cb5338a1334df33cb7d4f295bb2.js?7dbf0cb5338a1334df33cb7d4f295bb2, line 133: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_649734bc2011682db768a214cb00c474.js?649734bc2011682db768a214cb00c474, line 11: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_649734bc2011682db768a214cb00c474.js?649734bc2011682db768a214cb00c474, line 11: unreachable code after return statement
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1546065630423	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.UfA6iqBEYrpI"
+1546065631919	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546065631919	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546065634230	Marionette	INFO	Listening on port 52969
+1546065634326	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+JavaScript warning: https://s3.music.126.net/web/s/core_7dbf0cb5338a1334df33cb7d4f295bb2.js?7dbf0cb5338a1334df33cb7d4f295bb2, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_7dbf0cb5338a1334df33cb7d4f295bb2.js?7dbf0cb5338a1334df33cb7d4f295bb2, line 133: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_649734bc2011682db768a214cb00c474.js?649734bc2011682db768a214cb00c474, line 11: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_649734bc2011682db768a214cb00c474.js?649734bc2011682db768a214cb00c474, line 11: unreachable code after return statement
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 4104, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 736
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1546065984701	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.anG2b9WDam43"
+1546065985986	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546065985987	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546065988576	Marionette	INFO	Listening on port 54719
+1546065988611	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+JavaScript warning: https://s3.music.126.net/web/s/core_7dbf0cb5338a1334df33cb7d4f295bb2.js?7dbf0cb5338a1334df33cb7d4f295bb2, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_7dbf0cb5338a1334df33cb7d4f295bb2.js?7dbf0cb5338a1334df33cb7d4f295bb2, line 133: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_649734bc2011682db768a214cb00c474.js?649734bc2011682db768a214cb00c474, line 11: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer_649734bc2011682db768a214cb00c474.js?649734bc2011682db768a214cb00c474, line 11: unreachable code after return statement
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1546066427296	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.XJHo5PXG0psR"
+1546066429078	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546066429078	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546066431557	Marionette	INFO	Listening on port 56754
+1546066431654	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 87: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 87: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 147: unreachable code after return statement
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1546066515879	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.gv5WoC57KnLF"
+1546066517278	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546066517278	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546066519510	Marionette	INFO	Listening on port 57213
+1546066519608	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 87: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 87: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 147: unreachable code after return statement
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 4334, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 736
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1546066976502	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.FyrdznRwmyWk"
+1546066978009	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546066978009	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546066980240	Marionette	INFO	Listening on port 59230
+1546066980345	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 87: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 87: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 147: unreachable code after return statement
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+1546067084708	Marionette	INFO	Stopped listening on port 59230
+1546067159287	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.bTHhHiple8zV"
+1546067160704	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546067160704	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546067163124	Marionette	INFO	Listening on port 60078
+1546067163203	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 87: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 87: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 147: unreachable code after return statement
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1546067200467	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.0OT6WPlYjKE0"
+1546067202642	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546067202642	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546067205244	Marionette	INFO	Listening on port 60347
+1546067205327	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 87: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 87: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 147: unreachable code after return statement
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1546067292842	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.T4qSw348AROF"
+1546067294985	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546067294986	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546067297990	Marionette	INFO	Listening on port 60813
+1546067298054	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 87: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 87: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 147: unreachable code after return statement
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+JavaScript error: https://play2048.co/js/html_actuator.js, line 151: ReferenceError: twttr is not defined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1546067613795	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/j4/yyvhpcpn2nb1nq8mvhswvx3m0000gp/T/rust_mozprofile.sPZhOWhCMSo2"
+1546067615324	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546067615325	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1546067617698	Marionette	INFO	Listening on port 62233
+1546067617750	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 87: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 87: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-42620757-2, line 147: unreachable code after return statement
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+JavaScript error: https://play2048.co/js/html_actuator.js, line 151: ReferenceError: twttr is not defined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
