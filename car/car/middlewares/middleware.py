@@ -18,7 +18,7 @@ class JavaScriptMiddleware(object):
             # driver.execute_script(js)                 # 可执行js，模仿用户操作。此处为将页面拉至最底端。
             time.sleep(3)
             body = driver.page_source
-            print ("访问"+request.url)
+            print("访问"+request.url)
             return HtmlResponse(driver.current_url, body=body, encoding='utf-8', request=request)
         else:
             return
