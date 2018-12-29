@@ -12,23 +12,23 @@ from selenium.webdriver.common.action_chains import ActionChains
 import time
 import random
 
-broswer = webdriver.Firefox(executable_path='/Users/zhuangganglong/Desktop/geckodriver')
-broswer.get('https://play2048.co/')
+browser = webdriver.Firefox(executable_path='/Users/zhuangganglong/Desktop/geckodriver')
+browser.get('https://play2048.co/')
 while True:
     for i in str(random.randint(0, 3)):
         if i == '0':
-            ActionChains(broswer).send_keys(Keys.UP).perform()
+            ActionChains(browser).send_keys(Keys.UP).perform()
         elif i == '1':
-            ActionChains(broswer).send_keys(Keys.DOWN).perform()
+            ActionChains(browser).send_keys(Keys.DOWN).perform()
         elif i == '2':
-            ActionChains(broswer).send_keys(Keys.RIGHT).perform()
+            ActionChains(browser).send_keys(Keys.RIGHT).perform()
         else:
-            ActionChains(broswer).send_keys(Keys.LEFT).perform()
+            ActionChains(browser).send_keys(Keys.LEFT).perform()
 
         time.sleep(1)
 
         try:
-            broswer.find_element_by_xpath('/html/body/div[3]/div[4]/div[1]/div/a[2]').click()
+            browser.find_element_by_xpath('/html/body/div[3]/div[4]/div[1]/div/a[2]').click()
         except:
             pass
 

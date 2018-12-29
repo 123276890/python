@@ -7,10 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec2549ad-63f5-42d0-9b31-0c022d685bfc" name="Default Changelist" comment="default">
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/auto2048.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/enterAccount.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/enterAccount.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/geckodriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/geckodriver.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/auto2048.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/auto2048.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -143,23 +141,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="enterAccount.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/enterAccount.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="26" column="87" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="87" />
-              <folding>
-                <element signature="e#127#142#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="auto2048.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/auto2048.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="514">
-              <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+            <state relative-caret-position="305">
+              <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
               <folding>
                 <element signature="e#184#214#0" expanded="true" />
               </folding>
@@ -517,13 +503,6 @@
       <workItem from="1539332630195" duration="128000" />
       <workItem from="1539332794045" duration="2009000" />
     </task>
-    <task id="LOCAL-00009" summary="取出数据 破解未成功">
-      <created>1542015894996</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1542015894996</updated>
-    </task>
     <task id="LOCAL-00010" summary="易车网">
       <created>1542017319404</created>
       <option name="number" value="00010" />
@@ -860,7 +839,14 @@
       <option name="project" value="LOCAL" />
       <updated>1546049268426</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="default">
+      <created>1546069746095</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1546069746096</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1489,10 +1475,10 @@
         <state relative-caret-position="-8162" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bevol/bevol/stater.py">
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="177">
+          <caret line="309" selection-start-line="309" selection-end-line="309" />
         </state>
       </provider>
     </entry>
@@ -1506,17 +1492,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/codecs.py">
+    <entry file="file://$PROJECT_DIR$/bevol/bevol/stater.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="309" selection-start-line="309" selection-end-line="309" />
+        <state relative-caret-position="76">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/auto2048.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+        <state relative-caret-position="305">
+          <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
           <folding>
             <element signature="e#184#214#0" expanded="true" />
           </folding>
