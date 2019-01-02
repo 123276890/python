@@ -28,6 +28,7 @@ while True:
         time.sleep(1)
 
         try:
+            time.sleep(1)
             browser.find_element_by_xpath('/html/body/div[3]/div[4]/div[1]/div/a[2]').click()
         except:
             pass
