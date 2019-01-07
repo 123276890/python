@@ -28,11 +28,10 @@ class bevolSpider(scrapy.Spider):
             # })
 
     def parse(self, response):
-        page = response.xpath('/html/body/div[2]/div[3]/div[4]/div/a[4]/text()')[0].extract()
         url = (response.url).split('?')
         category = response.meta['category']
         i = 1
-        while i < 260:
+        while i < 251:
             # url[0] + '?v=2.0' + '&' + url[1] + '&p=' + str(i)
             yield SplashRequest(url=url[0] + '?v=2.0' + '&' + url[1] + '&p=' + str(i), callback=self.parse_list, args={'wait': 5},
                                 meta={'splash': {'endpoint': 'render.html'}, 'category': category
