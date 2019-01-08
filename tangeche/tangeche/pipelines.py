@@ -15,7 +15,7 @@ class TangechePipeline(object):
 
 class WebcrawlerScrapyPipeline(object):
     def process_item(self, item, spider):
-        db = pymysql.connect(host='127.0.0.1', user='root', password='123456', db='car_local', charset='utf8')
+        db = pymysql.connect(host='127.0.0.1', user='root', password='123456', db='car89', charset='utf8')
         cur = db.cursor()
         shopList = item['shopList']
         # 店铺城市
@@ -35,7 +35,7 @@ class WebcrawlerScrapyPipeline(object):
             sqlS = "INSERT INTO lrlz_nw_store(%s) select '%s' from dual where not EXISTS (select 1 from lrlz_nw_store a where original_id ='%s')" % (shopk, shopv, id)
             cur.execute(sqlS)
             db.commit()
-            sqlS2 = "SELECT shop_id from lrlz_nw_store WHERE original_id = %s" % id
+            sqlS2 = "SELECT shop_id from lrlz_nw_store WHERE original_id = '%s'" % id
             cur.execute(sqlS2)
             shop_id = (cur.fetchone())[0]
             shopId.append(shop_id)
