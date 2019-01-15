@@ -16,7 +16,7 @@ class CarPipeline(object):
 
 class WebcrawlerScrapyPipeline(object):
     def process_item(self, item, spider):
-        db = pymysql.connect(host='127.0.0.1', user='root', password='123456', db='car', charset='utf8')
+        db = pymysql.connect(host='127.0.0.1', user='root', password='123456', db='car89', charset='utf8')
         cur = db.cursor()
         keys = []
         values = []

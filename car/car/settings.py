@@ -78,7 +78,7 @@ SPIDER_MIDDLEWARES = {
 
 
 # 添加splash服务器地址
-SPLASH_URL = 'http://localhost:8050'
+SPLASH_URL = 'http://121.43.114.153:8050'
 
 # Set a custom DUPEFILTER_CLASS
 DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'

@@ -7,113 +7,86 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec2549ad-63f5-42d0-9b31-0c022d685bfc" name="Default Changelist" comment="default">
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/alarm.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/allMyCats1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/allMyCats2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/backupToZip.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/birthdays.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/boxPrint.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/buggyAddingProgram.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/bulletPointAdder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/calcProd.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/catlogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/catnapping.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/censu2010.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/census2010.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/censuspopdata.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/characterCount.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/coinFlip.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/combinePdfs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/combinedminutes.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/countdown.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/demo.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/dictionary.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/dimensions.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/downloadXkcd.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/duesRecords.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/encrypted.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/encryptedminutes.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/errorExample.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/example.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/example.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/example.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/example.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/excelSpreadsheets.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/exitExample.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/factorialLog.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/fiveTimes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/formFiller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/freezeExample.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/getDocxText.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/guessTheNumber.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/guests.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/headings.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/hello.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/helloFunc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/helloFunc2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/helloworld.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/inventory.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/isPhoneNumber.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/littleKid.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/lucky.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/magic8Ball.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/magic8Ball2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/mapIt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/mcb.pyw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/meetingminutes.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/meetingminutes2.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/merged.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/mouseNow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/mouseNow2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/multidownloadXkcd.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/multipleParagraphs.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/myPets.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/passingReference.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/phoneAndEmail.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/picnicTable.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/prettyCharacterCount.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/printRandom.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/produceSales.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/pw.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/quickWeather.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/randomQuizGenerator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/readCensusExcel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/readDocx.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/removeCsvHeader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/removeCsvHeader.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/renameDates.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/resizeAndAddLogo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/restyled.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/sameName.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/sameName2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/sameName3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/sameName4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/sampleChart.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/sendDuesReminders.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/stopwatch.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/styled.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/styles.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/swordfish.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/textMyself.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/threadDemo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/ticTacToe.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/torrentStarter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/twoPage.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/updateProduce.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/updatedProduceSales.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/validateInput.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/vampire.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/vampire2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/watermark.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/zeroDivide.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/zophie.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/duesRecords.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/excelSpreadsheets.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/sendDuesReminders.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/catlogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/mouseNow.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/resizeAndAddLogo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/zophie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/objectOriented/first_class.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/blankRowInserter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/car/car/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/car/car/pipelines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car/car/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/car/car/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/allMyCats1.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/allMyCats1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/allMyCats2.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/allMyCats2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/backupToZip.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/backupToZip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/birthdays.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/birthdays.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/boxPrint.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/boxPrint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/buggyAddingProgram.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/buggyAddingProgram.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/bulletPointAdder.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/bulletPointAdder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/calcProd.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/calcProd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/catnapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/catnapping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/census2010.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/census2010.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/characterCount.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/characterCount.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/coinFlip.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/coinFlip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/combinePdfs.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/combinePdfs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/countdown.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/countdown.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/dictionary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/dictionary.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/downloadXkcd.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/downloadXkcd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/errorExample.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/errorExample.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/example.csv" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/example.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/example.html" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/example.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/exitExample.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/exitExample.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/factorialLog.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/factorialLog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/fiveTimes.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/fiveTimes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/formFiller.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/formFiller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/getDocxText.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/getDocxText.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/guessTheNumber.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/guessTheNumber.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/guests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/guests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/hello.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/hello.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/helloFunc.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/helloFunc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/helloFunc2.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/helloFunc2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/inventory.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/inventory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/isPhoneNumber.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/isPhoneNumber.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/littleKid.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/littleKid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/lucky.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/lucky.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/magic8Ball.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/magic8Ball.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/magic8Ball2.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/magic8Ball2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/mapIt.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/mapIt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/mcb.pyw" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/mcb.pyw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/mouseNow.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/mouseNow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/mouseNow2.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/mouseNow2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/multidownloadXkcd.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/multidownloadXkcd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/myPets.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/myPets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/passingReference.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/passingReference.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/phoneAndEmail.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/phoneAndEmail.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/picnicTable.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/picnicTable.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/prettyCharacterCount.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/prettyCharacterCount.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/printRandom.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/printRandom.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/pw.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/pw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/quickWeather.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/quickWeather.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/randomQuizGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/randomQuizGenerator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/readCensusExcel.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/readCensusExcel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/readDocx.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/readDocx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/removeCsvHeader.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/removeCsvHeader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/renameDates.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/renameDates.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/resizeAndAddLogo.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/resizeAndAddLogo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/sameName.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/sameName.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/sameName2.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/sameName2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/sameName3.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/sameName3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/sameName4.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/sameName4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/sendDuesReminders.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/sendDuesReminders.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/stopwatch.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/stopwatch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/swordfish.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/swordfish.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/textMyself.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/textMyself.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/threadDemo.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/threadDemo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/ticTacToe.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/ticTacToe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/torrentStarter.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/torrentStarter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/updateProduce.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/updateProduce.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/validateInput.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/validateInput.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/vampire.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/vampire.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/vampire2.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/vampire2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/zeroDivide.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/automate_online-materials/zeroDivide.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/example.csv" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/example.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tangeche/tangeche/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/tangeche/tangeche/pipelines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getStartedWithQuickProgramming/sendDuesReminders.py" beforeDir="false" afterPath="$PROJECT_DIR$/getStartedWithQuickProgramming/sendDuesReminders.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -134,6 +107,7 @@
     <SUITE FILE_PATH="coverage/python$stater__1_.coverage" NAME="stater (1) Coverage Results" MODIFIED="1546927318912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tangeche/tangeche" />
     <SUITE FILE_PATH="coverage/python$exercise1.coverage" NAME="exercise1 Coverage Results" MODIFIED="1539587173099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$deleteUnwantedFiles.coverage" NAME="deleteUnwantedFiles Coverage Results" MODIFIED="1545038948571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getStartedWithQuickProgramming" />
+    <SUITE FILE_PATH="coverage/python$sendDuesReminders.coverage" NAME="sendDuesReminders Coverage Results" MODIFIED="1547089618606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getStartedWithQuickProgramming" />
     <SUITE FILE_PATH="coverage/python$FloatAndInteger.coverage" NAME="FloatAndInteger Coverage Results" MODIFIED="1539569442222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$backupToZip.coverage" NAME="backupToZip Coverage Results" MODIFIED="1545035587162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getStartedWithQuickProgramming" />
     <SUITE FILE_PATH="coverage/python$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1543386439122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -146,6 +120,7 @@
     <SUITE FILE_PATH="coverage/python$first.coverage" NAME="first Coverage Results" MODIFIED="1539337220921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$phantomJsTest.coverage" NAME="phantomJsTest Coverage Results" MODIFIED="1541575738526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$stater.coverage" NAME="stater Coverage Results" MODIFIED="1546911050804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bevol/bevol" />
+    <SUITE FILE_PATH="coverage/python$resizeAndAddLogo.coverage" NAME="resizeAndAddLogo Coverage Results" MODIFIED="1547113479972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getStartedWithQuickProgramming" />
     <SUITE FILE_PATH="coverage/python$characterGraphNetwork.coverage" NAME="characterGraphNetwork Coverage Results" MODIFIED="1544772919523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getStartedWithQuickProgramming" />
     <SUITE FILE_PATH="coverage/python$first2.coverage" NAME="first2 Coverage Results" MODIFIED="1539337216226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$stackoverflow__1_.coverage" NAME="stackoverflow (1) Coverage Results" MODIFIED="1539936428391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SpiderObject/SpiderObject" />
@@ -178,7 +153,7 @@
     <SUITE FILE_PATH="coverage/python$CustomClasses.coverage" NAME="CustomClasses Coverage Results" MODIFIED="1540453519892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$list.coverage" NAME="list Coverage Results" MODIFIED="1540798336503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$selectiveCopy.coverage" NAME="selectiveCopy Coverage Results" MODIFIED="1545037516391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getStartedWithQuickProgramming" />
-    <SUITE FILE_PATH="coverage/python$stater__2_.coverage" NAME="stater (2) Coverage Results" MODIFIED="1545721906768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/financial/financial" />
+    <SUITE FILE_PATH="coverage/python$stater__2_.coverage" NAME="stater (2) Coverage Results" MODIFIED="1547453941473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/car/car" />
     <SUITE FILE_PATH="coverage/python$exercise3.coverage" NAME="exercise3 Coverage Results" MODIFIED="1539659442265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$pw.coverage" NAME="pw Coverage Results" MODIFIED="1544781174052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getStartedWithQuickProgramming" />
     <SUITE FILE_PATH="coverage/python$conditional.coverage" NAME="conditional Coverage Results" MODIFIED="1539590330122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -194,6 +169,7 @@
     <SUITE FILE_PATH="coverage/python$text_strip.coverage" NAME="text_strip Coverage Results" MODIFIED="1543918321947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$printTable.coverage" NAME="printTable Coverage Results" MODIFIED="1544782724613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getStartedWithQuickProgramming" />
     <SUITE FILE_PATH="coverage/python$stopwatch.coverage" NAME="stopwatch Coverage Results" MODIFIED="1546832824450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getStartedWithQuickProgramming" />
+    <SUITE FILE_PATH="coverage/python$mouseNow.coverage" NAME="mouseNow Coverage Results" MODIFIED="1547175246798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getStartedWithQuickProgramming" />
     <SUITE FILE_PATH="coverage/python$combinePdfs.coverage" NAME="combinePdfs Coverage Results" MODIFIED="1546583457537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getStartedWithQuickProgramming" />
     <SUITE FILE_PATH="coverage/python$stackoverflow.coverage" NAME="stackoverflow Coverage Results" MODIFIED="1539839930705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Scrapy" />
     <SUITE FILE_PATH="coverage/python$quickWeather.coverage" NAME="quickWeather Coverage Results" MODIFIED="1546830822920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getStartedWithQuickProgramming" />
@@ -260,8 +236,8 @@
       <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tangeche/tangeche/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+            <state relative-caret-position="-116">
+              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
               <folding>
                 <element signature="e#193#207#0" expanded="true" />
               </folding>
@@ -269,11 +245,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="first_class.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/objectOriented/first_class.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/car/car/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="534">
+              <caret line="80" column="40" selection-start-line="80" selection-start-column="40" selection-end-line="80" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/car/car/pipelines.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="18" column="88" selection-start-line="18" selection-start-column="88" selection-end-line="18" selection-end-column="88" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stater.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/car/car/stater.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="car_spider.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/car/car/spiders/car_spider.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="157" selection-start-line="157" selection-end-line="157" />
+              <folding>
+                <element signature="e#26#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tangeche/tangeche/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="80" column="30" selection-start-line="80" selection-start-column="21" selection-end-line="80" selection-end-column="30" />
+            <state relative-caret-position="239">
+              <caret line="84" selection-start-line="84" selection-end-line="84" />
             </state>
           </provider>
         </entry>
@@ -282,7 +302,7 @@
         <entry file="file://$PROJECT_DIR$/tangeche/tangeche/stater.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -290,17 +310,8 @@
       <file leaf-file-name="tgcShop_spider.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tangeche/tangeche/spiders/tgcShop_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sendDuesReminders.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/sendDuesReminders.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+            <state relative-caret-position="600">
+              <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -355,11 +366,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/getStartedWithQuickProgramming/printTable.py" />
-        <option value="$PROJECT_DIR$/getStartedWithQuickProgramming/phoneAndEmail.py" />
-        <option value="$PROJECT_DIR$/getStartedWithQuickProgramming/passwordDetection.py" />
-        <option value="$PROJECT_DIR$/getStartedWithQuickProgramming/stripRe.py" />
-        <option value="$PROJECT_DIR$/getStartedWithQuickProgramming/randomQuizGenerator.py" />
         <option value="$PROJECT_DIR$/getStartedWithQuickProgramming/mcb.pyw.py" />
         <option value="$PROJECT_DIR$/getStartedWithQuickProgramming/mcb.pyw" />
         <option value="$PROJECT_DIR$/getStartedWithQuickProgramming/madList.txt" />
@@ -406,6 +412,11 @@
         <option value="$PROJECT_DIR$/getStartedWithQuickProgramming/countdown.py" />
         <option value="$PROJECT_DIR$/tangeche/tangeche/pipelines.py" />
         <option value="$PROJECT_DIR$/getStartedWithQuickProgramming/sendDuesReminders.py" />
+        <option value="$PROJECT_DIR$/getStartedWithQuickProgramming/resizeAndAddLogo.py" />
+        <option value="$PROJECT_DIR$/getStartedWithQuickProgramming/mouseNow.py" />
+        <option value="$PROJECT_DIR$/objectOriented/first_class.py" />
+        <option value="$PROJECT_DIR$/car/car/settings.py" />
+        <option value="$PROJECT_DIR$/car/car/pipelines.py" />
       </list>
     </option>
   </component>
@@ -419,10 +430,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1916" />
-    <option name="y" value="27" />
+    <option name="x" value="1922" />
+    <option name="y" value="26" />
     <option name="width" value="1920" />
-    <option name="height" value="991" />
+    <option name="height" value="987" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -442,19 +453,19 @@
             <path>
               <item name="python" type="b2602c69:ProjectViewProjectNode" />
               <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="tangeche" type="462c0819:PsiDirectoryNode" />
+              <item name="car" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="python" type="b2602c69:ProjectViewProjectNode" />
               <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="tangeche" type="462c0819:PsiDirectoryNode" />
-              <item name="tangeche" type="462c0819:PsiDirectoryNode" />
+              <item name="car" type="462c0819:PsiDirectoryNode" />
+              <item name="car" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="python" type="b2602c69:ProjectViewProjectNode" />
               <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="tangeche" type="462c0819:PsiDirectoryNode" />
-              <item name="tangeche" type="462c0819:PsiDirectoryNode" />
+              <item name="car" type="462c0819:PsiDirectoryNode" />
+              <item name="car" type="462c0819:PsiDirectoryNode" />
               <item name="spiders" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -475,19 +486,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/getStartedWithQuickProgramming" />
-      <recent name="$PROJECT_DIR$/study" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/car/car" />
-      <recent name="$PROJECT_DIR$/SpiderObject/SpiderObject/spiders" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/getStartedWithQuickProgramming" />
       <recent name="$PROJECT_DIR$/test" />
       <recent name="$PROJECT_DIR$/bevol/bevol" />
       <recent name="$PROJECT_DIR$/financial/financial" />
       <recent name="$PROJECT_DIR$/tangeche/tangeche" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/getStartedWithQuickProgramming" />
+      <recent name="$PROJECT_DIR$/study" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/car/car" />
+      <recent name="$PROJECT_DIR$/SpiderObject/SpiderObject/spiders" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -502,7 +513,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.stater (1)">
+  <component name="RunManager" selected="Python.stater (2)">
     <configuration name="Unicode" type="PythonConfigurationType" factoryName="Python">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -517,25 +528,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/study/Unicode.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="countdown" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getStartedWithQuickProgramming" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getStartedWithQuickProgramming/countdown.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -560,7 +552,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="multidownloadXkcd" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="mouseNow" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -573,7 +565,45 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getStartedWithQuickProgramming/multidownloadXkcd.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getStartedWithQuickProgramming/mouseNow.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="resizeAndAddLogo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getStartedWithQuickProgramming" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getStartedWithQuickProgramming/resizeAndAddLogo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="sendDuesReminders" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getStartedWithQuickProgramming" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getStartedWithQuickProgramming/sendDuesReminders.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -598,7 +628,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="stater" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="stater (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -606,31 +636,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bevol/bevol" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/car/car" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bevol/bevol/stater.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="stopwatch" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getStartedWithQuickProgramming" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getStartedWithQuickProgramming/stopwatch.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/car/car/stater.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -639,19 +650,19 @@
     <list>
       <item itemvalue="Python.hex()" />
       <item itemvalue="Python.Unicode" />
-      <item itemvalue="Python.stopwatch" />
-      <item itemvalue="Python.multidownloadXkcd" />
-      <item itemvalue="Python.countdown" />
-      <item itemvalue="Python.stater" />
       <item itemvalue="Python.stater (1)" />
+      <item itemvalue="Python.sendDuesReminders" />
+      <item itemvalue="Python.resizeAndAddLogo" />
+      <item itemvalue="Python.mouseNow" />
+      <item itemvalue="Python.stater (2)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.stater (2)" />
+        <item itemvalue="Python.mouseNow" />
+        <item itemvalue="Python.resizeAndAddLogo" />
+        <item itemvalue="Python.sendDuesReminders" />
         <item itemvalue="Python.stater (1)" />
-        <item itemvalue="Python.stater" />
-        <item itemvalue="Python.countdown" />
-        <item itemvalue="Python.multidownloadXkcd" />
-        <item itemvalue="Python.stopwatch" />
       </list>
     </recent_temporary>
   </component>
@@ -668,13 +679,6 @@
       <workItem from="1539331098166" duration="1153000" />
       <workItem from="1539332630195" duration="128000" />
       <workItem from="1539332794045" duration="2009000" />
-    </task>
-    <task id="LOCAL-00016" summary="go转换python测试">
-      <created>1542102906204</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1542102906204</updated>
     </task>
     <task id="LOCAL-00017" summary="go转换python测试">
       <created>1542189994363</created>
@@ -1012,14 +1016,21 @@
       <option name="project" value="LOCAL" />
       <updated>1546854306314</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="default">
+      <created>1546933385072</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1546933385073</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="3290000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1916" y="27" width="1920" height="991" extended-state="0" />
+    <frame x="1922" y="26" width="1920" height="987" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1027,15 +1038,15 @@
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32954547" />
-      <window_info anchor="bottom" x="328" y="128" width="1292" height="728" id="Run" order="2" sideWeight="0.4968051" visible="true" weight="0.33557048" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49893504" weight="0.42708334" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49668875" visible="true" weight="0.18051118" />
+      <window_info anchor="bottom" x="328" y="128" width="1292" height="728" id="Run" order="2" sideWeight="0.4968051" weight="0.33483145" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49893504" weight="0.4280899" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49668875" visible="true" weight="0.18210863" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32960597" />
       <window_info id="Structure" order="1" sideWeight="0.50223714" side_tool="true" weight="0.15335463" />
       <window_info id="Favorites" order="2" sideWeight="0.5033113" side_tool="true" weight="0.1629393" />
-      <window_info anchor="bottom" x="2178" y="93" width="1364" height="694" id="Debug" order="5" sideWeight="0.49627262" weight="0.35208333" />
+      <window_info active="true" anchor="bottom" x="2178" y="93" width="1364" height="694" id="Debug" order="5" sideWeight="0.49627262" visible="true" weight="0.3516854" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1049,25 +1060,25 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
-      <window_info id="Favorites" order="2" sideWeight="0.5033113" side_tool="true" weight="0.1629393" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49668875" visible="true" weight="0.16613418" />
       <window_info id="Structure" order="1" sideWeight="0.50223714" side_tool="true" weight="0.15335463" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" x="328" y="128" width="1292" height="728" id="Run" order="2" sideWeight="0.49733758" weight="0.49328858" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32885906" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32954547" />
       <window_info anchor="bottom" x="2178" y="93" width="1364" height="694" id="Debug" order="5" sideWeight="0.49733758" weight="0.37807608" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49946752" weight="0.4217002" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5026624" side_tool="true" weight="0.49328858" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32960597" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32885906" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32997763" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32954547" />
+      <window_info id="Favorites" order="2" sideWeight="0.5033113" side_tool="true" weight="0.1629393" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1317,6 +1328,21 @@
           <line>37</line>
           <option name="timeStamp" value="956" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/getStartedWithQuickProgramming/resizeAndAddLogo.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="959" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/getStartedWithQuickProgramming/mouseNow.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="960" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/car/car/spiders/car_spider.py</url>
+          <line>157</line>
+          <option name="timeStamp" value="961" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -1325,83 +1351,10 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="959" />
+      <option name="time" value="962" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tangeche/tangeche/spiders/tangeche_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car/car/spiders/car_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="100" column="59" selection-start-line="100" selection-start-column="59" selection-end-line="100" selection-end-column="59" />
-          <folding>
-            <element signature="e#26#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tangeche/tangeche/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="46" selection-start-line="46" selection-end-line="55" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/venv/lib/python3.7/site-packages/twisted/internet/defer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="653" selection-start-line="653" selection-end-line="653" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/financial/financial/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/coinFlip.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/venv/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car/car/stater.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/backupToZip.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="36" column="48" lean-forward="true" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/stripRe.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/randomQuizGenerator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="478">
@@ -1549,13 +1502,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/blankRowInserter.py" />
     <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/flip.py" />
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="309" selection-start-line="309" selection-end-line="309" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/venv/lib/python3.7/site-packages/PyPDF2/pdf.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="902">
@@ -1650,41 +1596,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tangeche/tangeche/spiders/tgcShop_spider.py">
+    <entry file="file://$PROJECT_DIR$/tangeche/tangeche/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="239">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="309" selection-start-line="309" selection-end-line="309" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/zophie.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/withLogo/zophie.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/catlogo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/resizeAndAddLogo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="27" column="26" lean-forward="true" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+          <folding>
+            <element signature="e#162#171#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/mouseNow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/getStartedWithQuickProgramming/sendDuesReminders.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tangeche/tangeche/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-          <folding>
-            <element signature="e#193#207#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="710">
+          <caret line="40" column="70" selection-start-line="40" selection-start-column="70" selection-end-line="40" selection-end-column="70" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tangeche/tangeche/stater.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tangeche/tangeche/settings.py">
+    <entry file="file://$PROJECT_DIR$/tangeche/tangeche/spiders/tgcShop_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="80" column="30" selection-start-line="80" selection-start-column="21" selection-end-line="80" selection-end-column="30" />
+        <state relative-caret-position="600">
+          <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tangeche/tangeche/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-116">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+          <folding>
+            <element signature="e#193#207#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/objectOriented/first_class.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/car/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="80" column="40" selection-start-line="80" selection-start-column="40" selection-end-line="80" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/car/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="18" column="88" selection-start-line="18" selection-start-column="88" selection-end-line="18" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/car/stater.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/car/spiders/car_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="157" selection-start-line="157" selection-end-line="157" />
+          <folding>
+            <element signature="e#26#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
