@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 # 负责维护一个类变量中所有联系人的列表，初始化姓名和地址
+# 第三章案例学习
 
 
 class ContactList(list):
