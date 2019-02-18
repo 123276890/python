@@ -108,11 +108,11 @@ class Authorizor:
                 return True
 
 
-class NotLoggedInError(Authenticator):
+class NotLoggedInError(AuthException):
     pass
 
 
-class NotPermittedError(Authenticator):
+class NotPermittedError(AuthException):
     pass
 
 
@@ -129,3 +129,6 @@ class InvalidPassword(AuthException):
 
 
 authorizor = Authorizor(authenticator)
+
+
+
