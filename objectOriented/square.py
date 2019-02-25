@@ -13,8 +13,12 @@ class Point:
 
 
 class Polygon:
-    def __init__(self):
+    def __init__(self, points=[]):
         self.vertices = []
+        for point in points:
+            if isinstance(point, tuple):
+                point = Point(*point)
+            self.vertices.append(point)
 
     def add_point(self, point):
         self.vertices.append(point)
@@ -28,8 +32,8 @@ class Polygon:
 
 
 square = Polygon()
-square.add_point(Point(1,1))
-square.add_point(Point(1,2))
-square.add_point(Point(2,2))
-square.add_point(Point(2,1))
-square.perimeter()
+square.add_point(Point(1, 1))
+square.add_point(Point(1, 2))
+square.add_point(Point(2, 2))
+square.add_point(Point(2, 1))
+print(square.perimeter())
